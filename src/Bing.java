@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,13 +21,13 @@ public class Bing {
     private String fifthAccount;
     private String fifthPassword;
 
+    private Map<String, String> accounts;
+    
     private WebDriver driver;
     private String baseUrl;
     
-    public Bing(ArrayList<String> accounts) {
-    	for(String account : accounts) {
-    		
-    	}
+    public Bing(Map<String, String> accounts) {
+    	this.accounts = accounts;
     }
   
     // execute whole script
@@ -49,10 +51,18 @@ public class Bing {
     
     @Test
     public void search() {
-        driver.get(baseUrl);
-        
-        driver.findElement(By.linkText("Sign in")).click();
-        driver.findElement(By.linkText("Connect")).click();
+    	for(Map.Entry<String, String> account : accounts.entrySet()) {
+            driver.get(baseUrl);
+            
+            // navigate to sign in
+            driver.findElement(By.linkText("Sign in")).click();
+            driver.findElement(By.linkText("Connect")).click();
+            
+            // login
+            driver.findElement(By.id("idDiv_PWD_UsernameExample")).sendKeys(account.getKey());
+            driver.findElement(By.id("idDiv_PWD_PasswordExample")).sendKeys(account.getValue());
+            driver.findElement(By.id("idSIButton9")).click();
+    	}
     }
     
     @After
@@ -61,7 +71,7 @@ public class Bing {
     }
         
     private boolean isElementPresent(By by) {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         try {
             driver.findElement(by);
             return true;
