@@ -1,6 +1,9 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import javax.swing.JOptionPane;
 
 import org.junit.*;
 import org.openqa.selenium.*;
@@ -9,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Bing {
     
-	// holds the username and the passwords of the accounts
+	// variables for the username and the passwords of the accounts
     private String firstAccount;
     private String firstPassword;
     private String secondAccount;
@@ -21,13 +24,13 @@ public class Bing {
     private String fifthAccount;
     private String fifthPassword;
 
-    private Map<String, String> accounts;
+    private Map<String, char[]> accounts = new HashMap<String, char[]>();
     
     private WebDriver driver;
     private String baseUrl;
     
-    public Bing(Map<String, String> accounts) {
-    	this.accounts = accounts;
+    public Bing(Map<String, char[]> accounts2) {
+    	this.accounts = accounts2;
     }
   
     // execute whole script
@@ -38,7 +41,8 @@ public class Bing {
             tearDown();
         }
         catch(Exception e) {
-
+        	JOptionPane.showMessageDialog(null, "An error has occured, stopping.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
+        	return;	
         }
     }
     
@@ -51,7 +55,7 @@ public class Bing {
     
     @Test
     public void search() {
-    	for(Map.Entry<String, String> account : accounts.entrySet()) {
+    	for(Map.Entry<String, char[]> account : accounts.entrySet()) {
             driver.get(baseUrl);
             
             // navigate to sign in
@@ -60,7 +64,7 @@ public class Bing {
             
             // login
             driver.findElement(By.id("idDiv_PWD_UsernameExample")).sendKeys(account.getKey());
-            driver.findElement(By.id("idDiv_PWD_PasswordExample")).sendKeys(account.getValue());
+            driver.findElement(By.id("idDiv_PWD_PasswordExample")).sendKeys(new String(account.getValue()));
             driver.findElement(By.id("idSIButton9")).click();
     	}
     }

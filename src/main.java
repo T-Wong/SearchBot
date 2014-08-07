@@ -4,6 +4,7 @@
  * Made by Tyler Wong
  */
 
+import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -13,6 +14,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,6 +36,33 @@ import javax.swing.border.TitledBorder;
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 
 public class main extends JFrame {
+	
+    // declare class level gui componenets           
+    private JPanel accountPanel;
+    private JTextField email1;
+    private JTextField email2;
+    private JTextField email3;
+    private JTextField email4;
+    private JTextField email5;
+    private JLabel emailLabel;
+    private JPasswordField password1;
+    private JPasswordField password2;
+    private JPasswordField password3;
+    private JPasswordField password4;
+    private JPasswordField password5;
+    private JLabel passwordLabel;
+    private JButton saveButton;
+    private JButton startButton;   
+    
+    public static void main(String args[]) {
+        /* Create and display the form */
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new main().setVisible(true);
+            }
+        });
+    }    
+    
     public main() {
         initComponents();
     }
@@ -42,12 +72,15 @@ public class main extends JFrame {
     private void initComponents() {
 
         accountPanel = new JPanel();
-        // initialize load variables
+        
+        // initialize variables that open the config file and read the username nad passwords
         Properties prop = new Properties();
         InputStream input = null;
         StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
         encryptor.setPassword("}@d[HZPn{;$&1c81oPui");
         OutputStream output = null;
+        
+        // initialize all swing componenets
         email1 = new JTextField();
         email2 = new JTextField();
         email3 = new JTextField();
@@ -63,9 +96,9 @@ public class main extends JFrame {
         saveButton = new JButton();
         startButton = new JButton();
 
+        // set window details
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("BingBot");
-
         accountPanel.setBorder(BorderFactory.createTitledBorder(null, "Account Information", TitledBorder.CENTER, TitledBorder.DEFAULT_POSITION));
 
         // load logins
@@ -107,24 +140,26 @@ public class main extends JFrame {
             }
         }
 
+        // set text for the JLabels and JButtons
         emailLabel.setText("Email");
-
         passwordLabel.setText("Password");
-
         saveButton.setText("Save");
+        startButton.setText("Start");
+        
+        // calls the action performed methods below when save or start is clicked
         saveButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 saveButtonActionPerformed(evt);
             }
         });
 
-        startButton.setText("Start");
         startButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 startButtonActionPerformed(evt);
             }
         });
 
+        // group and organize all the componenets
         GroupLayout accountPanelLayout = new GroupLayout(accountPanel);
         accountPanel.setLayout(accountPanelLayout);
         accountPanelLayout.setHorizontalGroup(
@@ -208,6 +243,7 @@ public class main extends JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>                        
 
+    // save the usernames and encrypted passwords here
     private void saveButtonActionPerformed(ActionEvent evt) {                                           
         Properties prop = new Properties();
         OutputStream output = null;
@@ -225,11 +261,11 @@ public class main extends JFrame {
             prop.setProperty("4.email", email4.getText().toLowerCase().trim());
             prop.setProperty("5.email", email5.getText().toLowerCase().trim());
 
-            prop.setProperty("1.password", encryptor.encrypt(password1.getText().trim()));
-            prop.setProperty("2.password", encryptor.encrypt(password2.getText().trim()));
-            prop.setProperty("3.password", encryptor.encrypt(password3.getText().trim()));
-            prop.setProperty("4.password", encryptor.encrypt(password4.getText().trim()));
-            prop.setProperty("5.password", encryptor.encrypt(password5.getText().trim()));
+            prop.setProperty("1.password", encryptor.encrypt(new String(password1.getPassword())));
+            prop.setProperty("2.password", encryptor.encrypt(new String(password2.getPassword())));
+            prop.setProperty("3.password", encryptor.encrypt(new String(password3.getPassword())));
+            prop.setProperty("4.password", encryptor.encrypt(new String(password4.getPassword())));
+            prop.setProperty("5.password", encryptor.encrypt(new String(password5.getPassword())));
             
             prop.store(output, null);
         }
@@ -245,37 +281,19 @@ public class main extends JFrame {
         }
     }                                          
 
+    // starts execution of the selenium script which does the searches
     private void startButtonActionPerformed(ActionEvent evt) {                                            
-        // TODO add your handling code here:
-    }                                           
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new main().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify                     
-    private JPanel accountPanel;
-    private JTextField email1;
-    private JTextField email2;
-    private JTextField email3;
-    private JTextField email4;
-    private JTextField email5;
-    private JLabel emailLabel;
-    private JPasswordField password1;
-    private JPasswordField password2;
-    private JPasswordField password3;
-    private JPasswordField password4;
-    private JPasswordField password5;
-    private JLabel passwordLabel;
-    private JButton saveButton;
-    private JButton startButton;
-    // End of variables declaration                   
+    	Map<String, char[]> accounts = new HashMap<String, char[]>();	// holds username and passwords
+    	
+    	// sets the account details in the hashmap
+    	accounts.put(email1.getText().toLowerCase().trim(), password1.getPassword());
+    	accounts.put(email2.getText().toLowerCase().trim(), password2.getPassword());
+    	accounts.put(email3.getText().toLowerCase().trim(), password3.getPassword());
+    	accounts.put(email4.getText().toLowerCase().trim(), password4.getPassword());
+    	accounts.put(email5.getText().toLowerCase().trim(), password5.getPassword());
+    	
+    	// starts the process and locks up the gui thread, may add worker later if I want to update gui during execution.
+    	Bing startBing = new Bing(accounts);
+    	startBing.execute();
+    }                                                   
 }
