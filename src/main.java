@@ -286,12 +286,22 @@ public class main extends JFrame {
     	Map<String, char[]> accounts = new HashMap<String, char[]>();	// holds username and passwords
     	
     	// sets the account details in the hashmap
-    	accounts.put(email1.getText().toLowerCase().trim(), password1.getPassword());
-    	accounts.put(email2.getText().toLowerCase().trim(), password2.getPassword());
-    	accounts.put(email3.getText().toLowerCase().trim(), password3.getPassword());
-    	accounts.put(email4.getText().toLowerCase().trim(), password4.getPassword());
-    	accounts.put(email5.getText().toLowerCase().trim(), password5.getPassword());
-    	
+    	if(!email1.getText().equals("") && new String(password1.getPassword()) != "") {
+    		accounts.put(email1.getText().toLowerCase().trim(), password1.getPassword());
+    	}
+    	if(!email2.getText().equals("") && new String(password2.getPassword()) != "") {
+			accounts.put(email2.getText().toLowerCase().trim(), password2.getPassword());
+    	}
+    	if(!email3.getText().equals("") && new String(password3.getPassword()) != "") {
+			accounts.put(email3.getText().toLowerCase().trim(), password3.getPassword());
+    	}
+    	if(!email4.getText().equals("") && new String(password4.getPassword()) != "") {
+			accounts.put(email4.getText().toLowerCase().trim(), password4.getPassword());
+    	}
+    	if(!email5.getText().equals("") && new String(password5.getPassword()) != "") {
+    		accounts.put(email5.getText().toLowerCase().trim(), password5.getPassword());
+    	}
+
     	// starts the process and locks up the gui thread, may add worker later if I want to update gui during execution.
     	Bing startBing = new Bing(accounts);
     	startBing.execute();

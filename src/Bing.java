@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
@@ -11,21 +13,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Bing {
-    
-	// variables for the username and the passwords of the accounts
-    private String firstAccount;
-    private String firstPassword;
-    private String secondAccount;
-    private String secondPassword;
-    private String thirdAccount;
-    private String thirdPassword;
-    private String fourthAccount;
-    private String fourthPassword;
-    private String fifthAccount;
-    private String fifthPassword;
 
+	// holds account info
     private Map<String, char[]> accounts = new HashMap<String, char[]>();
     
+    // declare variables for selenium
     private WebDriver driver;
     private String baseUrl;
     
@@ -41,7 +33,12 @@ public class Bing {
             tearDown();
         }
         catch(Exception e) {
+        	e.printStackTrace();
         	JOptionPane.showMessageDialog(null, "An error has occured, stopping.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
+        	try {
+        		tearDown();
+        	}
+        	catch(Exception e2) {}
         	return;	
         }
     }
@@ -57,15 +54,42 @@ public class Bing {
     public void search() {
     	for(Map.Entry<String, char[]> account : accounts.entrySet()) {
             driver.get(baseUrl);
-            
+
             // navigate to sign in
-            driver.findElement(By.linkText("Sign in")).click();
+            driver.findElement(By.id("id_s")).click();
             driver.findElement(By.linkText("Connect")).click();
             
             // login
-            driver.findElement(By.id("idDiv_PWD_UsernameExample")).sendKeys(account.getKey());
-            driver.findElement(By.id("idDiv_PWD_PasswordExample")).sendKeys(new String(account.getValue()));
+            driver.findElement(By.name("login")).sendKeys(account.getKey());
+            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
             driver.findElement(By.id("idSIButton9")).click();
+            driver.switchTo().alert().accept();
+            
+            // gets the number of "earn and explore" rewards there are
+            WebElement ulNum = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
+            List<WebElement> lisNum = ulNum.findElements(By.tagName("li"));
+            int size = lisNum.size();
+            
+            for(int i = 0; i < size; i++) {
+            	WebElement ul = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
+                List<WebElement> lis = ul.findElements(By.tagName("li"));
+                String base = driver.getWindowHandle();
+	        	lis.get(i).findElement(By.className("title")).click();
+		        	
+	        	// switches to the window and closes it
+	        	Set<String> set = driver.getWindowHandles();
+	        	set.remove(base);
+	        	assert set.size() == 1;
+	        	driver.switchTo().window((String) set.toArray()[0]);
+	            driver.close();
+	            driver.switchTo().window(base);
+	            
+	            // wait for page to load and for base window to refresh with changes. not sure if there is any other way because the list becomes stale after refresh
+	            try {
+	            	Thread.sleep(3000);
+	            }
+	            catch(Exception e) {}
+            }
     	}
     }
     
