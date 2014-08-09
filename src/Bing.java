@@ -1,7 +1,10 @@
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
@@ -12,15 +15,28 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Bing {
 
+	// constants used for timing in between searches and other variables
+	private final int MIN_TIME = 10;
+	private final int MAX_TIME = 30;
+	private final int SEARCHES_PER = 2;	// the number of searches to earn 1 credit
+	
+	// holds the number of searches needed to be done for mobile and desktop
+	private int desktopSearches = 0;
+	private int mobileSearches = 0;
+	
 	// holds account info
     private Map<String, char[]> accounts = new HashMap<String, char[]>();
+    
+    // holds words from word list
+    private Object[] wordArray;
     
     // declare variables for selenium
     private WebDriver driver;
     private String baseUrl;
     
-    public Bing(Map<String, char[]> accounts2) {
-    	this.accounts = accounts2;
+    public Bing(Map<String, char[]> accounts, Object[] wordArray) {
+    	this.accounts = accounts;
+    	this.wordArray = wordArray;
     }
   
     // execute whole script
@@ -63,6 +79,21 @@ public class Bing {
             driver.findElement(By.id("idSIButton9")).click();
             driver.switchTo().alert().accept();
             
+            // gets the number of searches needed to be done
+            List<WebElement> searchList = (driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[2]/ul"))).findElements(By.tagName("li"));
+            searchList.remove(0);
+            for(WebElement li : searchList) {
+            	if(li.findElement(By.className("title")).getText().trim().equals("Mobile search")) {
+            		mobileSearches = formatText(li.findElement(By.className("progress")).getText());
+            	}
+            	else if(li.findElement(By.className("title")).getText().trim().equals("PC search")) {
+            		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
+            	}
+            	
+            }
+            
+            System.out.println(mobileSearches + " " + desktopSearches);
+            
             // gets the number of "earn and explore" rewards there are
             WebElement ulNum = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
             List<WebElement> lisNum = ulNum.findElements(By.tagName("li"));
@@ -93,6 +124,10 @@ public class Bing {
             
             // back arrow to get to bing home page
             driver.findElement(By.className("me_backarrow")).click();
+            
+            // start searching. first search is always web search for simplicity
+            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[new Random().nextInt(wordArray.length)].toString());
+            driver.findElement(By.id("sb_form_go")).click();
     	}
     }
     
@@ -100,14 +135,34 @@ public class Bing {
     public void tearDown() {
         //driver.quit();
     }
-        
-    private boolean isElementPresent(By by) {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        try {
-            driver.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
+    
+    private int formatText(String text) {
+    
+    	// number of credits
+    	int creditsEarned = 0;
+    	int creditsMax = 0;
+    	
+    	// used to tell where certain points in the string is and what has been discovered
+    	boolean firstMarker = false;
+    	int firstMark = 0;
+    	boolean secondMarker = true;
+    	
+    	for(int i = 0; i < text.length(); i++) {
+    		char c = text.charAt(i);
+    		
+    		// finds where the of is and finds the number of credits already earned
+    		if(!firstMarker && c == 'o' && text.charAt(i+1) == 'f') {
+    			creditsEarned = Integer.parseInt(text.substring(0, i).trim());
+    			firstMarker = true;
+    			secondMarker = false;
+    			firstMark = i;
+    		}
+    		// finds where credits is to find the total amount of credits available to earn
+    		if(!secondMarker && c == 'c' && text.charAt(i+1) == 'r') {
+    			creditsMax = Integer.parseInt(text.substring(firstMark+2, i).trim());
+    			secondMarker = true;
+    		}
+    	}
+    	return (creditsMax - creditsEarned) * SEARCHES_PER;
     }
 }

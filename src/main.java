@@ -17,6 +17,9 @@ import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Scanner;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -66,8 +69,7 @@ public class main extends JFrame {
     public main() {
         initComponents();
     }
-    
-    @SuppressWarnings("unchecked")
+     
     // Load GUI                        
     private void initComponents() {
 
@@ -302,8 +304,22 @@ public class main extends JFrame {
     		accounts.put(email5.getText().toLowerCase().trim(), password5.getPassword());
     	}
 
+        // load current word list
+    	SortedSet<String> wordSet = new TreeSet<String>();
+    	
+        try {
+        	Scanner s = new Scanner(new File(System.getProperty("user.dir") + "\\WordList.txt"), "UTF-8");
+        	s.useDelimiter("\r\n");
+        	while(s.hasNext()) {
+        		wordSet.add(s.next().trim());
+        	}
+        	s.close();
+        }
+        catch(Exception e) {
+        	e.printStackTrace();
+        }
     	// starts the process and locks up the gui thread, may add worker later if I want to update gui during execution.
-    	Bing startBing = new Bing(accounts);
+    	Bing startBing = new Bing(accounts, wordSet.toArray());
     	startBing.execute();
     }                                                   
 }

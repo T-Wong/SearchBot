@@ -40,8 +40,8 @@ public class WordList {
         
         // load current word list
         try {
-        	Scanner s = new Scanner(new File(filePath));
-        	s.useDelimiter("\n");
+        	Scanner s = new Scanner(new File(filePath), "UTF-8");
+        	s.useDelimiter("\r\n");
         	while(s.hasNext()) {
         		wordSet.add(s.next().trim());
         	}
@@ -54,7 +54,7 @@ public class WordList {
     
     @Test
     public void getWords() {
-    	// get top 5000 atricle titles on wikipedia
+    	// get top 5000 top article titles on wikipedia for that week
     	driver.get(wikiUrl);
     	
     	WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl[2]/dd/dl/dd/table/tbody"));
@@ -89,7 +89,7 @@ public class WordList {
 			FileWriter writer = new FileWriter(filePath);
 			
 			for(String word : wordSet) {
-				writer.append(word + "\n");
+				writer.append(word + "\r\n");
 			}
 			writer.flush();
 			writer.close();
