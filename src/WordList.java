@@ -64,9 +64,7 @@ public class WordList {
     		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
     		
     		String word = td_collection.get(1).getText().trim();
-    		if(!wordSet.contains(word)) {
-    			wordSet.add(word);
-    		}
+    		wordSet.add(word);
     	}
     	
     	// get 50 more words from aol top daily searches
@@ -78,9 +76,7 @@ public class WordList {
     	for(WebElement li : li_collection) {
     		String word = li.getText().trim();
     		
-    		if(!wordSet.contains(word)) {
-    			wordSet.add(word);
-    		}
+    		wordSet.add(word);
     	}
     }
     
