@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +9,6 @@ import javax.swing.JOptionPane;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class Bing {
 
@@ -70,7 +68,9 @@ public class Bing {
             List<WebElement> lisNum = ulNum.findElements(By.tagName("li"));
             int size = lisNum.size();
             
+            // earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
             for(int i = 0; i < size; i++) {
+            	// finds the rewards html elements
             	WebElement ul = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
                 List<WebElement> lis = ul.findElements(By.tagName("li"));
                 String base = driver.getWindowHandle();
@@ -90,12 +90,15 @@ public class Bing {
 	            }
 	            catch(Exception e) {}
             }
+            
+            // back arrow to get to bing home page
+            driver.findElement(By.className("me_backarrow")).click();
     	}
     }
     
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
         
     private boolean isElementPresent(By by) {
