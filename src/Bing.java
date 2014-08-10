@@ -10,6 +10,9 @@ import javax.swing.JOptionPane;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Bing {
 
@@ -45,7 +48,7 @@ public class Bing {
         try {
             setUp();
             search();
-            tearDown();
+//            tearDown();		not used anymore
         }
         catch(Exception e) {
         	e.printStackTrace();
@@ -60,14 +63,14 @@ public class Bing {
     
     @Before
     public void setUp() {
-        driver = new FirefoxDriver();
         baseUrl = "http://www.bing.com/rewards/dashboard";
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
     
     @Test
     public void search() {
     	for(Map.Entry<String, char[]> account : accounts.entrySet()) {
+            driver = new FirefoxDriver();
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.get(baseUrl);
 
             // navigate to sign in
@@ -90,8 +93,6 @@ public class Bing {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
             }
-            
-            System.out.println(mobileSearches + " " + desktopSearches);
             
             // gets the number of "earn and explore" rewards there are
             WebElement ulNum = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
@@ -121,24 +122,26 @@ public class Bing {
 	            catch(Exception e) {}
             }
             
-            // back arrow to get to bing home page
-            driver.findElement(By.className("me_backarrow")).click();
-            
-            // start desktop searching. first search is always web search for simplicity
-            driver.findElement(By.id("sb_form_q")).clear();
-            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
-            driver.findElement(By.id("sb_form_go")).click();
-            currentSearch = "web";
-            desktopSearches--;
-            
-        	// wait in between searches
-        	try {
-        		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
-        	}
-        	catch(Exception e) {
-        		e.printStackTrace();
-        	}
-        	
+            if(desktopSearches != 0) {
+	            // back arrow to get to bing home page
+	            driver.findElement(By.className("me_backarrow")).click();
+	            
+	            // start desktop searching. first search is always web search for simplicity
+	            driver.findElement(By.id("sb_form_q")).clear();
+	            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+	            driver.findElement(By.id("sb_form_go")).click();
+	            currentSearch = "web";
+	            desktopSearches--;
+	            
+	        	// wait in between searches
+	        	try {
+	        		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
+	        	}
+	        	catch(Exception e) {
+	        		e.printStackTrace();
+	        	}
+            }
+            // start desktop searching
             for(int i = 1; i <= desktopSearches; i++) {
             	// randomly picks whether to search for web, images, or videos and then switches to that page
             	int typeOfSearch = rand.nextInt(5);
@@ -169,6 +172,76 @@ public class Bing {
             		e.printStackTrace();
             	}
             }
+        	driver.quit();
+            
+            if(mobileSearches != 0) {
+	            // mobile searching
+	            FirefoxProfile profile = new FirefoxProfile(); 
+	            profile.setPreference("general.useragent.override", "iPhone"); 
+	            
+	            driver = new FirefoxDriver(profile);
+	            driver.get("http://www.bing.com/rewards/dashboard");
+	            
+	            // login
+	            driver.findElement(By.className("idText")).click();
+	            driver.findElement(By.name("login")).sendKeys(account.getKey());
+	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
+	            driver.findElement(By.id("i0011")).click();
+	            driver.switchTo().alert().accept();
+	            
+	            driver.get("http://www.bing.com/");
+	            
+	            // first search from homepage
+	            driver.findElement(By.id("sbBoxCnt")).click();
+	            driver.findElement(By.id("sb_form_q")).click();
+	            
+	            driver.findElement(By.id("sb_form_q")).clear();
+	            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+	            driver.findElement(By.id("sbBtn")).click();
+	            currentSearch = "web";
+	            mobileSearches--;
+	            
+	        	// wait in between searches
+	        	try {
+	        		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
+	        	}
+	        	catch(Exception e) {
+	        		e.printStackTrace();
+	        	}
+	        	
+	        	// mobile searches from previous search page
+	        	for(int i = 1; i <= mobileSearches; i++) {
+	            	// randomly picks whether to search for web, images, or videos and then switches to that page
+	            	int typeOfSearch = rand.nextInt(5);
+	            	
+	            	if(typeOfSearch >= 2 && !currentSearch.equals("web")) {		// web search
+	            		currentSearch = "web";
+	            		driver.findElement(By.linkText("WEB")).click();
+	            	}
+	            	else if(typeOfSearch == 3 && !currentSearch.equals("image")) {	// image search
+	            		currentSearch = "image";
+	            		driver.findElement(By.linkText("IMAGES")).click();
+	            	}
+	            	else if(typeOfSearch == 4 && !currentSearch.equals("video")){		// video search
+	            		currentSearch = "video";
+	            		driver.findElement(By.linkText("VIDEOS")).click();
+	            	}
+	
+	            	// do the actual search
+	            	driver.findElement(By.id("sb_form_q")).clear();
+	            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+	            	driver.findElement(By.id("sbBtn")).click();
+	            	
+	            	// wait in between searches
+	            	try {
+	            		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
+	            	}
+	            	catch(Exception e) {
+	            		e.printStackTrace();
+	            	}
+	            }
+	        	driver.quit();
+	    	}
     	}
     }
     
