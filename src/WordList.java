@@ -16,7 +16,8 @@ public class WordList {
 	// holds the words. using a treeSet for fast searching as it goes by natural order
 	SortedSet<String> wordSet = new TreeSet<String>();
 	
-	private String filePath = (System.getProperty("user.dir") + "\\WordList.txt");
+	private String filePath = (System.getProperty("user.dir") + "\\src\\WordList.txt");		// change this if you want the wordlist somewhere else
+	
     // declare variables for selenium
     private WebDriver driver;
     private String wikiUrl;

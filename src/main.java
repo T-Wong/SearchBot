@@ -7,12 +7,14 @@
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -308,12 +310,15 @@ public class main extends JFrame {
     	SortedSet<String> wordSet = new TreeSet<String>();
     	
         try {
-        	Scanner s = new Scanner(new File(System.getProperty("user.dir") + "\\WordList.txt"), "UTF-8");
-        	s.useDelimiter("\r\n");
-        	while(s.hasNext()) {
-        		wordSet.add(s.next().trim());
+        	InputStream in = getClass().getResourceAsStream("WordList.txt");
+        	BufferedReader br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+        	
+        	String line;
+        	while ((line = br.readLine()) != null) {
+        		wordSet.add(line.trim());
         	}
-        	s.close();
+        	br.close();
+        	in.close();
         }
         catch(Exception e) {
         	e.printStackTrace();
