@@ -1,3 +1,9 @@
+/*	Created by: Tyler Wong
+ * 	Date: August 10th, 2014
+ * 	Purpose: Selenium script that controls a FireFox browser to obtain	
+ * 	all Bing Rewards points as possible per account.
+ */
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -180,7 +186,7 @@ public class Bing {
 	            profile.setPreference("general.useragent.override", "iPhone"); 
 	            
 	            driver = new FirefoxDriver(profile);
-	            driver.get("http://www.bing.com/rewards/dashboard");
+	            driver.get(baseUrl);
 	            
 	            // login
 	            driver.findElement(By.className("idText")).click();
@@ -212,20 +218,20 @@ public class Bing {
 	        	// mobile searches from previous search page
 	        	for(int i = 1; i <= mobileSearches; i++) {
 	            	// randomly picks whether to search for web, images, or videos and then switches to that page
-	            	int typeOfSearch = rand.nextInt(5);
-	            	
-	            	if(typeOfSearch >= 2 && !currentSearch.equals("web")) {		// web search
-	            		currentSearch = "web";
-	            		driver.findElement(By.linkText("WEB")).click();
-	            	}
-	            	else if(typeOfSearch == 3 && !currentSearch.equals("image")) {	// image search
-	            		currentSearch = "image";
-	            		driver.findElement(By.linkText("IMAGES")).click();
-	            	}
-	            	else if(typeOfSearch == 4 && !currentSearch.equals("video")){		// video search
-	            		currentSearch = "video";
-	            		driver.findElement(By.linkText("VIDEOS")).click();
-	            	}
+//	            	int typeOfSearch = rand.nextInt(5);
+//	            	
+//	            	if(typeOfSearch >= 5 && !currentSearch.equals("web")) {		// web search
+//	            		currentSearch = "web";
+//	            		driver.findElement(By.linkText("WEB")).click();
+//	            	}
+//	            	else if(typeOfSearch == 3 && !currentSearch.equals("image")) {	// image search
+//	            		currentSearch = "image";
+//	            		driver.findElement(By.linkText("IMAGES")).click();
+//	            	}
+//	            	else if(typeOfSearch == 4 && !currentSearch.equals("video")){		// video search
+//	            		currentSearch = "video";
+//	            		driver.findElement(By.linkText("VIDEOS")).click();
+//	            	}
 	
 	            	// do the actual search
 	            	driver.findElement(By.id("sb_form_q")).clear();

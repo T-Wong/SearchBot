@@ -1,3 +1,9 @@
+/*	Created by: Tyler Wong
+ * 	Date: August 10th, 2014
+ * 	Purpose: To obtain an up to date word list of up to date search terms that people
+ * 	are actively searching for. 
+ */
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

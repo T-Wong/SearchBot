@@ -1,7 +1,7 @@
-/*
- * BingBot
- * Automates the eaerning of points for Bing rewards.
- * Made by Tyler Wong
+/*	Created by: Tyler Wong
+ * 	Date: August 10th, 2014
+ * 	Purpose: Main class which initializes the GUI and accepts user input for
+ * 	email and password. Also, encrypts saved login information.
  */
 
 import java.awt.EventQueue;
