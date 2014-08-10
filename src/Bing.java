@@ -3,8 +3,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
@@ -19,10 +17,13 @@ public class Bing {
 	private final int MIN_TIME = 10;
 	private final int MAX_TIME = 30;
 	private final int SEARCHES_PER = 2;	// the number of searches to earn 1 credit
+    Random rand = new Random();
 	
-	// holds the number of searches needed to be done for mobile and desktop
-	private int desktopSearches = 0;
-	private int mobileSearches = 0;
+	// holds the number of searches needed to be done for mobile and desktop. set to 40 just in case the website changes
+	private int desktopSearches = 40;
+	private int mobileSearches = 40;
+	
+	String currentSearch;	// type of search being done. ex. web, image, or video
 	
 	// holds account info
     private Map<String, char[]> accounts = new HashMap<String, char[]>();
@@ -81,7 +82,6 @@ public class Bing {
             
             // gets the number of searches needed to be done
             List<WebElement> searchList = (driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[2]/ul"))).findElements(By.tagName("li"));
-            searchList.remove(0);
             for(WebElement li : searchList) {
             	if(li.findElement(By.className("title")).getText().trim().equals("Mobile search")) {
             		mobileSearches = formatText(li.findElement(By.className("progress")).getText());
@@ -89,7 +89,6 @@ public class Bing {
             	else if(li.findElement(By.className("title")).getText().trim().equals("PC search")) {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
-            	
             }
             
             System.out.println(mobileSearches + " " + desktopSearches);
@@ -125,15 +124,57 @@ public class Bing {
             // back arrow to get to bing home page
             driver.findElement(By.className("me_backarrow")).click();
             
-            // start searching. first search is always web search for simplicity
-            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[new Random().nextInt(wordArray.length)].toString());
+            // start desktop searching. first search is always web search for simplicity
+            driver.findElement(By.id("sb_form_q")).clear();
+            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
             driver.findElement(By.id("sb_form_go")).click();
+            currentSearch = "web";
+            desktopSearches--;
+            
+        	// wait in between searches
+        	try {
+        		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
+        	}
+        	catch(Exception e) {
+        		e.printStackTrace();
+        	}
+        	
+            for(int i = 1; i <= desktopSearches; i++) {
+            	// randomly picks whether to search for web, images, or videos and then switches to that page
+            	int typeOfSearch = rand.nextInt(5);
+            	
+            	if(typeOfSearch >= 2 && !currentSearch.equals("web")) {		// web search
+            		currentSearch = "web";
+            		driver.findElement(By.linkText("WEB")).click();
+            	}
+            	else if(typeOfSearch == 3 && !currentSearch.equals("image")) {	// image search
+            		currentSearch = "image";
+            		driver.findElement(By.linkText("IMAGES")).click();
+            	}
+            	else if(typeOfSearch == 4 && !currentSearch.equals("video")){		// video search
+            		currentSearch = "video";
+            		driver.findElement(By.linkText("VIDEOS")).click();
+            	}
+
+            	// do the actual search
+            	driver.findElement(By.id("sb_form_q")).clear();
+            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+            	driver.findElement(By.id("sb_form_go")).click();
+            	
+            	// wait in between searches
+            	try {
+            		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
+            	}
+            	catch(Exception e) {
+            		e.printStackTrace();
+            	}
+            }
     	}
     }
     
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
     
     private int formatText(String text) {
