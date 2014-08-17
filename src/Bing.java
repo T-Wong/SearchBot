@@ -4,6 +4,7 @@
  * 	all Bing Rewards points as possible per account.
  */
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,8 +18,6 @@ import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Bing {
 
@@ -33,6 +32,7 @@ public class Bing {
 	private int mobileSearches = 40;
 	
 	String currentSearch;	// type of search being done. ex. web, image, or video
+	boolean continu = true;
 	
 	// holds account info
     private Map<String, char[]> accounts = new HashMap<String, char[]>();
@@ -99,35 +99,49 @@ public class Bing {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
             }
-            
-            // gets the number of "earn and explore" rewards there are
-            WebElement ulNum = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
-            List<WebElement> lisNum = ulNum.findElements(By.tagName("li"));
-            int size = lisNum.size();
-            
+
             // earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
-            for(int i = 0; i < size; i++) {
-            	// finds the rewards html elements
-            	WebElement ul = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
-                List<WebElement> lis = ul.findElements(By.tagName("li"));
-                String base = driver.getWindowHandle();
-	        	lis.get(i).findElement(By.className("title")).click();
-		        	
-	        	// switches to the window and closes it
-	        	Set<String> set = driver.getWindowHandles();
-	        	set.remove(base);
-	        	assert set.size() == 1;
-	        	driver.switchTo().window((String) set.toArray()[0]);
-	            driver.close();
-	            driver.switchTo().window(base);
-	            
-	            // wait for page to load and for base window to refresh with changes. not sure if there is any other way because the list becomes stale after refresh
-	            try {
-	            	Thread.sleep(3000);
-	            }
-	            catch(Exception e) {}
+        	WebElement ul = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
+            List<WebElement> lis = ul.findElements(By.tagName("li"));
+            		
+            // finds which elements need to be clicked
+            ArrayList<String> titles = new ArrayList<String>();
+            for(WebElement li : lis) {
+            	if(isElementPresent(By.cssSelector("div[class='check open-check dashboard-sprite']"), li)) {
+            		titles.add(li.findElement(By.className("title")).getText());
+            	}
             }
-            
+
+            // clicks the rewards
+            for(String title : titles) {
+            	// finds the rewards html elements again to prevent stale elements
+            	WebElement ul2 = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
+                List<WebElement> lis2 = ul2.findElements(By.tagName("li"));
+                String base = driver.getWindowHandle();
+                
+                for(WebElement li2 : lis2) {
+                	try {
+	                	if(li2.findElement(By.className("title")).getText().equals(title)) {
+	                		li2.findElement(By.className("title")).click();
+	                	}
+                	}
+                	catch(Exception e) {}
+                }
+                
+            	// switches to the window and closes it
+            	Set<String> set = driver.getWindowHandles();
+            	set.remove(base);
+            	assert set.size() == 1;
+            	driver.switchTo().window((String) set.toArray()[0]);
+            	driver.close();
+            	driver.switchTo().window(base);
+                // wait for page to load and for base window to refresh with changes. not sure if there is any other way because the list becomes stale after refresh
+                try {
+                	Thread.sleep(3000);
+                }
+                catch(Exception e) {} 
+            }
+             
             if(desktopSearches != 0) {
 	            // back arrow to get to bing home page
 	            driver.findElement(By.className("me_backarrow")).click();
@@ -257,7 +271,6 @@ public class Bing {
     }
     
     private int formatText(String text) {
-    
     	// number of credits
     	int creditsEarned = 0;
     	int creditsMax = 0;
@@ -284,5 +297,15 @@ public class Bing {
     		}
     	}
     	return (creditsMax - creditsEarned) * SEARCHES_PER;
+    }
+    
+    private boolean isElementPresent(By by, WebElement webElement) {
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        try {
+        	webElement.findElement(by);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 }
