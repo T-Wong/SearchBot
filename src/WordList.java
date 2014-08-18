@@ -7,6 +7,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.SortedSet;
@@ -26,6 +27,7 @@ public class WordList {
 	
     // declare variables for selenium
     private WebDriver driver;
+    private String historyWikiUrl;
     private String wikiUrl;
     private String aolUrl;
     
@@ -33,14 +35,20 @@ public class WordList {
   
     // execute whole script
     public void execute() {
-        setUp();
-        getWords();
-        tearDown();
+    	try {
+            setUp();
+            getWords();
+            tearDown();
+    	}
+    	catch(Exception e) {
+    		e.printStackTrace();
+    	}
     }
     
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
+        historyWikiUrl = "http://tools.wmflabs.org/usersearch/usersearch.py?name=West.andrew.g&page=User%3AWest.andrew.g%2FPopular+pages&server=enwiki&max=500";
         wikiUrl = "http://en.wikipedia.org/wiki/Wikipedia:5000";		//This list updates every Sunday morning (UTC), aggregating data from the 7 days preceeding 11:59PM Saturday.
         aolUrl = "http://search.aol.com/aol/trends";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -61,6 +69,43 @@ public class WordList {
     
     @Test
     public void getWords() {
+    	// gets the top 5000 wiki articles from current to October 2012
+    	ArrayList<String> links = new ArrayList<String>();
+    	
+    	driver.get(historyWikiUrl);
+    	
+    	WebElement ul = driver.findElement(By.tagName("ul"));
+    	List<WebElement> li_collection_wiki = ul.findElements(By.tagName("li"));
+    	
+    	// finds which links to click
+    	for(WebElement li : li_collection_wiki) {
+    		try {
+	    		List<WebElement> a_collection = li.findElements(By.tagName("a"));
+	    		if(li.findElement(By.tagName("span")).getText().equals("Updating popular pages report")) {		// checks to see if the edit is actually an update to the report
+	    			links.add(a_collection.get(0).getAttribute("href"));
+	    		}
+    		}
+    		catch(Exception e) {}
+    	}
+    	
+    	// clicks each link and gets the resulsts
+    	for(String link : links) {
+    		try {
+	    		driver.get(link);
+	    		
+	    		WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl/dd/dl/dd/table/tbody"));
+	        	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
+	        	
+	        	for(WebElement tr : tr_collection) {
+	        		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
+	        		
+	        		String word = td_collection.get(1).getText().trim();
+	        		wordSet.add(word);
+	        	}
+    		}
+    		catch(Exception e) {}
+    	}
+    	
     	// get top 5000 top article titles on wikipedia for that week
     	driver.get(wikiUrl);
     	
