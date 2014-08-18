@@ -13,7 +13,7 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 * Variable search delay that can be changed in the code
 * Searches for web, images, and videos for desktop searching (image and video searches don't register for points on mobile for some reason)
 * Emulates an iPhone to obtain mobile searches
-* A ~28,000 word list that contains many commonly searched for items and is still being updated by me (contains NSFW language)
+* A ~25,000 word list that contains many commonly searched for items and is still being updated by me (contains NSFW language)
 * A word list class that actually searches various places for these commonly searched for items (not used in GUI)
 
 ## Requirements
