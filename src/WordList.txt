@@ -13,6 +13,7 @@ $kinny
 .NET Framework
 .bf
 .xxx
+/admin/categories.php/login.php
 0
 0 (number)
 0R
@@ -91,6 +92,7 @@ $kinny
 1980 Summer Olympics
 1980 Summer Olympics boycott
 1980 Winter Olympics
+1981 South Africa rugby union tour of New Zealand
 1982 British Army Gazelle friendly fire incident
 1982 FIFA World Cup
 1983–1985 famine in Ethiopia
@@ -112,6 +114,7 @@ $kinny
 1990 in film
 1990s in fashion
 1991 Austin yogurt shop murders
+1992 Los Angeles riots
 1992 United States men's Olympic basketball team
 1992 Winter Olympics
 1994 FIFA World Cup
@@ -319,6 +322,7 @@ $kinny
 2014 African Nations Championship
 2014 Algeria Lockheed C-130 Hercules crash
 2014 American Athletic Conference Men's Basketball Tournament
+2014 American intervention in Iraq
 2014 Armenian–Azerbaijani clashes
 2014 Asia Cup
 2014 Asian Games
@@ -364,16 +368,19 @@ $kinny
 2014 Crimean crisis
 2014 Crimean crisism
 2014 Crimean unrest
+2014 DFL-Supercup
 2014 Dubai Tennis Championships – Men's Singles
 2014 Dubai Tennis Championships – Women's Singles
 2014 Elk River chemical spill
 2014 Emirates Cup
+2014 European Athletics Championships
 2014 European Figure Skating Championships
 2014 European Men's Handball Championship
 2014 FA Community Shield
 2014 FA Cup Final
 2014 FIBA Asia Cup
 2014 FIBA Basketball World Cup
+2014 FIBA Under-17 World Championship
 2014 FIFA U-17 Women's World Cup
 2014 FIFA U-20 Women's World Cup
 2014 FIFA World Cup
@@ -420,6 +427,7 @@ $kinny
 2014 Grammy Awards
 2014 Guinea Ebola outbreak
 2014 Guinea ebola outbreak
+2014 Hassanal Bolkiah Trophy
 2014 Hopman Cup
 2014 Hrushevskoho Street riots
 2014 IAAF World Indoor Championships
@@ -447,6 +455,7 @@ $kinny
 2014 Lao People's Liberation Army Air Force An-74 crash
 2014 Latakia offensive
 2014 Libyan conflict
+2014 Little League World Series
 2014 Ludian earthquake
 2014 MLS All-Star Game
 2014 MTV Movie Awards
@@ -515,6 +524,7 @@ $kinny
 2014 Stanley Cup playoffs
 2014 State of Origin series
 2014 State of the Union Address
+2014 Summer Youth Olympics
 2014 Teen Choice Awards
 2014 Thai coup d'état
 2014 Thomas & Uber Cup
@@ -524,6 +534,7 @@ $kinny
 2014 UEFA Champions League Final
 2014 UEFA Europa League Final
 2014 UEFA European Under-19 Championship
+2014 UEFA Super Cup
 2014 Uber Cup group stage
 2014 Ukrainian Revolution
 2014 Ukrainian revolution
@@ -534,6 +545,10 @@ $kinny
 2014 WTA Tour
 2014 Welsh Open (snooker)
 2014 West Africa Ebola outbreak
+2014 West Africa Ebola virus outbreak
+2014 Western & Southern Open
+2014 Western & Southern Open – Men's Singles
+2014 Western & Southern Open – Women's Singles
 2014 Wimbledon Championships
 2014 Wimbledon Championships – Men's Doubles
 2014 Wimbledon Championships – Men's Singles
@@ -568,6 +583,7 @@ $kinny
 2014–15 Bundesliga
 2014–15 Chelsea F.C. season
 2014–15 FC Barcelona season
+2014–15 Football League Cup
 2014–15 La Liga
 2014–15 Liverpool F.C. season
 2014–15 Manchester United F.C. season
@@ -662,6 +678,7 @@ $kinny
 404 error
 40oz. to Freedom
 40th People's Choice Awards
+41st Chess Olympiad
 42 (film)
 42 (number)
 420 (cannabis culture)
@@ -680,6 +697,7 @@ $kinny
 50 Cent
 50 Greatest Players in NBA History
 500 home run club
+512K
 51st state
 52-Hertz whale
 55th Annual Grammy Awards
@@ -689,6 +707,7 @@ $kinny
 5S (methodology)
 61st National Film Awards
 66th Primetime Emmy Awards
+67P/Churyumov–Gerasimenko
 67th British Academy Film Awards
 68th Tony Awards
 69 (sex position)
@@ -712,6 +731,7 @@ $kinny
 83rd Academy Awards
 84th Academy Awards
 85th Academy Awards
+867-5309/Jenny
 86th Academy Awards
 86th Academy Awardsm
 8888 Uprising
@@ -738,6 +758,7 @@ A Clockwork Orange (film)
 A Dance with Dragons
 A Fairly Odd Summer
 A Feast for Crows
+A Friggin' Christmas Miracle
 A Game of Thrones
 A Gentleman's Guide to Love and Murder
 A Good Day to Die Hard
@@ -759,6 +780,7 @@ A Song of Ass and Fire
 A Song of Ice and Fire
 A Storm of Swords
 A Time to Kill (film)
+A Touch of Cloth
 A Trip to the Moon
 A Visit from St. Nicholas
 A Walk to Remember
@@ -772,12 +794,14 @@ A+E Networks
 A-10 Thunderbolt II
 A-side and B-side
 A-type main-sequence star
+A. J. Allmendinger
 A. L. Vijay
 A. N. R. Robinson
 A. P. J. Abdul Kalam
 A. R. Rahman
 A. Raja
 A.C. Milan
+A.I. Artificial Intelligence
 A.J. Styles
 A.K.A. (album)
 A.N.T. Farm
@@ -787,6 +811,7 @@ AB de Villiers
 ABBA
 AC Ajaccio
 AC power plugs and sockets
+AC/DC
 ACF Fiorentina
 ACV Ocean Protector
 ADE 651
@@ -853,6 +878,7 @@ Aashiqui 2
 Ab Ke Baras
 Ab-Soul
 Abaarmoog
+Abalone
 Abbey Clancy
 Abbey Road
 Abbie Cornish
@@ -894,6 +920,7 @@ Abraham Woodhull
 Abscam
 Absinthe
 Absolute zero
+Absolutely Anything
 Abstract (summary)
 Absurdism
 Abu Bakr al-Baghdadi
@@ -932,6 +959,7 @@ Acetone
 Acetylcholine
 Achaemenid Empire
 Achilles
+Achtiname of Muhammad
 Acid rain
 Acid–base homeostasis
 Acne vulgaris
@@ -1019,6 +1047,7 @@ Adonis Stevenson
 Adore You
 Adrenal gland
 Adrian Carton de Wiart
+Adrian Cronauer
 Adrian Edmondson
 Adrian Marcel
 Adrian Mole
@@ -1150,12 +1179,14 @@ Ajit Sarkar
 Ajith Kumar
 Ajnabee (2001 film)
 Akademik Shokalskiy
+Akamai
 Akamai Technologies
 Akame ga Kill!
 Akbar
 Akdong Musician
 Akeem Adams
 Akiane Kramarik
+Akiba's Trip: Undead & Undressed
 Akihito
 Akira (film)
 Akita (dog)
@@ -1184,8 +1215,10 @@ Al-Qaeda
 Alabama
 Alabama Crimson Tide football
 Alabama Great Southern Railroad
+Aladdin
 Aladdin (1992 Disney film)
 Aladdin (Disney character)
+Aladdin and the King of Thieves
 Alain Baxter
 Alain Prost
 Alain Resnais
@@ -1282,6 +1315,7 @@ Alex Turner (musician)
 Alex trebek
 Alexa Chung
 Alexa Internet
+Alexa PenaVega
 Alexa Vega
 Alexander Armstrong (comedian)
 Alexander Borodai
@@ -1320,6 +1354,7 @@ Alexis Bledel
 Alexis Davis (fighter)
 Alexis Denisof
 Alexis Knapp
+Alexis Smith
 Alexis Sánchez
 Alexis Texas
 Alfie Allen
@@ -1482,6 +1517,7 @@ Amanda Kessel
 Amanda Knox
 Amanda Palmer
 Amanda Peet
+Amanda Plummer
 Amanda Seyfried
 Amanda Waller
 Amanda knox
@@ -1509,6 +1545,7 @@ America's Got Talent
 America's Got Talent (season 9)
 America's Next Top Model
 America's Next Top Model (cycle 20)
+America's Next Top Model (cycle 21)
 America's Next Top Model, Cycle 15
 American Airlines
 American Airlines Flight 11
@@ -1630,6 +1667,7 @@ Andaman and Nicobar Islands
 Ander Herrera
 Anders Behring Breivik
 Anders Celsius
+Anders Jonas Ångström
 Anderson Cooper
 Anderson Luís de Abreu Oliveira
 Anderson Silva
@@ -1654,6 +1692,7 @@ Andrea Petkovic
 Andrea Pirlo
 Andrea Riseborough
 Andreas Biermann
+Andrei Alexandrescu
 Andrei Arlovski
 Andrei Chikatilo
 Andrei Linde
@@ -1673,6 +1712,7 @@ Andrew Johnson
 Andrew Lincoln
 Andrew Lloyd Webber
 Andrew Luck
+Andrew Luster
 Andrew McCutchen
 Andrew Scott (actor)
 Andrew Tiernan
@@ -1799,6 +1839,7 @@ AnnaLynne McCord
 AnnaSophia Robb
 Annabel Chong
 Annabel Giles
+Annabella Sciorra
 Annabelle (film)
 Anne Bancroft
 Anne Baxter
@@ -1836,6 +1877,7 @@ Anquan Boldin
 Anschluss
 Ansel Adams
 Ansel Elgort
+Anselm J. McLaurin
 Anson Mount
 Ant
 Ant & Dec
@@ -1882,6 +1924,7 @@ Antonio Nocerino
 Antonio Silva (fighter)
 Antonio Valencia
 Antonio de la Rúa
+Antonov An-140
 Antonov An-225 Mriya
 Antonov An-26
 Antonov An-74
@@ -2066,6 +2109,7 @@ Arjuna
 Ark of the Covenant
 Arkansas
 Arkansas National Guard and the Integration of Central High School
+Arlene Martel
 Arlington National Cemetery
 Armaan Jain
 Armaan Kohli
@@ -2126,6 +2170,7 @@ Article 370
 Articles of Confederation
 Artificial intelligence
 Artpop
+Artur Avila
 Arturo Vidal
 Aruba
 Arun Jaitley
@@ -2165,6 +2210,7 @@ Ashley Olsen
 Ashley Tisdale
 Ashley Wagner
 Ashoka
+Ashoka Chakra
 Ashton Kutcher
 Ashwatthama
 Asia
@@ -2181,6 +2227,7 @@ Asparagus
 Aspartame
 Asperger syndrome
 Asphyxia
+Asphyxiation
 Aspirin
 Assassin's Creed
 Assassin's Creed III
@@ -2201,6 +2248,7 @@ Assisi Cathedral
 Association football
 Association football pitch
 Association of Southeast Asian Nations
+Assumption of Mary
 Asthma
 Aston Villa F.C.
 AstraZeneca
@@ -2272,6 +2320,13 @@ Audrey Raines
 Audrey Totter
 August
 August 1
+August 10
+August 11
+August 12
+August 13
+August 14
+August 15
+August 16
 August 2
 August 3
 August 4
@@ -2281,6 +2336,7 @@ August 7
 August 8
 August 9
 August Alsina
+August Rush
 Augusta National Golf Club
 Augustine of Hippo
 Augustinians
@@ -2354,6 +2410,7 @@ Avram Glazer
 Avril Lavigne
 Avril Lavigne (album)
 Avro Canada CF-105 Arrow
+Awakenings
 Awards and decorations of the United States military
 AwesomenessTV
 Awkward (TV series)
@@ -2453,6 +2510,7 @@ Backstreet Boys
 Bacon
 Bacteria
 Bad Education (TV series)
+Bad Elk v. United States
 Bad Girls Club (season 11)
 Bad Hair Day
 Bad Santa
@@ -2467,6 +2525,7 @@ Badr Hari
 Bae Irene
 Bagger 288
 Baghdad
+Bahia Bakari
 Bahia Palace
 Bahrain
 Bahá'í Faith
@@ -2505,15 +2564,18 @@ Balu Mahendra
 Bam Aquino
 Bam Margera
 Bam Thwok
+Bambi
 Bambino Gold
 Bamboo
 Bamboo torture
 Ban Ki-moon
+Banach–Tarski paradox
 Banana
 Band Aid (band)
 Band of Brothers (TV miniseries)
 Band-e Amir National Park
 Bandit Gang Marco
+Bandwidth
 Bane (comics)
 Bang Bang (2014 film)
 Bang Bang (Jessie J, Ariana Grande and Nicki Minaj song)
@@ -2595,6 +2657,7 @@ Basilica of Santa Maria Novella
 Basilica of St. Thérèse, Lisieux
 Basilica of the Annunciation
 Basketball
+Basking shark
 Bass Player Wanted
 Bastard (color)
 Bastian Schweinsteiger
@@ -2682,6 +2745,7 @@ Battle of Spotsylvania Court House
 Battle of Stalingrad
 Battle of Thermopylae
 Battle of Verdun
+Battle of Vienna
 Battle of Vimy Ridge
 Battle of Waterloo
 Battle of Waxhaws
@@ -2765,6 +2829,7 @@ Behavioral addiction
 Behind the Candelabra
 Beijing
 Beijing National Stadium
+Being Human (1994 film)
 Being Human (North American TV series)
 Being Human (TV series)
 Being Mary Jane
@@ -2881,6 +2946,7 @@ Beth Behrs
 Beth Greene
 Beth Phoenix
 Beth Tweddle
+Bethany Mota
 Bethenny Frankel
 Bethlehem
 Betrayal (TV series)
@@ -2939,6 +3005,7 @@ Biathlon at the Winter Olympics
 Bible
 Biblical Magi
 Bibras Natkho
+Bicentennial Man (film)
 Bidet
 Bids for the 2014 Winter Olympics
 Bids for the 2018 Winter Olympics
@@ -2981,6 +3048,7 @@ Bigfoot
 Bigg Boss
 Bigg Boss 6
 Bigg Boss 7
+Bigg Boss 8
 Bigotry
 Bijou Phillips
 Bikini
@@ -3043,6 +3111,7 @@ Billy Idol
 Billy Jack
 Billy Joel
 Billy Ray Cyrus
+Billy Sharp
 Billy the Kid
 Binary number
 Binary star
@@ -3092,6 +3161,7 @@ Blacc Hollywood
 Black
 Black Adam
 Black Angel (1980 short film)
+Black Bolt
 Black Box (TV series)
 Black Bullet
 Black Butler
@@ -3132,6 +3202,7 @@ Black Swan (film)
 Black Talon
 Black Versace dress of Elizabeth Hurley
 Black Widow (Natalia Romanova)
+Black Widow (song)
 Black belt (martial arts)
 Black box
 Black box (transportation)
@@ -3285,17 +3356,21 @@ Bob marley
 Bob's Burgers
 Bobbi Eden
 Bobby Byrd
+Bobby Darin
 Bobby Fischer
+Bobby Flay
 Bobby Green (fighter)
 Bobby Jasoos
 Bobby Jindal
 Bobby Lashley
+Bobby McFerrin
 Bobby Petrino
 Bobby Sands
 Bobby Simha
 Bobby Valentine
 Bobby Womack
 Bobcat
+Bobcat Goldthwait
 Bobsled
 Bobsleigh
 Bobsleigh at the 2014 Winter Olympics
@@ -3347,6 +3422,7 @@ Bombardier Global Express
 Bombay Explosion (1944)
 Bombay Velvet
 Bombing of Darwin
+Bon Festival
 Bon Jovi
 Bon Scott
 Bon Secours Mother and Baby Home
@@ -3359,6 +3435,7 @@ Bones (TV series)
 Bones (season 9)
 Boney M.
 Bonn, Germany
+Bonnie Hunt
 Bonnie Langford
 Bonnie Rotten
 Bonnie Wright
@@ -3382,6 +3459,7 @@ Borat
 Borat Sagdiyev
 Border Collie
 Borderlands 2
+Borderlands: The Pre-Sequel!
 Borderline personality disorder
 Borgen (TV series)
 Boring, Oregon
@@ -3418,6 +3496,7 @@ Botnet
 Botswana
 Bottom (TV series)
 Botulism
+Boulevard (film)
 Boulonnais horse
 Bound 2
 Bound by Flame
@@ -3543,6 +3622,7 @@ Brett Ratner
 Brian Acton
 Brian Austin Green
 Brian Banks (American football)
+Brian Blessed
 Brian Boitano
 Brian Clough
 Brian Cox (actor)
@@ -3554,6 +3634,7 @@ Brian Field
 Brian Griffin
 Brian Hallisay
 Brian Harradine
+Brian Hoyer
 Brian Johnson
 Brian O'Conner
 Brian O'Driscoll
@@ -3656,6 +3737,7 @@ Bruno Mars
 Bruno Mars discography
 Bruno Martins Indi
 Bruno Sammartino
+Bruno Zuculini
 Bruno mars
 Brusio spiral viaduct
 Brussels
@@ -3693,6 +3775,7 @@ Buenos Aires
 Buffalo Bills
 Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo
 Buffy the Vampire Slayer
+Buffy the Vampire Slayer (TV series)
 Bugatti
 Bugatti Veyron
 Bugchasing
@@ -3703,6 +3786,7 @@ Bukhara
 Bukkake
 Bulford Kiwi
 Bulgaria
+Bull shark
 Bulldog
 Bulletin board system
 Bullett Raja
@@ -3797,10 +3881,12 @@ Cable (comics)
 Cabrini–Green
 Cachaça
 Caddyshack
+Cadillac Man
 Caecilian
 Caen
 Caerus
 Caesar (Planet of the Apes)
+Caesarean section
 Caesura
 Caffeine
 Cafu
@@ -3863,11 +3949,13 @@ Cameroon national football team
 Camila Alves
 Camila Giorgi
 Camilla, Duchess of Cornwall
+Camp X-Ray (film)
 Camp for Climate Action
 Campa Cola Compound
 Campaign for "santorum" neologism
 Campeonato Brasileiro Série A
 Campo Verano
+Can I Do It 'Till I Need Glasses?
 Can This Be Dixie?
 Can't Remember to Forget You
 Canaan
@@ -3893,6 +3981,7 @@ Canda
 Candace Cameron Bure
 Candice Bergen
 Candice Swanepoel
+Candid Camera
 Candida (fungus)
 Candidiasis
 Candiru
@@ -3955,6 +4044,7 @@ Carbon dioxide
 Carbon dioxide sink
 Carbon monoxide
 Carbon monoxide poisoning
+Carbonemys
 Carcano
 Carcassonne
 Carcosa
@@ -3962,6 +4052,7 @@ Card counting
 Cardiac arrest
 Cardiff
 Cardiff City F.C.
+Cardinal Richelieu
 Cardiopulmonary resuscitation
 Cardiovascular disease
 Cards Against Humanity
@@ -3981,6 +4072,7 @@ Carl Reiner
 Carl Sagan
 Carl Tanzler
 Carla Bruni
+Carla Gugino
 Carles Puyol
 Carlin Isles
 Carlito Olivero
@@ -4000,6 +4092,7 @@ Carlos Slim
 Carlos Tevez
 Carlos Valderrama
 Carlos Vela
+Carlos the Jackal
 Carlotta (performer)
 Carly Colón
 Carly Rae Jepsen
@@ -4024,6 +4117,7 @@ Carolina Reaper
 Caroline Aherne
 Caroline Kennedy
 Caroline Wozniacki
+Caroline Wyatt
 Caroline, Princess of Hanover
 Caron Butler
 Carpal tunnel syndrome
@@ -4032,6 +4126,7 @@ Carpet cleaning
 Carport
 Carrie (1976 film)
 Carrie (2013 film)
+Carrie Coon
 Carrie Fisher
 Carrie Fulton Phillips
 Carrie Underwood
@@ -4039,6 +4134,7 @@ Carrot
 Cars (film)
 Cars 2
 Carson Daly
+Carte Vitale
 Cartesian coordinate system
 Cartman Gets an Anal Probe
 Cartoon Network
@@ -4106,6 +4202,7 @@ Catholic Church
 Catholic Church and evolution
 Cathy McMorris Rodgers
 Cathy Reed
+Cathy Smith
 Cattle
 Catullus 16
 Catwoman
@@ -4145,6 +4242,7 @@ Celsius
 Celtic F.C.
 Celtic Woman
 Celts
+Centenary of the outbreak of World War I
 Centennial (miniseries)
 Centennial Light
 Centennial Olympic Park bombing
@@ -4176,6 +4274,7 @@ Cesar Millan
 Cesare Borgia
 Cesare Prandelli
 Cesc Fàbregas
+Cessna Citation Excel
 Chace Crawford
 Chad Brown (poker player)
 Chad Kroeger
@@ -4205,6 +4304,7 @@ Chandler Parsons
 Chandler Riggs
 Chanel West Coast
 Chang'e 3
+Changeling (film)
 Channel Tunnel
 Channing Tatum
 Chante Jawan Mallard
@@ -4225,6 +4325,7 @@ Charles Alden Black
 Charles B. Rangel
 Charles Babbage
 Charles Barkley
+Charles Barnard (castaway)
 Charles Bronson
 Charles Bronson (prisoner)
 Charles Bukowski
@@ -4240,6 +4341,7 @@ Charles II of England
 Charles James (designer)
 Charles James Napier
 Charles Keating
+Charles Keating (actor)
 Charles Koch
 Charles Krauthammer
 Charles Lindbergh
@@ -4279,6 +4381,7 @@ Charlotte Corday
 Charlotte Dawson
 Charlotte Gainsbourg
 Charlotte Hornets
+Charlotte Le Bon
 Charlotte, North Carolina
 Charlton Heston
 Charmed
@@ -4295,6 +4398,7 @@ Che Guevara
 Chechnya
 Checker shadow illusion
 Checkerboard
+Ched Evans
 Cheek to Cheek (album)
 Cheers
 Cheese
@@ -4509,6 +4613,7 @@ Christian Jessen
 Christian Serratos
 Christian Slater
 Christian atheism
+Christian martyrs
 Christianity
 Christianity in Japan
 Christie Brinkley
@@ -4599,6 +4704,7 @@ Chuck Hagel
 Chuck Knoblauch
 Chuck Noll
 Chuck Norris
+Chuck Todd
 Chuck Traynor
 Chucky (Child's Play)
 Chumlee
@@ -4626,6 +4732,8 @@ Cicero
 Cigarette
 Cilla Black
 Cillian Murphy
+Cincinnati
+Cincinnati Masters
 Cinco de Mayo
 Cinderella
 Cinderella (2015 film)
@@ -4795,6 +4903,7 @@ Code talker
 Codeine
 Codeshare
 Codetermination in Germany
+Codex Gigas
 Cody Rhodes
 Cody Rhodes and Goldust
 Cody Simpson
@@ -4815,6 +4924,7 @@ Cold War
 Cold fusion
 Coldplay
 Coldplay discography
+Cole Porter
 Coleen Rooney
 Colin Farrell
 Colin Firth
@@ -4856,6 +4966,8 @@ Columbia
 Columbine High School massacre
 Columbus Blue Jackets
 Columbus Short
+Com/fluendo/plugin/KateDec.class
+Com/fluendo/plugin/KateOverlay.class
 Coma
 Combination gun
 Combo washer dryer
@@ -4948,6 +5060,7 @@ Connecticut Huskies
 Connecticut Huskies men's basketball
 Connecticut Huskies women's basketball
 Connie Britton
+Connie Francis
 Connie Hedegaard
 Connie Nielsen
 Connor Wickham
@@ -4987,6 +5100,7 @@ Contracted (film)
 Controlled Substances Act
 Controversial Reddit communities
 Controversies about the word "niggardly"
+Conversion coating
 Convoy PQ 17
 Conway's Game of Life
 Cook Islands
@@ -5243,6 +5357,7 @@ Cyclone Ita
 Cyclopia
 Cyclops (comics)
 Cyhi the Prynce
+Cymothoa exigua
 Cyndi Lauper
 Cynthia Alksne
 Cynthia Lennon
@@ -5300,6 +5415,7 @@ Dachshund
 Dada
 Dads (2013 TV series)
 Daenerys Targaryen
+Dafne Schippers
 Daft Punk
 Daft Punk discography
 Daft punk
@@ -5342,6 +5458,7 @@ Damon Wayans, Jr.
 Dan Auerbach
 Dan Aykroyd
 Dan Bilzerian
+Dan Castellaneta
 Dan Dierdorf
 Dan Eldon
 Dan Gilbert (businessman)
@@ -5355,6 +5472,7 @@ Dana Andrews
 Dana Carvey
 Dana International
 Dana Perino
+Dana Reeve
 Dana Seetahal
 Danai Gurira
 Dance
@@ -5410,6 +5528,7 @@ Danielle Panabaker
 Danielle Steel
 Danielle Wyatt
 Danity Kane
+Danny Almonte
 Danny Blind
 Danny Boy
 Danny DeVito
@@ -5430,6 +5549,7 @@ Danny Wells
 Danny Woodburn
 Dante (footballer)
 Dante Alighieri
+Dante Basco
 Dante Exum
 Dante's Inferno (video game)
 Danube
@@ -5478,6 +5598,7 @@ Daryl Dragon
 Daryl Gates
 Daryl Hall
 Daryl Janmaat
+Daryl Sabara
 Dascha Polanco
 Dash
 Dasha Zhukova
@@ -5485,6 +5606,8 @@ Dassault Rafale
 Data
 Data collection
 Data mining
+Data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAuCAIAAABmjeQ9AAAARElEQVR42mVO2wrAUAhy/f8fz+n...
+Data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAAAAAAphRnkAAAAJ0lEQVQIW7XFsQEAIAyAMPD/b7u...
 DataHand
 Database
 Date A Live
@@ -5551,6 +5674,7 @@ David Gandy
 David Geffen
 David Gilmour
 David Green (entrepreneur)
+David Gregory (journalist)
 David Guetta
 David Gyngell
 David H. Koch
@@ -5640,6 +5764,7 @@ Dazzler
 Db cooper
 Ddd
 De Beers
+De Beers Diamonds Antitrust Litigation
 De La Soul
 De facto
 DeAndre Jordan
@@ -5650,6 +5775,7 @@ DeMoulas Market Basket
 DeSean Jackson
 Deacon Blue
 Deacon McGuire
+Dead Again
 Dead Hand (nuclear war)
 Dead Island
 Dead Island 2
@@ -5689,6 +5815,7 @@ Death of Adolf Hitler
 Death of Ayrton Senna
 Death of Caylee Anthony
 Death of Daniel Morcombe
+Death of Eric Garner
 Death of Jean Charles de Menezes
 Death of Jeffrey Baldwin
 Death of John Lennon
@@ -5702,6 +5829,7 @@ Death of Michael Jackson
 Death of Osama bin Laden
 Death of a Salesman
 Death row
+Death to Smoochy
 Deathlok
 Deaths in 2013
 Deaths in 2014
@@ -5867,6 +5995,7 @@ Denzel Washington filmography
 Deontay Wilder
 Dependent and independent variables
 Deposition (law)
+Depression (mood)
 Der Fuehrer's Face
 Derby County F.C.
 Derecho
@@ -5944,9 +6073,11 @@ Dhoom (film series)
 Dhoom 2
 Dhoom 3
 Dhritiman Chatterjee
+Dhyan Chand
 Dia Mirza
 Diabetes mellitus
 Diablo III
+Diablo III: Reaper of Souls
 Diabolik Lovers
 Diagnostic and Statistical Manual of Mental Disorders
 Diahnne Abbott
@@ -5961,6 +6092,7 @@ Diana Nyad
 Diana Penty
 Diana Rigg
 Diana Ross
+Diana Wynne Jones
 Diana, Princess of Wales
 Diane Guerrero
 Diane Keaton
@@ -6144,6 +6276,7 @@ Dodo
 Doe B
 Dog
 Dog (zodiac)
+Dog the Bounty Hunter
 Doge (meme)
 Doge's Palace, Venice
 Dogecoin
@@ -6202,6 +6335,7 @@ Don Trip
 Don Zimmer
 Don't Download This Song
 Don't Starve
+Don't Worry, Be Happy
 Donal Logue
 Donald Arthur
 Donald Cerrone
@@ -6262,7 +6396,9 @@ Dotted and dotless I
 Double jeopardy
 Doubleclicksearch.php
 Doubt (2008 film)
+Doug
 Doug Baldwin (American football)
+Doug Hutchison
 Doug Liman
 Doug McDermott
 Doug Nussmeier
@@ -6310,10 +6446,12 @@ Dragon (zodiac)
 Dragon Age
 Dragon Age: Inquisition
 Dragon Ball
+Dragon Ball Xenoverse
 Dragon Ball Z
 Dragon Ball Z: Battle of Gods
 Dragonar Academy
 Dragonfly
+Dragonfly in Amber
 Drake
 Drake & Josh
 Drake (entertainer)
@@ -6549,6 +6687,7 @@ Ed Gein
 Ed Harris
 Ed Koch
 Ed Miliband
+Ed Nelson
 Ed O'Neill
 Ed Orgeron
 Ed Sheeran
@@ -6589,6 +6728,7 @@ Edinburgh
 Edinburgh Castle
 Edinson Cavani
 Edith Cavell
+Edith Flagg
 Edith Macefield
 Edmond Halley
 Edmond O'Brien
@@ -6598,6 +6738,7 @@ Edo-Tokyo Open Air Architectural Museum
 Edsel Ford
 Eduard Bloch
 Eduard Shevardnadze
+Eduardo Campos
 Eduardo Saverin
 Eduardo Vargas
 Eduardo da Silva
@@ -6798,6 +6939,7 @@ Elysium (film)
 EmDrive
 Email
 Emancipation Proclamation
+Embeth Davidtz
 Embodied cognition#Reasoning
 Emeli Sandé
 Emerald Cockroach Wasp
@@ -6861,6 +7003,7 @@ Empathy
 Emperor Jimmu
 Emperor of Japan
 Empire State Building
+Empire of Trebizond
 Empire of Vietnam
 Empress Ki
 Empress Matilda
@@ -6913,6 +7056,7 @@ Enrique Iglesias
 Enron scandal
 Entente cordiale
 Enterprise resource planning
+Entertainment
 Entertainment (film)
 Entertainment Culture
 Entertainment Software Rating Board
@@ -6941,6 +7085,7 @@ Epilepsy
 Epilepsy Foundation
 Epinephrine
 Epiphany (holiday)
+Episcopal Church (United States)
 Episodes (TV series)
 Epistemology
 Equilibrium constant
@@ -6981,6 +7126,7 @@ Eric Young (wrestler)
 Erick Silva
 Erik Compton
 Erik Durm
+Erik Per Sullivan
 Erik S. Kristensen
 Erik Spoelstra
 Erikson's stages of psychosocial development
@@ -7005,6 +7151,7 @@ Ernst Moro
 Ernst Röhm
 Ernő Rubik
 Erosion
+Erotic asphyxiation
 Erraid Davies
 Errol Flynn
 Erwin Rommel
@@ -7035,6 +7182,7 @@ Eternals (comics)
 Ethan Couch
 Ethan Hawke
 Ethanol
+Ethel Kennedy
 Ethel Merman
 Ethernet
 Ethics
@@ -7071,6 +7219,7 @@ Europa Report
 Europe
 Europe Day
 Europe of Freedom and Democracy
+European Athletics Championships
 European Conservatives and Reformists
 European Cup and UEFA Champions League records and statistics
 European Parliament
@@ -7122,6 +7271,7 @@ Evangeline Lilly
 Evanna Lynch
 Eve (entertainer)
 Eve Adams
+Eve Hewson
 Eve Muirhead
 Eve Online
 Eve Plumb
@@ -7161,6 +7311,7 @@ Exodus (2014 film)
 Exodus: Gods and Kings
 Exoplanet
 Exorcism
+Expendables 3
 Exploding head syndrome
 Exploding whale
 Expo
@@ -7286,6 +7437,7 @@ Family
 Family Day (Canada)
 Family Guy
 Family Guy (season 12)
+Family Guy Viewer Mail 2
 Family of Barack Obama
 Family of Medium Tactical Vehicles
 Famke Janssen
@@ -7341,11 +7493,14 @@ Fated to Love You (2014 TV series)
 Father Brown (2013 TV series)
 Father Christmas
 Father's Day
+Fathers' Day (film)
 Fatmir Sejdiu
 Fats Domino
 Faust (2011 film)
 Favela
 Fawad Afzal Khan
+Faye Dunaway
+Faye Reagan
 Fazlur Khan
 Fear and Loathing on the Campaign Trail '72
 Feast of the Ascension
@@ -7418,18 +7573,23 @@ Ferdinand Magellan
 Ferdinand Marcos
 Ferenc Puskás
 Fergie (singer)
+Ferguson Police Department (Missouri)
+Ferguson, Missouri
 Fermat's theorem (stationary points)
 Fermi level
 Fermi paradox
 Fermi problem
 Fern
+FernGully: The Last Rainforest
 Fernanda Lima
+Fernando (footballer)
 Fernando Francisco Reges
 Fernando Gago
 Fernando Luiz Roza
 Fernando Muslera
 Fernando Torres
 Feroze Gandhi
+Ferragosto
 Ferrari
 Ferris Bueller's Day Off
 Ferrite bead
@@ -7449,6 +7609,7 @@ Fibromyalgia
 Fibular hemimelia
 Fidel Castro
 Field goal (American and Canadian football)
+Fields Medal
 Fiesta Bowl
 Fifteenth Amendment to the United States Constitution
 Fifth Amendment to the United States Constitution
@@ -7536,6 +7697,7 @@ Fish
 Fish finger
 Fish locomotion
 Fisher (animal)
+Fisher King
 Fisheries management
 Fisht Olympic Stadium
 Fistula
@@ -7549,6 +7711,7 @@ Fjord
 Flabby whalefish
 Flag Day (United States)
 Flag and seal of Virginia
+Flag code of India
 Flag of Australia
 Flag of Bikini Atoll
 Flag of Brazil
@@ -7612,6 +7775,7 @@ Florida Mitzvah Disc Jockey
 Florida School for Boys
 Florida State Seminoles football
 Florida State University
+Florin Gardoș
 Flotsam and jetsam
 Flounder
 Flour
@@ -7621,6 +7785,7 @@ Flowers for Algernon
 Flowers in the Attic
 Flowers in the Attic (film)
 Floyd Mayweather, Jr.
+Flubber (film)
 Fluoxetine
 Flying Spaghetti Monster
 Flying Tiger Line Flight 739
@@ -7696,6 +7861,7 @@ Fossil fuel
 Foster the People
 Fouad Ajami
 Fouls and misconduct (association football)
+Foundation series
 Founding Fathers of the United States
 Fountain of Neptune, Bologna
 Four Christmases
@@ -7737,6 +7903,7 @@ Francis II, Holy Roman Emperor
 Francis Matthews (actor)
 Francis of Assisi
 Francisco Franco
+Francisco Lázaro
 Franck Ribéry
 Franco Di Santo
 Francois Pienaar
@@ -7753,6 +7920,7 @@ Frank L. Culbertson, Jr.
 Frank L. VanderSloot
 Frank Lampard
 Frank Lloyd Wright
+Frank Maloney
 Frank Marth
 Frank Miller (comics)
 Frank Mir
@@ -7773,6 +7941,7 @@ Frankie Muniz
 Frankie Valli
 Frankincense
 Franking
+Franklin & Bash
 Franklin D. Roosevelt
 Franklin Richards
 Franklin's lost expedition
@@ -7942,6 +8111,7 @@ GEC-Marconi scientist deaths conspiracy theory
 GG Allin
 GIMP
 GJ 1214 b
+GNU Lesser General Public License
 GSM
 Gabapentin
 Gabby Douglas
@@ -7960,6 +8130,7 @@ Gabriel Paletta
 Gabriella Wilde
 Gabrielle Union
 Gaby Hoffmann
+Gadolinium(III) oxide
 Gadreel
 Gadsby (novel)
 Gadsden Purchase
@@ -7973,6 +8144,7 @@ Galalith
 Galatasaray S.K. (football)
 Galaxy
 Galba
+Gale Hansen
 Galentine's Day
 Galilean moons
 Galileo (satellite navigation)
@@ -8003,10 +8175,12 @@ Game of Thrones (season 5)
 Game of thrones
 Game theory
 Gamera
+Gamescom
 Gamora
 Gandalf
 Ganden Monastery
 Ganden Sumtseling Monastery
+Ganesh Chaturthi
 Ganesha
 Gang Related (TV series)
 Gang of Ghosts
@@ -8233,6 +8407,7 @@ Gerry Goffin
 Gerry Hutch
 Gerrymandering
 Gertie the Dinosaur
+Gertrude Baniszewski
 Gertrude Weaver
 Gervinho
 Geryon
@@ -8361,6 +8536,7 @@ Gloria Vanderbilt
 Gloriavale Christian Community
 Glorious Revolution
 Glory 17: Los Angeles
+Glory Johnson
 Glossary of curling
 Glossary of figure skating terms
 Gloster Meteor
@@ -8449,6 +8625,7 @@ Good Friday
 Good Kid, M.A.A.D City
 Good King Wenceslas
 Good Luck Charlie
+Good Morning, Vietnam
 Good Night (Homeland)
 Good Night, and Good Luck
 Good Will Hunting
@@ -8542,6 +8719,7 @@ Grand Theft Auto (series)
 Grand Theft Auto IV
 Grand Theft Auto V
 Grand Theft Auto: San Andreas
+Grand jury
 Grandmaster (film)
 Granit Xhaka
 Granite
@@ -8591,6 +8769,7 @@ Great Pacific garbage patch
 Great Pyramid of Cholula
 Great Pyramid of Giza
 Great Pyrenees
+Great Seal bug
 Great Seal of the United States
 Great Society
 Great Sphinx of Giza
@@ -8719,6 +8898,7 @@ Guillermo Ochoa
 Guillermo del Toro
 Guillotine
 Guinea
+Guinea Pig (film series)
 Guinea pig
 Guinness
 Guinness World Record
@@ -8752,6 +8932,7 @@ Gus Kenworthy
 Gus Malzahn
 Gust Avrakotos
 Gustaf Skarsgård
+Gustave (crocodile)
 Gustave Eiffel
 Guus Hiddink
 Guy Fawkes
@@ -8790,6 +8971,7 @@ HBO
 HD 106906 b
 HDMI
 HIV
+HIV/AIDS
 HMAS Success (OR 304)
 HMS Dragon (D35)
 HMS Echo (H87)
@@ -8828,6 +9010,7 @@ Hafþór Júlíus Björnsson
 Haggis
 Hagia Sophia
 Haider (film)
+Haider Al-Abadi
 Haiku
 Haile Selassie I
 Hailee Steinfeld
@@ -8847,6 +9030,7 @@ Halal
 Haley Joel Osment
 Half Girlfriend
 Half cent (United States coin)
+Half-elf (Dungeons & Dragons)
 Half-life
 Hall & Oates
 Halle Berry
@@ -8869,6 +9053,7 @@ Hamatora
 Hamburg
 Hamid Mir
 Hamlet
+Hammerhead shark
 Hampstead Heath
 Hampton, Florida
 Hamster
@@ -8925,6 +9110,8 @@ Happy Birthday to You
 Happy Birthday, Mr. President
 Happy Days
 Happy Endings (TV series)
+Happy Feet
+Happy Feet Two
 Happy Holiday (song)
 Happy New Year (2014 film)
 Happy New Year (song)
@@ -9029,6 +9216,7 @@ Hawkwind
 Hayao Miyazaki
 Hayden Christensen
 Hayden Panettiere
+Hayk
 Hayley Atwell
 Hayley Cropper
 Hayley Hasselhoff
@@ -9046,6 +9234,7 @@ Headlamp
 Headlights (Eminem song)
 Health
 Health Medical Pharma
+Health care in the United States
 Health economics
 Health effects of tobacco
 Health effects of tobacco smoking
@@ -9079,6 +9268,7 @@ Heather Watson
 Heaven Is for Real
 Heaven Is for Real (film)
 Heaven Lake of Tian Shan
+Heaven's Gate (religious group)
 Heavy metal music
 Hebrew language
 Hebrew numerals
@@ -9106,6 +9296,7 @@ Helen Atkinson-Woodm
 Helen Hunt
 Helen Jones Woods
 Helen Keller
+Helen Menken
 Helen Mirren
 Helen Skelton
 Helen Wood (actress)
@@ -9199,6 +9390,7 @@ Here Comes Honey Boo Boo
 Heritage Junior B Hockey League
 Herma
 Hermann Göring
+Hermann Görner
 Hermaphrodite
 Hermes
 Hermione Granger
@@ -9234,6 +9426,7 @@ Hi-hat
 Hidden Cash
 Hideki Tojo
 Hideki Tōjō
+Hideo Kojima
 Hierarchical clustering
 Higgs boson
 High Frequency Active Auroral Research Program
@@ -9242,6 +9435,7 @@ High Point University
 High Roller (Ferris wheel)
 High School DxD
 High School Musical
+High dynamic range imaging
 High five
 High frame rate
 High school
@@ -9321,6 +9515,7 @@ History of North Carolina
 History of Palestine
 History of South Africa
 History of Ukraine
+History of Wikipedia
 History of YouTube
 History of aspirin
 History of beer
@@ -9345,6 +9540,7 @@ History of video games
 Hit the Floor (TV series)
 Hitchens' razor
 Hitchhiking
+Hitendra Thakur
 Hitman (2007 film)
 Hitman (video game series)
 Hmong people
@@ -9488,6 +9684,7 @@ House of Cards (season 1)
 House of Cards (season 2)
 House of Cards (season 3)
 House of Commons (United Kingdom)
+House of D
 House of Habsburg
 House of Lies
 House of Plantagenet
@@ -9506,6 +9703,7 @@ How Your Mother Met Me
 How i met your mother
 How the Grinch Stole Christmas!
 How the West Was Won (film)
+How to Build a Better Boy
 How to Catch a Monster
 How to Train Your Dragon
 How to Train Your Dragon (film)
@@ -9522,6 +9720,7 @@ Howard the Duck
 Howard the Duck (film)
 Howie Long
 Howie Mandel
+Howl's Moving Castle
 Howl's Moving Castle (film)
 Hozier (musician)
 Hristo Stoichkov
@@ -9613,11 +9812,13 @@ Huntington's disease
 Huntsman spider
 Hurricane (Bob Dylan song)
 Hurricane Iniki
+Hurricane John (1994)
 Hurricane Katrina
 Hurricane Sandy
 Hutu
 Hybristophilia
 Hyderabad
+Hydnellum peckii
 Hydraulic conductivity
 Hydraulic fracturing
 Hydraulic fracturing by country
@@ -9686,6 +9887,7 @@ I-35W Mississippi River bridge
 I-400-class submarine
 IAI RQ-5 Hunter
 IBM
+IBM Personal Computer
 IBeacon
 ICANN
 ICC Under-19 Cricket World Cup
@@ -9700,6 +9902,7 @@ IKEA effect
 IMAX
 IMI Tavor TAR-21
 IMac
+INS Kolkata (D63)
 INS Vikramaditya
 INTJ
 INXS
@@ -9761,6 +9964,7 @@ Ibiza
 Ibrahim Afellay
 Ibrahim Touré
 Ibuprofen
+Ice Bucket Challenge
 Ice Cube
 Ice Ice Baby
 Ice age
@@ -9855,6 +10059,7 @@ Imperialism
 Impetigo
 Impossible colors
 Impressionism
+Imran Khan
 Imran Khan (actor)
 Imtiaz Ali (director)
 In Cold Blood
@@ -9862,6 +10067,7 @@ In Flanders Fields
 In God we trust
 In Living Color
 In My Mind (Pharrell Williams album)
+In Search of Dr. Seuss
 In Secret
 In Utero (album)
 In Your Eyes (2014 film)
@@ -9883,8 +10089,10 @@ Incoterms
 Indefinite pronoun
 Independence Day (1996 film)
 Independence Day (India)
+Independence Day (Pakistan)
 Independence Day (Philippines)
 Independence Day (United States)
+Independence of irrelevant alternatives
 Independent Olympians at the Olympic Games
 Independent Olympic Participants at the 2014 Winter Olympics
 Inder Kumar
@@ -9909,6 +10117,7 @@ Indian Ocean
 Indian Ocean garbage patch
 Indian Premier League
 Indian Railways
+Indian Rebellion of 1857
 Indian Space Research Organisation
 Indian Super League
 Indian Wells Masters
@@ -10010,6 +10219,7 @@ Inside Llewyn Davis
 Inside Out (2015 film)
 Insidious (film)
 Insomnia
+Insomnia (2002 film)
 Instagram
 Instinctive drowning response
 Insubordination
@@ -10050,6 +10260,7 @@ International Day of Zero Tolerance to Female Genital Mutilation
 International Friendship Day
 International Holocaust Remembrance Day
 International Indian Film Academy Awards
+International Lefthanders Day
 International Men's Day
 International Monetary Fund
 International Mother Language Day
@@ -10182,6 +10393,7 @@ Islamic State of Iraq and the Levant
 Islamic bicycle
 Islamic calendar
 Islamic sexual jurisprudence
+Islamic state
 Island of California
 Island of stability
 Isle of Man
@@ -10269,6 +10481,7 @@ Jaap Stam
 Jaba Kankava
 Jabari Parker
 Jabberwocky
+Jack (1996 film)
 Jack Andraka
 Jack Antonoff
 Jack Bauer
@@ -10354,6 +10567,7 @@ Jaden Smith
 Jadeveon Clowney
 Jaguar
 Jaguar Cars
+Jai Brooks
 Jai Courtney
 Jai Ho (film)
 Jai ho
@@ -10372,6 +10586,7 @@ Jake Roberts
 Jake Roche
 Jake Shields
 Jake T. Austin
+Jakob the Liar
 Jal (film)
 Jaleel White
 Jamaica
@@ -10430,6 +10645,7 @@ James Hetfield
 James Hunt
 James II of England
 James J. Braddock
+James J. Corbett
 James Joyce
 James Kwesi Appiah
 James L. Dolan
@@ -10606,6 +10822,8 @@ Jason Lee (actor)
 Jason Mewes
 Jason Momoa
 Jason Mraz
+Jason Robards
+Jason Robards, Jr.
 Jason Schwartzman
 Jason Segel
 Jason Statham
@@ -10633,6 +10851,7 @@ Jawaharlal Nehru
 Jawed Karim
 Jaws (film)
 Jaws 2
+Jay Adams
 Jay Baruchel
 Jay Bhanushali
 Jay Carney
@@ -10644,6 +10863,7 @@ Jay Leno
 Jay Mehta
 Jay Mohr
 Jay Moriarity
+Jay Nixon
 Jay Rodriguez
 Jay Sean
 Jay-Z
@@ -10877,6 +11097,7 @@ Jillian Bell
 Jillian Michaels (personal trainer)
 Jim Backus
 Jim Bakker
+Jim Belushi
 Jim Brown
 Jim Caldwell (American football)
 Jim Calhoun
@@ -10970,6 +11191,7 @@ Joanna Lumley
 Joanna Newsom
 Joanna Rowsell
 Joanna Shimkus
+Joanne Pavey
 Joanne Whalley
 Joaquin Phoenix
 Joaquín Guzmán Loera
@@ -11036,6 +11258,7 @@ Johannes Kepler
 Johannes Vermeer
 Johannes von Trapp
 Johannesburg
+John 3:16
 John A. Shaw
 John Abraham (actor)
 John Adair
@@ -11108,6 +11331,7 @@ John Henson (puppeteer)
 John Herschel
 John Hinckley, Jr.
 John Holmes (pornographic actor)
+John Houseman
 John Hughes (filmmaker)
 John Hurt
 John J. Pershing
@@ -11224,6 +11448,7 @@ Johnny Winter
 Johnny knoxville
 Johnson South Reef Skirmish
 Johny Hendricks
+Join.php
 Joker (comics)
 Jokhang
 Joko Widodo
@@ -11242,6 +11467,7 @@ Jon Heder
 Jon Jones
 Jon Jones (fighter)
 Jon Kitna
+Jon Koppenhaver
 Jon Lester
 Jon Postel
 Jon Snow
@@ -11269,6 +11495,7 @@ Jonathan Rhys Meyers
 Jonathan Taylor Thomas
 Jonathan Toews
 Jonathan Wilkes
+Jonathan Winters
 Jonathan de Guzmán
 Jonestown
 Jonny Lee Miller
@@ -11354,6 +11581,7 @@ Joule
 Journals (album)
 Journey (band)
 Jovian–Plutonian gravitational effect
+Jovito Palparan
 Joy Ride (2001 film)
 Joyce Maynard
 Joyeux Noël
@@ -11391,6 +11619,7 @@ Juggalo
 Juggernaut (comics)
 Juhi Chawla
 Juicy J
+Juilliard School
 Jules Verne
 Julia Collins (Jeopardy! champion)
 Julia Lipnitskaia
@@ -11459,6 +11688,7 @@ July 7
 July 8
 July 9
 July Crisis
+Jumanji
 Jun Ji-hyun
 June
 June 1
@@ -11547,6 +11777,7 @@ Jusuf Nurkić
 Juventus F.C.
 Juyongguan
 Jwala Gutta
+Jyoti Amge
 János Lázár
 Jägerbomb
 Jägermeister
@@ -11682,6 +11913,7 @@ Katana
 Katarina Witt
 Katarzyna Wi??niewska,
 Katawa Shoujo
+Kate Adie
 Kate Beckinsale
 Kate Bosworth
 Kate Bush
@@ -11702,6 +11934,7 @@ Kate Williamson
 Kate Winslet
 Katee Sackhoff
 Katey Sagal
+Kathai Thiraikathai Vasanam Iyakkam
 Katharina von Bora
 Katharine Hepburn
 Katharine Lee Bates
@@ -11746,6 +11979,7 @@ Ke-mo sah-bee
 Keane (band)
 Keanu Reeves
 Keccak
+Keddie Murders
 Keeley Hawes
 Keep Calm and Carry On
 Keeping Up with the Kardashians
@@ -11887,6 +12121,7 @@ Kevin Sharp (country singer)
 Kevin Smith
 Kevin Sorbo
 Kevin Spacey
+Kevin Steen
 Kevin Stewart (footballer)
 Kevin Trudeau
 Kevin Volland
@@ -12054,6 +12289,7 @@ Knowshon Moreno
 Knurling
 Knut (polar bear)
 Ko Phi Phi Lee
+Ko San
 Koala
 Kobayashi Maru
 Kobe Bryant
@@ -12098,6 +12334,7 @@ Kosher foods
 Kosovo
 Kosovo War
 Kosovo national football team
+Kostas Manolas
 Kourtney Kardashian
 Kowloon Walled City
 Koyal Rana
@@ -12121,6 +12358,7 @@ Kris Kross
 Kris Marshall
 Krishna
 Krishna Godavari Basin
+Krishna Janmashtami
 Krishnadevaraya
 Krist Novoselic
 Kristallnacht
@@ -12206,6 +12444,7 @@ Kyra Sedgwick
 Kyrgyzstan
 Kyrie Irving
 Kyrsten Sinema
+Kyshtym disaster
 Kübler-Ross model
 L
 L'A Capone
@@ -12226,6 +12465,7 @@ LLVM
 LMFAO
 LOL
 LOLCODE
+LP1 (FKA twigs album)
 LTE (telecommunication)
 LZ 127 Graf Zeppelin
 LZ 129 Hindenburg
@@ -12360,6 +12600,7 @@ Las Vegas
 Laser
 Lassana Diarra
 Last Christmas
+Last Comic Standing
 Last Forever
 Last Kiss
 Last Man Standing (U.S. TV series)
@@ -12508,6 +12749,7 @@ Leicester City F.C.
 Leighton Meester
 Leila Hatami
 Lekar Hum Deewana Dil
+Leland Chapman
 Leland Yee
 Lemon
 Lemony Snicket's A Series of Unfortunate Events
@@ -12616,6 +12858,7 @@ Libby Clegg
 Liberace
 Liberal Democrats
 Liberal, Kansas
+Liberal, Missouri
 Liberalism
 Liberation Tigers of Tamil Eelam
 Liberia
@@ -12734,6 +12977,7 @@ Lisa Bonet
 Lisa Brennan-Jobs
 Lisa Edelstein
 Lisa Haydon
+Lisa Jakub
 Lisa Kudrow
 Lisa Lampanelli
 Lisa Lopes
@@ -12792,6 +13036,7 @@ List of Autobots
 List of Avengers Assemble episodes
 List of Avengers members
 List of Awkward episodes
+List of BBC newsreaders and reporters
 List of Baby Daddy episodes
 List of Banshee episodes
 List of Bates Motel episodes
@@ -12951,6 +13196,7 @@ List of James Bond allies
 List of James Bond films
 List of Jessie episodes
 List of Jewish Nobel laureates
+List of Juilliard School people
 List of Justices of the Supreme Court of the United States
 List of Justified episodes
 List of Keeping Up with the Kardashians episodes
@@ -13318,6 +13564,7 @@ List of hobbies
 List of indoor arenas by capacity
 List of insults always used on reddit
 List of islands in the Indian Ocean
+List of killings by law enforcement officers in the United States
 List of languages by number of native speakers
 List of large aircraft
 List of largest buildings in the world
@@ -13359,6 +13606,7 @@ List of mythological objects
 List of names of the Seven Dwarfs
 List of national animals
 List of national association football teams by nickname
+List of national independence days
 List of newspapers in Brazil
 List of newspapers in the Netherlands
 List of number-one singles of 2007 (Canada)
@@ -13422,6 +13670,8 @@ List of state and union territory capitals in India
 List of states and territories of the United States
 List of states with nuclear weapons
 List of successful rickrolls
+List of suicide crisis lines
+List of suicides
 List of superhuman features and abilities in fiction
 List of surviving silent film actors
 List of surviving veterans of World War II
@@ -13466,6 +13716,7 @@ Lithopedion
 Lithuania
 Little Boy
 Little House on the Prairie (TV series)
+Little League World Series
 Little Mix
 Little Richard
 Little Rock Nine
@@ -13477,6 +13728,7 @@ Live Aid
 Liver
 Liverpool
 Liverpool F.C.
+Livor mortis
 Liz Jones
 Liza Minnelli
 Lizzie Borden
@@ -13509,6 +13761,7 @@ Lockheed SR-71 Blackbird
 Lockheed U-2
 Lod Airport massacre
 Log Horizon
+Logan Clements
 Logan Lerman
 Logarithm
 Logbook loan
@@ -13519,6 +13772,7 @@ Logistics
 Lohachara
 Lohri
 Lois Lerner
+Lois Lowry
 Lok Sabha
 Loki
 Loki (comics)
@@ -13540,6 +13794,7 @@ Long Island serial killer
 Long Man of Wilmington
 Long Walk to Freedom
 Long hair
+Longest professional baseball game
 Longest tennis match records
 Longest word in English
 Longmire (TV series)
@@ -13558,6 +13813,7 @@ Lord's Prayer
 Lorde
 Lorde discography
 Lordi
+Lords of Dogtown
 Lorelei (Asgardian)
 Lorem ipsum
 Lorentz force
@@ -13779,6 +14035,7 @@ MTV Movie Awards
 MTV Splitsvilla
 MV Lyubov Orlova
 MV Xue Long
+Maadhu Balaji
 Maan Karate
 Maat (TV series)
 Mac DeMarco
@@ -13822,6 +14079,7 @@ Madalyn O'Hair
 Madam C. J. Walker
 Madam C.J. Walker
 Madden NFL
+Madden NFL 15
 Maddie Ziegler
 Made in Chelsea
 Madeleine Albright
@@ -13890,6 +14148,7 @@ Mahendra Singh Dhoni
 Mahershala Ali
 Mahesh Babu
 Mahesh Bhatt
+Mahiedine Mekhissi-Benabbad
 Mahmoud Abbas
 Mahmoud Shokoko
 Mahmudiyah killings
@@ -13972,6 +14231,7 @@ Mamphela Ramphele
 Man o' War
 Man of Steel (film)
 Man of Tai Chi
+Man of the Year (2006 film)
 Man on a Ledge
 Man-Thing
 Man-Thing (film)
@@ -14007,10 +14267,12 @@ Manic Street Preachers
 Manifest destiny
 Manila
 Manipal Institute of Technology
+Manish Dayal
 Manish Sisodia
 Manitoba
 Manjapai
 Manju Warrier
+Manjul Bhargava
 Manmohan Singh
 Mann Act
 Manny Pacquiao
@@ -14152,6 +14414,7 @@ Maria von Trapp
 Mariah Carey
 Mariam-uz-Zamani
 Marian Anderson
+Marian Rivera
 Mariana Trench
 Marianne Faithfull
 Mariano Rivera
@@ -14170,6 +14433,7 @@ Marilyn Chambers
 Marilyn Manson
 Marilyn Monroe
 Marin County courthouse incident
+Marin County, California
 Marin Čilić
 Marina Coastal Expressway
 Marina Zueva
@@ -14206,6 +14470,7 @@ Mark Cavendish
 Mark Cuban
 Mark Dantonio
 Mark David Chapman
+Mark Driscoll (pastor)
 Mark Fuhrman
 Mark Gatiss
 Mark Hamill
@@ -14255,7 +14520,10 @@ Marry Him If You Dare
 Mars
 Mars One
 Mars Orbiter Mission
+Marsha Garces
+Marsha Garces Williams
 Marsha Hunt (singer and novelist)
+Marshall Applewhite
 Marshall Islands
 Marshall Ledbetter
 Marshall Plan
@@ -14263,6 +14531,7 @@ Marshawn Lynch
 Martha Hyer
 Martha Stewart
 Martha Vickers
+Martha's Vineyard
 Martial law
 Martian meteorite
 Martin Adams
@@ -14271,7 +14540,9 @@ Martin Compston
 Martin Fourcade
 Martin Freeman
 Martin Garrix
+Martin Hairer
 Martin Kaymer
+Martin Kelly
 Martin Lawrence
 Martin Luther
 Martin Luther King III
@@ -14307,6 +14578,7 @@ Mary Astor
 Mary Babnik Brown
 Mary Barra
 Mary Berry (food writer)
+Mary Bowser
 Mary Burke
 Mary Carillo
 Mary Celeste
@@ -14327,6 +14599,7 @@ Mary Lou Retton
 Mary Lynn Rajskub
 Mary Magdalene
 Mary Mary
+Mary Philips
 Mary Poppins
 Mary Poppins (film)
 Mary Shelley
@@ -14340,6 +14613,7 @@ Mary, Queen of Scots
 Mary-Kate Olsen
 Mary-Kate and Ashley Olsen
 Mary-Louise Parker
+Maryam Mirzakhani
 Maryam Nawaz
 Maryland
 María Conchita Alonso
@@ -14431,6 +14705,7 @@ Matthew Cowles
 Matthew Garber
 Matthew Goode
 Matthew Gray Gubler
+Matthew Lawrence
 Matthew Lillard
 Matthew M.
 Matthew McConaughey
@@ -14534,6 +14809,7 @@ Mayfly
 Mayim Bialik
 Mayinga N'Seka
 Maynard James Keenan
+Mayo Methot
 Mayor of New York City
 Maypole
 Mayra Rosales
@@ -14669,6 +14945,7 @@ Meningitis
 Menopause
 Menorah
 Mensa International
+Mensch
 Menstrual cycle
 Menstrual leave
 Menthol cigarettes
@@ -14693,6 +14970,7 @@ Mermaid
 Merrill's Marauders
 Merrimack College
 Merry Christmas (Mariah Carey album)
+Merry Friggin' Christmas
 Meryl Davis
 Meryl Streep
 Meryl Streep filmography
@@ -14719,6 +14997,7 @@ Metallica
 Metaphor
 Metaphysics
 Meteor Garden
+Meteor shower
 Metformin
 Methadone
 Methamphetamine
@@ -14767,6 +15046,7 @@ Michael Bisping
 Michael Bloomberg
 Michael Bolton
 Michael Bradley (soccer)
+Michael Brown
 Michael Brutsch
 Michael Bublé
 Michael C. Hall
@@ -14790,6 +15070,7 @@ Michael Feldman (consultant)
 Michael Flatley
 Michael Franzese
 Michael Gambon
+Michael Glatze
 Michael Gove
 Michael Grimm (politician)
 Michael Harney
@@ -15039,6 +15320,7 @@ Minnie Riperton
 Minor Sherlock Holmes characters
 Mint julep
 Miquita Oliver
+Mira Sorvino
 Miracast
 Miracle in Cell No. 7
 Miracle on 34th Street
@@ -15274,12 +15556,14 @@ Morse code
 Mortal Kombat
 Mortal Kombat (2011 video game)
 Mortal Kombat X
+Mortdecai (film)
 Mos Def
 Mosab Hassan Yousef
 Mosaic (genetics)
 Moscow
 Moscow Kremlin
 Moscow Metro
+Moscow on the Hudson
 Moses
 Moshe Dayan
 Mosin–Nagant
@@ -15317,6 +15601,7 @@ Mount Vesuvius
 Mount Wutai
 Mount everest
 Mountain Dew
+Mountain Meadows massacre
 Mountain meadows massacre
 Mountains of Io
 Mouse (computing)
@@ -15405,6 +15690,7 @@ Murder of Vincent Chin
 Murder of Yvonne Fletcher
 Murder, Inc.
 Murdered: Soul Suspect
+Murders of Channon Christian and Christopher Newsom
 Murinsel
 Murphy Lee
 Murphy's Romance
@@ -15465,6 +15751,7 @@ Myles Jury
 Myocardial infarction
 Myopia
 Myrmecia
+Myrna Loy
 Myrrh
 Myrtle Corbin
 Myspace
@@ -15492,6 +15779,7 @@ N.W.A
 N844AA
 NAND gate
 NASA
+NASA Helios
 NASDAQ-100
 NATO
 NATO phonetic alphabet
@@ -15627,6 +15915,7 @@ Nathan Berg
 Nathan Fielder
 Nathan Fillion
 Nathan Kress
+Nathan Lane
 Nathan MacKinnon
 Nathan Phelps
 Nathan for You
@@ -15675,6 +15964,7 @@ National anthem of England
 National anthem of South Africa
 National dish
 National redoubt of Belgium
+National symbols of India
 National team appearances in the FIFA World Cup
 Nationalism
 Nationally Appropriate Mitigation Action
@@ -15959,6 +16249,7 @@ Night Visions (album)
 Night Zero (The Strain)
 Night at the Museum
 Night at the Museum 3
+Night at the Museum: Battle of the Smithsonian
 Night at the Museum: Secret of the Tomb
 Night of Champions (2014)
 Night of the Long Knives
@@ -15994,6 +16285,7 @@ Nina Dobrev
 Nina Hartley
 Nine Inch Nails
 Nine Men's Morris
+Nine Months
 Nineteen Eighty-Four
 Nineteen Minutes
 Nineteenth Amendment to the United States Constitution
@@ -16066,6 +16358,7 @@ Nominal Pipe Size
 Non-Newtonian fluid
 Non-Stop (film)
 Non-governmental organization
+Non-revenue track
 Nonpareils
 Noomi Rapace
 Noragami
@@ -16098,6 +16391,7 @@ North American video game crash of 1983
 North Atlantic Treaty
 North Carolina
 North Dakota
+North Hollywood shootout
 North Korea
 North Korea national football team
 North Korean calendar
@@ -16131,6 +16425,7 @@ Novosibirsk
 Now That's What I Call Music! 16 (U.S. series)
 Now You See Me (film)
 Nowruz
+Nsl.mapticket.net/sd/apps/showpass/showpass-1.5.js
 Nuclear and radiation accidents and incidents
 Nuclear briefcase
 Nuclear fission
@@ -16170,6 +16465,7 @@ Nærøyfjord
 O Brother, Where Art Thou?
 O Brother, Where Art Thou? (soundtrack)
 O Canada
+O Captain! My Captain!
 O Holy Night
 O Teri
 O. Gabriel
@@ -16221,6 +16517,7 @@ Odell Beckham, Jr.
 Oderus Urungus
 Odessa
 Odette Annable
+Odeya Rush
 Odin
 Odontoma
 Odyssey
@@ -16250,6 +16547,7 @@ Oksana Baiul
 Ol' Dirty Bastard
 Ola Playa
 Old Dog New Tricks
+Old Dogs (film)
 Old Fortress, Corfu
 Old Norse
 Old Tjikko
@@ -16272,6 +16570,7 @@ Oliver Hynd
 Oliver Kahn
 Oliver North
 Oliver Reed
+Oliver Sacks
 Oliver Tambo
 Olivia Chow
 Olivia Colman
@@ -16338,6 +16637,7 @@ Once Upon a Time in Wonderland
 One Day (2011 film)
 One Direction
 One Flew Over the Cuckoo's Nest (film)
+One Hour Photo
 One Hundred Years of Solitude
 One Last Time (Homeland)
 One Love, One Rhythm – The 2014 FIFA World Cup Official Album
@@ -16391,6 +16691,7 @@ Operation Bodenplatte
 Operation Bodyguard
 Operation Buckshot Yankee
 Operation Crossroads
+Operation Dragoon
 Operation Freakout
 Operation Gladio
 Operation Hannibal
@@ -16573,6 +16874,7 @@ PRL-8-53
 PSR J1748-2446ad
 PSV Eindhoven
 PSX (video game console)
+Pablo Armero
 Pablo Escobar
 Pablo Picasso
 Pablo Schreiber
@@ -16581,6 +16883,7 @@ Pacers–Pistons brawl
 Pachinko
 Pacific Ocean
 Pacific Rim (film)
+Pacific Time Zone
 Paco de Lucía
 Paczki
 Padma Lakshmi
@@ -16591,6 +16894,7 @@ Paganism
 Page Eight
 Pagerank
 Paget Brewster
+Pagliacci
 Paige (wrestler)
 Paige Turco
 Pain & Gain
@@ -16635,6 +16939,7 @@ Pan's Labyrinth
 Panagiotis Kone
 Panama
 Panama Canal
+Panavia Tornado
 Pancake
 Pancreas
 Pancreatic cancer
@@ -16651,6 +16956,7 @@ Pannenkoek
 Pansexuality
 Pantheon, Rome
 Panther chameleon
+Panty & Stocking with Garterbelt
 Panzram
 Paoli Dam
 Paolo Bediones
@@ -16668,6 +16974,7 @@ Paracas National Reservation
 Paracas Peninsula
 Paracetamol
 Parachutes
+Paradise Cay, California
 Paradox
 Paraguay
 Paralympic Games
@@ -16683,6 +16990,7 @@ Parasympathetic nervous system
 Parathyroid gland
 Paravirtualization
 Parc Clichy-Batignolles
+Pareidolia
 Parenthood (2010 TV series)
 Parenting
 Pareto principle
@@ -16719,6 +17027,7 @@ Parthenon
 Partial Terms of Endearment
 Particulate
 Partition coefficient
+Partition of India
 Partners (2014 TV series)
 Party Monster (2003 film)
 Party leaders of the United States House of Representatives
@@ -16752,6 +17061,7 @@ Pat Robertson
 Pat Sajak
 Pat Summitt
 Pat Tillman
+Patch Adams
 Patch Adams (film)
 Patient Protection and Affordable Care Act
 Patrice Evra
@@ -16820,6 +17130,7 @@ Paul McGann
 Paul Muni
 Paul Newman
 Paul Nobuo Tatsuguchi
+Paul Orndorff
 Paul Pierce
 Paul Pogba
 Paul Potts
@@ -16927,6 +17238,7 @@ Penny Marshall
 Penny dreadful
 Penny dreadful (disambiguation)
 Penny stock
+Penobscot Expedition
 Pentatonix
 Pentecost
 Pentobarbital
@@ -16938,6 +17250,7 @@ Pepe (footballer born 1983)
 Pepe (footballer, born 1983)
 Pepe Mel
 Pepe Reina
+Peppa Pig
 Pepsi
 Peptic ulcer
 Per "Dead" Ohlin
@@ -16964,6 +17277,7 @@ Perri Luc Kiely
 Perro de Presa Canario
 Perry Como
 Persecuted (film)
+Perseids
 Perseus
 Perseus (constellation)
 Persia White
@@ -17110,6 +17424,7 @@ Philistines
 Phill Lewis
 Phillip Phillips
 Phillip Seymour Hoffman
+Philo Farnsworth
 Philomena (film)
 Philosophy
 Phineas and Ferb
@@ -17157,6 +17472,7 @@ Pickett's Charge
 Pickling
 Pierce Brosnan
 Pierre Omidyar
+Pierre-Emerick Aubameyang
 Piers Morgan
 Pig (zodiac)
 Pig pickin'
@@ -17329,6 +17645,7 @@ Polaris
 Polaris (comics)
 Polarizing filter (photography)
 Polavaram Project
+Pole dance
 Pole of inaccessibility
 Poles
 Police Story 2013
@@ -17345,6 +17662,7 @@ Polymath
 Polymer
 Polymerase chain reaction
 Polymorphism (computer science)
+Polynesian navigation
 Polyphasic sleep
 Polypropylene
 Pomalidomide
@@ -17379,6 +17697,9 @@ Pope Paul III and His Grandsons
 Pope Paul VI
 Pope Pius IX
 Pope Pius XII
+Popeye
+Popeye (1980 film)
+Popeye (film)
 Poppy Delevingne
 Poppy Montgomery
 Popular culture
@@ -17400,6 +17721,7 @@ Port wine
 Port-wine stain
 Portable Document Format
 Portal (video game)
+Porter Robinson
 Porter five forces analysis
 Portia Doubleday
 Portia de Rossi
@@ -17419,6 +17741,7 @@ Positive pressure personnel suit
 Possum
 Post-Soviet states
 Post-mortem photography
+Postage stamps and postal history of India
 Postcodes in the United Kingdom
 Postmodern literature
 Postmodernism
@@ -17439,6 +17762,7 @@ Poverty in the United States
 Powelliphanta
 Power (TV series)
 Power (physics)
+Power Girl
 Power Rangers
 Power Rangers Megaforce
 Power inverter
@@ -17501,6 +17825,7 @@ Pretty Little Liars (TV series)
 Pretty Little Liars (season 4)
 Pretty Little Liars (season 5)
 Pretty Woman
+Prevention of Insults to National Honour Act, 1971
 Previously Unaired Christmas
 Priapus
 Price elasticity of demand
@@ -17553,6 +17878,7 @@ Priyamani
 Priyanka Chopra
 Priyanka Vadra
 Pro Bowl
+Pro Evolution Soccer 2015
 Pro Kabaddi League
 Pro forma
 Probability space
@@ -17691,6 +18017,7 @@ Putin huylo
 Putin khuilo
 Putin khuilo!
 PySide
+Pyarey Afzal
 Pyeongchang
 Pyeongchang County
 Pygocentrus palometa
@@ -17733,12 +18060,14 @@ Qingming Festival
 Qixi Festival
 Quad (figure skating)
 Quadratic equation
+Quagga
 Quakers
 Qualitative research
 Quality assurance
 QuantiFERON
 Quantitative easing
 Quantum
+Quantum Break
 Quantum computer
 Quantum entanglement
 Quantum mechanics
@@ -17816,6 +18145,7 @@ RSVP
 RSVP (invitations)
 RT (TV network)
 RT-2PM Topol
+RV (film)
 RWBY
 Ra's al Ghul
 Ra-Horakhty
@@ -17859,6 +18189,7 @@ Radek Štěpánek
 Radha Mohan Singh
 Radiation
 Radiation burn
+Radical Faeries
 Radio frequency
 Radio-frequency identification
 Radioactive (Imagine Dragons song)
@@ -17866,6 +18197,7 @@ Radioactive decay
 Radiohead
 Radiologic technologist
 Radja Nainggolan
+Rae Sremmurd
 Raees (film)
 Rafael Benítez
 Rafael Márquez
@@ -18036,6 +18368,7 @@ Raëlism
 Raïs M'Bolhi
 Raúl (footballer)
 Raúl Castro
+Raúl Jiménez
 Reactions to Operation Protective Edge
 Reactions to the death of Nelson Mandela
 Reading Rainbow
@@ -18060,6 +18393,7 @@ Rebecca Romijn
 Rebecca Schaeffer
 Rebekah Brooks
 Rebel Wilson
+Recent Deaths
 Recep Tayyip Erdoğan
 Recess (album)
 Recife
@@ -18261,6 +18595,7 @@ Richard I of England
 Richard I. Bong
 Richard II of England
 Richard III of England
+Richard Jeni
 Richard Jewell
 Richard John Bingham, 7th Earl of Lucan
 Richard Jordan Gatling
@@ -18296,6 +18631,7 @@ Rick Fox
 Rick Genest
 Rick Grimes
 Rick Harrison
+Rick Hoffman
 Rick Huxley
 Rick James
 Rick Jones (baseball coach)
@@ -18344,6 +18680,7 @@ Right Sector
 Right of foreigners to vote
 Right-wing politics
 Righthaven
+Rigor mortis
 Rihanna
 Riin Tamm
 Rik Mayall
@@ -18351,6 +18688,7 @@ Riki Lindhome
 Rikishi (wrestler)
 Riley Keough
 Riley Reid
+Riley Steele
 Ring Magazine pound for pound
 Ring of Fire
 Ringo Star, MBE
@@ -18369,6 +18707,7 @@ Rise Like a Phoenix
 Rise of the Guardians
 Rise of the Planet of the Apes
 Rise of the Tomb Raider
+Risen 3: Titan Lords
 Rising Star (TV series)
 Risk management
 Risperidone
@@ -18408,6 +18747,7 @@ Rob Ford
 Rob Gronkowski
 Rob Kardashian
 Rob Lowe
+Rob Manfred
 Rob McElhenney
 Rob Pardo
 Rob Reiner
@@ -18476,6 +18816,7 @@ Robert Pattinson
 Robert Plant
 Robert Redford
 Robert Reed
+Robert Sean Leonard
 Robert Sungenis
 Robert Trujillo
 Robert Vadra
@@ -18483,6 +18824,8 @@ Robert Wadlow
 Robert Wagner
 Robert Wahlberg
 Robert Webster Cary
+Robert Williams (actor)
+Robert Williams (artist)
 Robert Wolders
 Robert the Bruce
 Roberto Baggio
@@ -18505,8 +18848,10 @@ Robin Söderling
 Robin Thicke
 Robin Tunney
 Robin Williams
+Robin Williams filmography
 Robin Wright
 Robin van Persie
+Robin williams
 Robinho
 Robinson Canó
 RoboCop
@@ -18517,6 +18862,7 @@ RoboCop 2
 RoboCop 3
 Robocop
 Robot
+Robots (2005 film)
 Robots exclusion standard
 Robyn Lawley
 Rocco Siffredi
@@ -18565,6 +18911,7 @@ Rohit Shetty
 Roku
 Roland Ratzenberger
 Rolf Harris
+Roller coaster
 Rolling shutter
 Rolls-Royce Phantom I
 Roma Downey
@@ -18731,6 +19078,7 @@ Ruby Dee
 Ruby Ridge
 Ruby Rose
 Ruby on Rails
+Rucha Hasabnis
 Rude (song)
 Rudimental
 Rudolph the Red-Nosed Reindeer
@@ -18810,6 +19158,7 @@ Ruud Gullit
 Ruud van Nistelrooy
 Rwanda
 Rwandan Genocide
+Ryan Adams
 Ryan Dunn
 Ryan Fitzpatrick
 Ryan Freel
@@ -18832,6 +19181,7 @@ Ryan Sweeting
 Ryan Tandy
 Ryan Tedder
 Ryan White
+Ryder Cup
 Rye
 Ryugyong Hotel
 Rza
@@ -18856,6 +19206,7 @@ SAT
 SAT Reasoning Test
 SCIgen
 SD Eibar
+SEC Network
 SEPIC converter
 SEXINT
 SHA-1
@@ -18883,6 +19234,7 @@ SWV
 Sa'idi Arabic
 Sa'idi Arabicm
 Saab JAS 39 Gripen
+Saath Nibhaana Saathiya
 Sabaton (band)
 Sabbath Bloody Sabbath
 Sabbatical
@@ -18901,6 +19253,7 @@ Sachin Bansal
 Sachin Tendulkar
 Sacramento Kings
 Sacred 3
+Sacred prostitution
 Sacrifice (2014)
 Sada Abe
 Sadamichi Hirasawa
@@ -19001,6 +19354,7 @@ Sam Kelly
 Sam Manekshaw
 Sam Palladio
 Sam Riley
+Sam Robards
 Sam Rockwell
 Sam Shepard
 Sam Simon
@@ -19062,6 +19416,7 @@ San Diego Comic-Con International
 San Francisco
 San Francisco 49ers
 San Francisco Bay
+San Francisco Bay Area
 San Jose Sharks
 San Marino
 San Michele in Foro
@@ -19275,6 +19630,7 @@ Scott Stapp
 Scott Thompson (comedian)
 Scott Thorson
 Scott Walker
+Scott Weinger
 Scott Wilson (actor)
 Scottie Pippen
 Scottish independence referendum, 2014
@@ -19288,6 +19644,7 @@ Scrubs (TV series)
 Scrum (software development)
 Scurvy
 Sea
+Sea Cliff, San Francisco
 Sea Hawk
 Sea Peoples
 Sea breeze
@@ -19316,6 +19673,7 @@ Sean Taylor
 Sean Waltman
 Sean's Bar
 Search
+Search Engine Marketing
 Search engine optimization
 Searching for Sugar Man
 Season
@@ -19361,10 +19719,13 @@ Seemandhra
 Seether
 Sega NetLink
 Segovia
+Segunda Guerra Mundial
 Seine
 Seinfeld
+Seinfeld (season 4)
 Seirei Tsukai no Blade Dance
 Seismic wave
+Seize the Day (film)
 Sekhemre Khutawy Sobekhotep
 Selective catalytic reduction
 Selena
@@ -19392,6 +19753,7 @@ Senthil Kumar
 Sentinel (comics)
 Sentinelese people
 Seoul
+Sepahan Airlines Flight 5915
 Separatism
 Sephardi Jews
 Sepp Blatter
@@ -19513,6 +19875,7 @@ Shane Black
 Shane Gibson (musician)
 Shane Harper
 Shane Larkin
+Shane Long
 Shane MacGowan
 Shane McMahon
 Shane West
@@ -19537,7 +19900,9 @@ Shaquille O'Neal
 Sharia
 Shark
 Shark Tank
+Shark Week
 Shark episode
+Shark! (film)
 Sharknado
 Sharknado 2: The Second One
 Sharlto Copley
@@ -19584,6 +19949,7 @@ Shelby Mustang
 Sheldon Adelson
 Sheldon Cooper
 Shell shock
+Shelley Duvall
 Shelley Hennig
 Shemale
 Shemar Moore
@@ -19657,6 +20023,7 @@ Shola Ameobi
 Sholay
 Shonda Rhimes
 Shooter (2007 film)
+Shooting of Michael Brown
 Shooting of Trayvon Martin
 Shooting of the Romanov family
 Short Message Service
@@ -19667,6 +20034,7 @@ Shownews.asp
 Shraddha Kapoor
 Shrapnel (DC Comics)
 Shredder (Teenage Mutant Ninja Turtles)
+Shree Krishna Shrestha
 Shrek
 Shreya Ghoshal
 Shroud of Turin
@@ -19733,6 +20101,9 @@ Silambarasan
 Silas Robertson
 Sildenafil
 Silence (Doctor Who)
+Silent Hill
+Silent Hill (video game)
+Silent Hills
 Silent Night
 Silent Spring
 Silent Witness
@@ -19776,6 +20147,7 @@ Simone de Beauvoir
 Simple Mail Transfer Protocol
 Simple Network Management Protocol
 Simple machine
+Sin City
 Sin City (film)
 Sin City: A Dame to Kill For
 Sinaloa Cartel
@@ -19786,6 +20158,7 @@ Singapore Airlines
 Singapore in Malaysia
 Singh Is Bling
 Singh Saab the Great
+Singham
 Singham Returns
 Single Ladies (TV series)
 Singles Awareness Day
@@ -19837,6 +20210,7 @@ Skrillex
 Skrull
 Sky Ferreira
 Sky High (2005 film)
+Sky burial
 SkySails
 Skye McCole Bartusiak
 Skyfall
@@ -20003,6 +20377,7 @@ Somalia
 Somerset Levels
 Something Awful
 Somnath Bharti
+Son (novel)
 Son Heung-min
 Son of Batman
 Son of Batman (film)
@@ -20029,6 +20404,7 @@ Sonoluminescence
 Sons of Anarchy
 Sons of Anarchy (season 5)
 Sons of Anarchy (season 6)
+Sons of Guns
 Sonu Sood
 Sony
 Sony BMG copy protection rootkit scandal
@@ -20097,6 +20473,7 @@ Space Cowboys
 Space Dandy
 Space Ghost Coast to Coast
 Space Jam
+Space Pirate Captain Harlock (film)
 Space Shuttle Challenger
 Space Shuttle Challenger disaster
 Space Shuttle Columbia disaster
@@ -20131,6 +20508,7 @@ Special Protection Group
 Special centralautologin start?type=1x1
 Special characters
 Speckle pattern
+Spectroscopy
 Speech disfluency
 Speed of electricity
 Speed of light
@@ -20150,6 +20528,7 @@ Spetsnaz
 Speyer wine bottle
 Sphere
 Sphinx
+Sphynx cat
 Spice
 Spice Girls
 Spider
@@ -20180,6 +20559,7 @@ Splatoon
 Spleen
 Splendor in the Grass
 Splice (film)
+Splinter (Teenage Mutant Ninja Turtles)
 Split infinitive
 Splog
 SpongeBob SquarePants
@@ -20195,6 +20575,8 @@ Spratly Islands
 Spring (season)
 Spring Breakers
 Spring Hill College
+Springfield (The Simpsons)
+Sprint car racing
 Sputnik Monroe (wrestler)
 Sputtering
 Spuyten Duyvil, Bronx
@@ -20214,6 +20596,8 @@ Srinivasa Ramanujan
 Sriracha sauce
 St Michael's Mount
 St. Elmo's fire
+St. Louis
+St. Louis County, Missouri
 St. Paul's Cathedral, Dunedin
 St. Peter's Basilica
 St. Stephen's Day
@@ -20225,6 +20609,7 @@ Stacey Nelkin
 Stacey Slater
 Stacy Keibler
 Stacy Martin
+Stacy Peralta
 Staind
 Stainless steel
 Stairway to Heaven
@@ -20283,6 +20668,7 @@ Star-Crossed
 Star-Crossed (TV series)
 Star-Lord
 Star-crossed
+StarCraft II: Legacy of the Void
 Starbound
 Starbucks
 Starbury
@@ -20333,6 +20719,7 @@ Stem cell
 Step Up (film series)
 Step Up (film)
 Step Up 2: The Streets
+Step Up 3D
 Step Up All In
 Step Up Revolution
 Step Up: All In
@@ -20420,6 +20807,7 @@ Steven Horsford
 Steven Moffat
 Steven R. McQueen
 Steven Seagal
+Steven Soderbergh
 Steven Spielberg
 Steven Spielberg filmography
 Steven Tyler
@@ -20466,6 +20854,7 @@ Stoning
 Stoning of Du'a Khalil Aswad
 Stop Online Piracy Act
 Storage 24
+Storage Wars
 Storm (Marvel Comics)
 Storming of the Bastille
 Storyboard
@@ -20550,8 +20939,10 @@ Sudden infant death syndrome
 Sudetenland
 Sudirman
 Sue Barker
+Sue Perkins
 Sue Townsend
 Suez Canal
+Sufism
 Sugar
 Sugar Bowl
 Sugarloaf Key bat tower
@@ -20560,6 +20951,8 @@ Suicide
 Suicide Club (film)
 Suicide Is Painless
 Suicide Squad
+Suicide bag
+Suicide by hanging
 Suicide in Greenland
 Suicide methods
 Suicide of Amanda Todd
@@ -20728,6 +21121,7 @@ Suzanne Khan
 Suzanne Pleshette
 Suzanne Shaw
 Suzuka Nakamoto
+Suzy Amis
 Sven Kramer
 Svetlana Kuznetsova
 Svoboda (political party)
@@ -20742,6 +21136,7 @@ Swastika
 Swatch Internet Time
 Swatting
 Sweden
+Sweden Solar System
 Sweden men's national ice hockey team
 Sweden national football team
 Sweet Child o' Mine
@@ -20778,6 +21173,7 @@ Sykes–Picot Agreement
 Sylvester McCoy
 Sylvester Stallone
 Sylvester Stallone filmography
+Sylvia Likens
 Sylvia Mathews Burwell
 Sylvia Plath
 Sympathetic nervous system
@@ -20840,6 +21236,7 @@ Tab Clear
 Table of keyboard shortcuts
 Table tennis
 Tablet computer
+Tabnit sarcophagus
 Tabrett Bethell
 Tabu (actress)
 Tabu Ley Rochereau
@@ -20860,6 +21257,7 @@ Taissa Farmiga
 Taiwan
 Taj Mahal
 Tajikistan
+Takbir
 Take Me Out (UK game show)
 Taken (film)
 Taken 3
@@ -20980,7 +21378,9 @@ Teal
 Team Fortress 2
 Teamwork
 Teapot Dome scandal
+Tear gas
 Teardrop tattoo
+Tears in rain monologue
 Tech N9ne
 Technical Ecstasy
 Technical school
@@ -21008,6 +21408,7 @@ Teddy Bridgewater
 Teddy Girls
 Teej
 Teemu Selänne
+Teen Choice Awards
 Teen Mom
 Teen Mom 2
 Teen Spirit (deodorant)
@@ -21022,6 +21423,7 @@ Teenage Mutant Ninja Turtles (2014 film)
 Teenage Mutant Ninja Turtles (disambiguation)
 Teenage Mutant Ninja Turtles (film series)
 Teenage Mutant Ninja Turtles II: The Secret of the Ooze
+Teenage Mutant Ninja Turtles III
 Teetotalism
 Tegan and Sara
 Tehelka
@@ -21032,6 +21434,7 @@ Tel Aviv
 Telamonia dimidiata
 Telangana
 Telangana movement
+Telephone recording laws
 Teletubbies
 Television
 Television in the United States
@@ -21120,6 +21523,7 @@ Tetris effect
 Teutonic Knights
 Texas
 Texas A&M University
+Texas German
 Texas Independence Day
 Text messaging
 Textron AirLand Scorpion
@@ -21137,6 +21541,7 @@ Thaipusam
 Thaksin Shinawatra
 Thalassemia
 Thalidomide
+Thalía
 Thames Barrier
 Thanasi Kokkinakis
 Thanasis Antetokounmpo
@@ -21156,6 +21561,7 @@ The 7.39
 The Act of Killing
 The Adventure of Charles Augustus Milverton
 The Adventure of the Empty House
+The Adventures of Baron Munchausen
 The Adventures of Tintin
 The After
 The After (TV series)
@@ -21175,6 +21581,7 @@ The Amityville Horror
 The Anarchist Cookbook
 The Angels (Australian band)
 The Angriest Man in Brooklyn
+The Aristocrats (film)
 The Art of Letting Go
 The Artist (film)
 The Ashes
@@ -21205,6 +21612,7 @@ The Beatles discography
 The Beautiful Game
 The Bella Twins
 The Best Man Holiday
+The Best of Times (film)
 The Bible (TV miniseries)
 The Bible and homosexuality
 The Big Bang Theory
@@ -21213,8 +21621,12 @@ The Big Bang Theorym
 The Big Bopper
 The Big Fat Quiz of the Year
 The Big Lebowski
+The Big Sleep (1946 film)
+The Big Wedding
+The Big White
 The Biggest Loser
 The Biggest Loser (U.S. TV series)
+The Birdcage
 The Black Eyed Peas
 The Black Keys
 The Black Market (Rise Against album)
@@ -21299,6 +21711,7 @@ The Da Vinci Code
 The Da Vinci Code (film)
 The Daily Currant
 The Daily Show
+The Dakota
 The Dark Knight (film)
 The Dark Knight Returns
 The Dark Knight Rises
@@ -21314,6 +21727,7 @@ The Death of Captain America
 The Decision (TV special)
 The Departed
 The Descendants
+The Devil Is a Part-Timer!
 The Devil Wears Prada (film)
 The Devil's Double
 The Diary of a Nobody
@@ -21360,6 +21774,7 @@ The Expendables 2
 The Expendables 3
 The F Word (2013 film)
 The Fabulous Moolah
+The Face of Love (film)
 The Faculty
 The Fairly OddParents
 The Fall (TV series)
@@ -21377,6 +21792,8 @@ The Fault in Our Stars (film)
 The Fifth Element
 The Fifth Estate (film)
 The Fighting Sullivans
+The Final Cut (2004 film)
+The Fisher King
 The Five(ish) Doctors Reboot
 The Flash (2014 TV series)
 The Following
@@ -21526,6 +21943,7 @@ The Last Ship (novel)
 The Last Stand (2013 film)
 The Last Supper (Leonardo da Vinci)
 The Last of Us
+The Last: Naruto the Movie
 The Laws of Gods and Men
 The Lazarus Project
 The League
@@ -21554,6 +21972,7 @@ The Little Couple
 The Little Drummer Boy
 The Little Mermaid
 The Little Mermaid (1989 film)
+The Little Prince
 The Lone Ranger (2013 film)
 The Lonely Island
 The Long Good Friday
@@ -21585,6 +22004,7 @@ The Mentalist
 The Mentalist (season 6)
 The Middle (TV series)
 The Mindy Project
+The Mirror Has Two Faces
 The Miz
 The Monkey King (film)
 The Monster (song)
@@ -21615,6 +22035,7 @@ The New York Times Best Seller list
 The Newsroom (U.S. TV series)
 The Night Eternal
 The Night Gwen Stacy Died
+The Night Listener (film)
 The Night Shift (TV series)
 The Night of the Doctor
 The Nightmare Before Christmas
@@ -21623,6 +22044,7 @@ The Normal Heart
 The Normal Heart (film)
 The Notebook (2004 film)
 The Notorious B.I.G.
+The November Man
 The Numbers Gang
 The Nut Job
 The Nutcracker
@@ -21653,6 +22075,7 @@ The Pilot's Love Song
 The Pineapple Incident
 The Pink Panther (movie series)
 The Pink Print
+The Pinkprint
 The Pirate Bay
 The Pirate Fairy
 The Place Beyond the Pines
@@ -21692,6 +22115,7 @@ The Red Road (TV series)
 The Rehearsal Dinner
 The Reichenbach Fall
 The Renaissance
+The Return of Jafar
 The Returned
 The Road
 The Rockford Files
@@ -21772,6 +22196,7 @@ The Sum of All Fears (film)
 The Sun Has Got His Hat On
 The Super Hero Squad Show
 The Superior Spider-Man
+The Survivors (1983 film)
 The Tale of Princess Kaguya (film)
 The Talented Mr. Ripley (film)
 The Taste
@@ -21788,6 +22213,7 @@ The Thriving Cult of Greed and Power
 The Tick (2001 TV series)
 The Time Machine
 The Time of the Doctor
+The Timekeeper
 The Titan's Curse
 The To Do List
 The Tolmachevy Sisters
@@ -21825,6 +22251,7 @@ The Vamps
 The Vamps (British band)
 The Vanishing (1988 film)
 The View (U.S. TV series)
+The Village (2013 TV series)
 The Virginity Hit
 The Voice (Australia series 3)
 The Voice (Australian TV series)
@@ -21878,6 +22305,8 @@ The Woman in Black
 The Woman in Black (2012 film)
 The Wonder Years
 The Wonderful Wizard of Oz
+The World According to Garp
+The World According to Garp (film)
 The World Wars (miniseries)
 The World is Still Beautiful
 The World's 10 Most Wanted
@@ -21910,6 +22339,7 @@ Thelma & Louise
 Themistocles
 Theo James
 Theo Walcott
+Theodor Morell
 Theodore Roosevelt
 Theodore Roosevelt, Jr
 Theodore Van Kirk
@@ -21918,6 +22348,7 @@ Theory of everything
 Theory of multiple intelligences
 Theory of relativity
 Theory of the firm
+Theranos
 There Was a Crooked Man
 There Will Be Blood
 There's No Place Like Home (Once Upon a Time)
@@ -22024,6 +22455,7 @@ Tiananmen Square
 Tiananmen Square protests of 1989
 Tibet
 Tibetan Mastiff
+Tiburon, California
 Tick
 Tick (check mark)
 Tickling
@@ -22031,11 +22463,13 @@ Tiffani Thiessen
 Tiffany (South Korean singer)
 Tiffany Cole
 Tiffany Foxx
+Tiffany Porter
 Tiffany Thornton
 Tiger
 Tiger (zodiac)
 Tiger Shroff
 Tiger Woods
+Tiger shark
 Tiki-taka
 Tikrit
 Tila Tequila
@@ -22102,6 +22536,7 @@ Timothy Leary
 Timothy Maude
 Timothy McVeigh
 Timothy Olyphant
+Timur
 Tina Fey
 Tina Knowles
 Tina Louise
@@ -22112,6 +22547,7 @@ Tinashe
 Tinder (app)
 Tinder (application software)
 Tinder (application)
+Tinea versicolor
 Tinikling
 Tinker Bell (film series)
 Tinker Tailor Soldier Spy (film)
@@ -22140,6 +22576,7 @@ Titushky
 Tizen
 Tiësto
 To Be Kind
+To Have and Have Not (film)
 To Kill a Mockingbird
 To Kill a Mockingbird (film)
 Toad (comics)
@@ -22152,6 +22589,7 @@ Toby Stephens
 Today (The Smashing Pumpkins song)
 Todd Carney
 Todd Frazier
+Todd Herzog
 Todd Solondz
 Todd Williams (American football)
 Toe Nash
@@ -22216,6 +22654,7 @@ Tom and Jerry (mixed drink)
 Tom of Finland
 Tomasz M.
 Tomato
+Tomato ketchup
 Tomato soup
 Tomb Raider
 Tomb Raider (2013 video game)
@@ -22266,12 +22705,16 @@ Tony Gonzalez (American football)
 Tony Gwynn
 Tony Gwynn, Jr.
 Tony Hateley
+Tony Hawk
 Tony Iommi
 Tony Jaa
 Tony Martin (cyclist)
 Tony Mokbel
 Tony Parker
+Tony Pulis
 Tony Romo
+Tony Shalhoub
+Tony Stewart
 Tonya Harding
 Too Far Gone (The Walking Dead)
 Tool (band)
@@ -22327,6 +22770,7 @@ Toynbee tiles
 Toyota
 Toyota Corolla
 Toyota Supra
+Toys (film)
 Trace Cyrus
 Tracey Emin
 Tracey Ullman
@@ -22432,6 +22876,7 @@ Trigonometric functions
 Trigonometry
 Trigun
 Trilemma
+Trillion dollar coin
 Trinidad Moruga Scorpion
 Trinidad and Tobago
 Trio (Glee)
@@ -22483,8 +22928,10 @@ Truman Doctrine
 Trypophobia
 Tryptophan
 Tsar Bomba
+Tsujigiri
 Tsunami
 Tsvetana Pironkova
+Tu B'Av
 Tu Bishvat
 Tuam
 Tuam mass grave
@@ -22498,6 +22945,7 @@ Tumblr
 Tungsten
 Tunguska event
 Tunisia
+Tunnel Railway
 Tupac Shakur
 Tupolev Tu-143
 Tupolev Tu-160
@@ -22505,6 +22953,7 @@ Tupolev Tu-95
 Turbo (film)
 Turbo button
 Turbo-Charged Prelude
+Turbojet
 Turducken
 Turing machine
 Turing test
@@ -22512,6 +22961,7 @@ Turk
 Turkey
 Turkish coffee
 Turkish local elections, 2014
+Turkish presidential election, 2014
 Turkmenistan
 Turks & Caicos (film)
 Turks and Caicos Islands
@@ -22561,6 +23011,9 @@ Tycho Brahe
 Tyga
 Tyger Drew-Honey
 Tyke (elephant)
+Tyler Bates
+Tyler Blackett
+Tyler Oakley
 Tyler Perry
 Tyler Posey
 Tyler Zeller
@@ -22625,6 +23078,7 @@ UEFA Europa League
 UEFA European Championship
 UEFA European Football Championship
 UEFA Futsal Euro 2014
+UEFA Super Cup
 UEFA coefficient
 UFC 167
 UFC 168
@@ -22650,6 +23104,7 @@ UFC Fight Night: Henderson vs. Khabilov
 UFC Fight Night: Henderson vs. dos Anjos
 UFC Fight Night: Hunt vs. Nelson
 UFC Fight Night: McGregor vs. Brandao
+UFC Fight Night: Nelson vs. Story
 UFC Fight Night: Silva vs. Arlovski
 UFC Fight Night: Souza vs. Mousasi
 UFC Fight Night: Swanson vs. Stephens
@@ -22671,6 +23126,7 @@ USS Cairo
 USS Coronado (LCS-4)
 USS Cowpens (CG-63)
 USS Donald Cook (DDG-75)
+USS Enterprise (CVN-65)
 USS Forrestal (CV-59)
 USS George H.W. Bush (CVN-77)
 USS Gerald R. Ford (CVN-78)
@@ -22685,6 +23141,7 @@ USS Mesa Verde (LPD-19)
 USS Midway (CV-41)
 USS Nevada (BB-36)
 USS Pinckney (DDG-91)
+USS San Francisco (SSN-711)
 USS Somerset (LPD-25)
 USS Triton (SSRN-586)
 USS Truxtun
@@ -22868,6 +23325,7 @@ Unofficial Football World Championships
 Unorthodox Jukebox
 Unpause
 Unsimulated sex
+Until Dawn
 Untitled Fantastic Four reboot
 Ununseptium
 Up (2009 film)
@@ -22891,6 +23349,7 @@ Urticaria
 Uruguay
 Uruguay national football team
 Uruguay v Brazil (1950 FIFA World Cup)
+Uruguayan War
 Urvashi Rautela
 Urvashi Sharma
 Us (The Walking Dead)
@@ -22898,6 +23357,7 @@ Usa Guitar
 Usage share of web browsers
 Usain Bolt
 User Datagram Protocol
+User/login form/
 Usher (entertainer)
 Usher syndrome
 Utah
@@ -22984,6 +23444,7 @@ Vance Joy
 Vance McAllister
 Vancouver
 Vandalism on Wikipedia
+Vande Mataram
 Vanderbilt family
 Vanderpump Rules
 Vanessa Hudgens
@@ -23074,6 +23535,7 @@ Vermont
 Vermont Republic
 Verne Troyer
 Vernon C. Bain Correctional Center
+Verona Arena
 Veronica Guerin
 Veronica Mars
 Veronica Mars (film)
@@ -23086,7 +23548,9 @@ Vesak
 Vespa mandarinia japonica
 Vesuvius (How I Met Your Mother)
 Veterans Day
+Veterinary physician
 Vevo
+VfL Wolfsburg
 Vhong Navarro
 Viber
 Vic Chou
@@ -23100,6 +23564,7 @@ Vichy France
 Vicious (TV series)
 Vicki Adams
 Vickie Guerrero
+Vicky Beeching
 Victor Dubuisson
 Victor Hugo
 Victor Moses
@@ -23120,6 +23585,7 @@ Victorino Noval Foundation
 Victorious
 Victory Day (9 May)
 Victory in Europe Day
+Victory over Japan Day
 Video
 Video Camera
 Video game
@@ -23147,6 +23613,7 @@ Vikram Prabhu
 Vikram Seth
 Vikramadithyan
 Viktor Ahn
+Viktor Belenko
 Viktor Petrenko
 Viktor Yanukovych
 Viktor Yushchenko
@@ -23174,6 +23641,7 @@ Vincent Kartheiser
 Vincent Kompany
 Vincent Margera
 Vincent Mason
+Vincent Otti
 Vincent Tan
 Vincent van Gogh
 Vincente Minnelli
@@ -23257,6 +23725,7 @@ Volcker Rule
 Volgograd
 Volkshalle
 Volkswagen
+Volkswagen 1-litre car
 Volkswagen Golf Mk3
 Volkswagen Group
 Volleyball
@@ -23310,6 +23779,7 @@ Wadiyar dynasty
 Waffen-SS
 Wagon-wheel effect
 Wahhabi movement
+Wahlburgers
 Waist–hip ratio
 Waitangi Day
 Waiting for Godot
@@ -23353,6 +23823,8 @@ War Doctor
 War Eagle
 War Horse (film)
 War Is a Racket
+War Machine
+War Machine (mixed martial artist)
 War and Peace
 War crimes of the Wehrmacht
 War elephant
@@ -23411,6 +23883,7 @@ Water activity
 Water cycle
 Water deer
 Water dropwort
+Water intoxication
 Water ionizer
 Water pollution
 Water retention (medicine)
@@ -23424,6 +23897,7 @@ Watkin Tudor Jones
 Watt
 Waveguide filter
 Wavelength
+Wax bullet
 Way of St. James
 Waylon Jennings
 Wayne Dyer
@@ -23526,6 +24000,8 @@ Whale shark
 Whaling in Japan
 Whaling in the Faroe Islands
 Wham Paymaster Robbery
+What Dreams May Come
+What Dreams May Come (film)
 What the Fish
 What's Eating Gilbert Grape
 Whatever You Like
@@ -23579,6 +24055,7 @@ Whole Lotta Love
 Whoopi Goldberg
 Whopper
 Whose Line Is It Anyway?
+Whose Line Is It Anyway? (U.S. TV series)
 Whydah Gally
 Wi-Fi
 Wicca
@@ -23596,6 +24073,7 @@ WildFly
 WildStar (video game)
 Wiley Post
 Wilfred (U.S. TV series)
+Wilfred (U.S. season 4)
 Wilfredo Caballero
 Wilfried Bony
 Wilfried Zaha
@@ -23649,6 +24127,7 @@ William Powell
 William Randolph Hearst
 William Roache
 William S. Burroughs
+William Schabas
 William Shakespeare
 William Shatner
 William Strunk, Jr.
@@ -23669,6 +24148,7 @@ Willie Robertson
 Willie nelson
 Willis Tower
 Willow Smith
+Willy Caballero
 Willy Vlautin
 Willy Wonka & the Chocolate Factory
 Wilmer Valderrama
@@ -23698,6 +24178,7 @@ Windows XP
 Windows games
 Wing Commander III: Heart of the Tiger
 Winklevoss twins
+Winner (band)
 Winnie Madikizela-Mandela
 Winnie-the-Pooh
 Winona Ryder
@@ -23728,6 +24209,7 @@ Wofford College
 Wojciech J.
 Wojciech Jaruzelski
 Wojtek (bear)
+Wola massacre
 Wolf Creek (film)
 Wolf of Wall Street
 Wolf of Wall Streetm
@@ -23808,8 +24290,10 @@ World cup
 World cup 2014
 World of A Song of Ice and Fire
 World of Warcraft
+World of Warcraft: Warlords of Draenor
 World population
 World's Columbian Exposition
+World's Greatest Dad
 World's Strongest Man
 World's busiest airports by passenger traffic
 World's fair
@@ -23840,6 +24324,7 @@ Wrongful execution
 Wrotham
 Wu-Tang Clan
 Wudu
+Wunderwaffe
 Wyatt Earp
 Wyatt Emory Cooper
 Wyatt Russell
@@ -24060,6 +24545,7 @@ Yvonne De Carlo
 Yvonne Fletcher
 Yvonne Strahovski
 Z Berg
+Z-Boys
 ZH-05
 ZIP code
 ZMapp
@@ -24088,12 +24574,15 @@ Zara
 Zara Phillips
 Zara Salim Davidson
 Zatanna
+Zathura (film)
 Zayn Malik
 Zdeno Chára
 Zdzisław Beksiński
 Zebra
 Zedd (musician)
 Zeitgeist
+Zelda Rae Williams
+Zelda Williams
 Zellweger syndrome
 Zendaya
 Zeno's paradoxes
@@ -24150,27 +24639,35 @@ Zumwalt class destroyer
 Zumwalt-class destroyer
 Zvjezdan Misimović
 Zwarte Piet
+Zürich
 [[ ]]
 [[Canc�n]]
 [[����]]
 a bell for adano
+aaron rodgers girlfriend
 after the thin man
 airport
+akrx
 american hustle
 angel lift
+audrey hepburn
 ava roosevelt
 ava roosevelt bio
 avignon's river
+beheading of nick foley
 billy joel
 bitcovery
 bobby darin
 body in suitcase
 boston globe
 brad falchuk
+brazilian rubber
 brightness measure
 brittney griner
+bryan cranston
 caitriona balfe
 casey kasem
+celine dion
 cheap michael kors
 chicago bears
 chinatown movie
@@ -24191,14 +24688,18 @@ david gregory
 detective vance
 detroit lions
 digoxin
+dion
+dodd darin
 elio
 elio motors
 elio motors scam
 elio motors vehicle
+elizabeth darcy bennet
 elizabeth vargas
 escher work
 faithwriters member
 faye dunaway
+fireside chats
 flds
 florida lottery results
 frances gifford
@@ -24208,8 +24709,16 @@ gabrielle union
 geometric solids
 gigi playwright
 glory johnson
+golf leaderboard
+grace and lace
+green mansions
+gregory peck
 groovebook
+grouper eats shark
+harry reid
 homicide
+honda accord
+hunter hayes
 iex
 isis
 isis execution videos
@@ -24218,27 +24727,34 @@ james brady
 james brady death
 james brady homicide
 james denton
+janet yellen
 jay adams
 jean harlow
 jean kasem
 jean muggli
 jeff bridges
 jenise wright
+jenna wolfe
 jennifer lawrence
 jesse williams
+jessie nizewitz
+jihadi john
 jim kelly
 joan bramhall
 john hinckley jr
 john hodiak
+julie herrod
 katherine heigl
 katrina hodiak
 kevin ward jr
 kiwiburger
+kodiak cakes
 kristen cavallari
 kristin cavallari
 lace front wigs
 lake mead
 lana turner
+last man standing
 lifeboat
 lifeboat movie
 lil kim
@@ -24246,12 +24762,15 @@ lola albright
 long island medium
 louis vuitton outlet
 louisville purge
+lpga
 mamie gummer
 map of missouri
 marc cohn
+mariah carey divorce
 marlon brando
 matt rutler
 meet the press
+mekong river capital
 meteor shower tonight
 miami dolphins
 michael brown
@@ -24261,7 +24780,10 @@ mila kunis
 miley cyrus
 mlb scores
 mo'ne davis
+monkey mat
+my little pony
 myrna loy
+mythbusters
 narrow point of land
 nascar 2014 schedule
 nascar qualifying results
@@ -24281,27 +24803,40 @@ notre dame football
 ny lottery
 outlander
 outlander tv series
+paul hogan
 paula faris
 paula patton
+pga
+pga leaderboard today
+pga tour leaderboard
 piece mil
 powerball results
+project a119
+reese witherspoon
 rick perry
 rick perry indicted
 rita moreno
+roman holiday
 ron palillo
 rosemary lehmberg
 sandra dee
 sharon tate
+snoring remedies
+south african city
 starz outlander series
 summerslam 2014
 super moon august 2014
 susan sarandon
 texas lottery results
+the island movie
+the paint brush cover
 the purge
+tom arnold
 tony stewart
 tori amos
 va lottery
 valerie bertinelli
+valerie parr hill
 vanessa hudgens
 vanessa marcil
 walgreens weekly ad
@@ -24316,6 +24851,7 @@ wwe summerslam 2014
 yazidi
 yazidi religion
 yazidis
+yonkers raceway
 zoe saldana
 ¡Mucha Lucha!
 Álvaro Morata

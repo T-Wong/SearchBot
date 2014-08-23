@@ -69,42 +69,42 @@ public class WordList {
     
     @Test
     public void getWords() {
-    	// gets the top 5000 wiki articles from current to October 2012
-    	ArrayList<String> links = new ArrayList<String>();
-    	
-    	driver.get(historyWikiUrl);
-    	
-    	WebElement ul = driver.findElement(By.tagName("ul"));
-    	List<WebElement> li_collection_wiki = ul.findElements(By.tagName("li"));
-    	
-    	// finds which links to click
-    	for(WebElement li : li_collection_wiki) {
-    		try {
-	    		List<WebElement> a_collection = li.findElements(By.tagName("a"));
-	    		if(li.findElement(By.tagName("span")).getText().equals("Updating popular pages report")) {		// checks to see if the edit is actually an update to the report
-	    			links.add(a_collection.get(0).getAttribute("href"));
-	    		}
-    		}
-    		catch(Exception e) {}
-    	}
-    	
-    	// clicks each link and gets the resulsts
-    	for(String link : links) {
-    		try {
-	    		driver.get(link);
-	    		
-	    		WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl/dd/dl/dd/table/tbody"));
-	        	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
-	        	
-	        	for(WebElement tr : tr_collection) {
-	        		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
-	        		
-	        		String word = td_collection.get(1).getText().trim();
-	        		wordSet.add(word);
-	        	}
-    		}
-    		catch(Exception e) {}
-    	}
+//    	// gets the top 5000 wiki articles from current to October 2012
+//    	ArrayList<String> links = new ArrayList<String>();
+//    	
+//    	driver.get(historyWikiUrl);
+//    	
+//    	WebElement ul = driver.findElement(By.tagName("ul"));
+//    	List<WebElement> li_collection_wiki = ul.findElements(By.tagName("li"));
+//    	
+//    	// finds which links to click
+//    	for(WebElement li : li_collection_wiki) {
+//    		try {
+//	    		List<WebElement> a_collection = li.findElements(By.tagName("a"));
+//	    		if(li.findElement(By.tagName("span")).getText().equals("Updating popular pages report")) {		// checks to see if the edit is actually an update to the report
+//	    			links.add(a_collection.get(0).getAttribute("href"));
+//	    		}
+//    		}
+//    		catch(Exception e) {}
+//    	}
+//    	
+//    	// clicks each link and gets the resulsts
+//    	for(String link : links) {
+//    		try {
+//	    		driver.get(link);
+//	    		
+//	    		WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl/dd/dl/dd/table/tbody"));
+//	        	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
+//	        	
+//	        	for(WebElement tr : tr_collection) {
+//	        		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
+//	        		
+//	        		String word = td_collection.get(1).getText().trim();
+//	        		wordSet.add(word);
+//	        	}
+//    		}
+//    		catch(Exception e) {}
+//    	}
     	
     	// get top 5000 top article titles on wikipedia for that week
     	driver.get(wikiUrl);
