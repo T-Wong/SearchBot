@@ -25,6 +25,7 @@ public class Bing {
 	private final int MIN_TIME = 10;
 	private final int MAX_TIME = 30;
 	private final int SEARCHES_PER = 2;	// the number of searches to earn 1 credit
+	
     Random rand = new Random();
 	
 	// holds the number of searches needed to be done for mobile and desktop. set to 40 just in case the website changes
@@ -32,7 +33,6 @@ public class Bing {
 	private int mobileSearches = 40;
 	
 	String currentSearch;	// type of search being done. ex. web, image, or video
-	boolean continu = true;
 	
 	// holds account info
     private Map<String, char[]> accounts = new HashMap<String, char[]>();
@@ -148,7 +148,7 @@ public class Bing {
 	            
 	            // start desktop searching. first search is always web search for simplicity
 	            driver.findElement(By.id("sb_form_q")).clear();
-	            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+	            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
 	            driver.findElement(By.id("sb_form_go")).click();
 	            currentSearch = "web";
 	            desktopSearches--;
@@ -181,7 +181,14 @@ public class Bing {
 
             	// do the actual search
             	driver.findElement(By.id("sb_form_q")).clear();
-            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+            	
+            	// 50 50 chance for a lowercase search or regular search with first letter capital
+            	if(rand.nextInt(2) == 1) {
+            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
+            	}
+            	else {
+            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+            	}
             	driver.findElement(By.id("sb_form_go")).click();
             	
             	// wait in between searches
