@@ -21,7 +21,7 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 * Java 1.7 or 7 JRE
 
 ## Installation
-1. Download BingBot.jar in the master branch or click [here] (https://github.com/T-Wong/BingBot/blob/master/BingBot.jar).
+1. Download BingBot.jar in the master branch or click [here] (https://github.com/T-Wong/BingBot/raw/master/BingBot.jar).
 2. Run the downloaded file.
 3. Done.
 
