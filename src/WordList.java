@@ -105,20 +105,20 @@ public class WordList {
 //    		}
 //    		catch(Exception e) {}
 //    	}
-    	
-    	// get top 5000 top article titles on wikipedia for that week
-    	driver.get(wikiUrl);
-    	
-    	WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl[2]/dd/dl/dd/table/tbody"));
-    	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
-    	
-    	for(WebElement tr : tr_collection) {
-    		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
-    		
-    		String word = td_collection.get(1).getText().trim();
-    		wordSet.add(word);
-    	}
-    	
+//    	
+//    	// get top 5000 top article titles on wikipedia for that week
+//    	driver.get(wikiUrl);
+//    	
+//    	WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl[2]/dd/dl/dd/table/tbody"));
+//    	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
+//    	
+//    	for(WebElement tr : tr_collection) {
+//    		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
+//    		
+//    		String word = td_collection.get(1).getText().trim();
+//    		wordSet.add(word);
+//    	}
+//    	
     	// get 50 more words from aol top daily searches
     	driver.get(aolUrl);
     	
@@ -141,7 +141,12 @@ public class WordList {
 			FileWriter writer = new FileWriter(filePath);
 			
 			for(String word : wordSet) {
-				writer.append(word + "\r\n");
+				if(!word.contains("(") && !word.contains(")") && !word.contains("/")) {
+					writer.append(word + "\r\n");
+				}
+				else if(word.contains("(") || word.contains(")")){	// remove anything in parantheses
+					writer.append(word.substring(0, word.lastIndexOf("(")).trim() + "\r\n");
+				}
 			}
 			writer.flush();
 			writer.close();
