@@ -84,10 +84,16 @@ public class Bing {
             driver.findElement(By.linkText("Connect")).click();
             
             // login
-            driver.findElement(By.name("login")).sendKeys(account.getKey());
-            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
-            driver.findElement(By.id("idSIButton9")).click();
-            driver.switchTo().alert().accept();
+            try {
+	            driver.findElement(By.name("login")).sendKeys(account.getKey());
+	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
+	            driver.findElement(By.id("idSIButton9")).click();
+	            driver.switchTo().alert().accept();
+            }
+            catch(Exception e) {
+            	JOptionPane.showMessageDialog(null, "An error has occured, during login for " + account.getKey() + ". Check to make sure login and username are correct"
+            			+ "and that there are no authentication issues.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
+            }
             
             // gets the number of searches needed to be done
             List<WebElement> searchList = (driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[2]/ul"))).findElements(By.tagName("li"));
@@ -182,7 +188,7 @@ public class Bing {
             	// do the actual search
             	driver.findElement(By.id("sb_form_q")).clear();
             	
-            	// 50 50 chance for a lowercase search or regular search with first letter capital
+            	// 50 50 chance for a lowercase search or regular search with default capitalization
             	if(rand.nextInt(2) == 1) {
             		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
             	}
