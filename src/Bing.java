@@ -229,7 +229,14 @@ public class Bing {
 	            driver.findElement(By.id("sb_form_q")).click();
 	            
 	            driver.findElement(By.id("sb_form_q")).clear();
-	            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+	            
+            	// 50 50 chance for a lowercase search or regular search with default capitalization
+	            if(rand.nextInt(2) == 1) {
+	            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+	            }
+	            else {
+	            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
+	            }
 	            driver.findElement(By.id("sbBtn")).click();
 	            currentSearch = "web";
 	            mobileSearches--;
