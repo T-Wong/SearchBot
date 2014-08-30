@@ -96,7 +96,7 @@ public class Bing {
             }
             
             // gets the number of searches needed to be done
-            List<WebElement> searchList = (driver.findElement(By.className("tileset"))).findElements(By.tagName("li"));
+            List<WebElement> searchList = (driver.findElements(By.className("tileset")).get(1)).findElements(By.tagName("li"));
             for(WebElement li : searchList) {
             	if(li.findElement(By.className("title")).getText().trim().equals("Mobile search")) {
             		mobileSearches = formatText(li.findElement(By.className("progress")).getText());
@@ -104,6 +104,7 @@ public class Bing {
             	else if(li.findElement(By.className("title")).getText().trim().equals("PC search")) {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
+            	System.out.println(mobileSearches + "\n" + desktopSearches);
             }
 
             // earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
