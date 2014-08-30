@@ -96,7 +96,7 @@ public class Bing {
             }
             
             // gets the number of searches needed to be done
-            List<WebElement> searchList = (driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[2]/ul"))).findElements(By.tagName("li"));
+            List<WebElement> searchList = (driver.findElement(By.className("tileset"))).findElements(By.tagName("li"));
             for(WebElement li : searchList) {
             	if(li.findElement(By.className("title")).getText().trim().equals("Mobile search")) {
             		mobileSearches = formatText(li.findElement(By.className("progress")).getText());
@@ -107,7 +107,7 @@ public class Bing {
             }
 
             // earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
-        	WebElement ul = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
+        	WebElement ul = driver.findElement(By.className("tileset"));
             List<WebElement> lis = ul.findElements(By.tagName("li"));
             		
             // finds which elements need to be clicked
@@ -121,7 +121,7 @@ public class Bing {
             // clicks the rewards
             for(String title : titles) {
             	// finds the rewards html elements again to prevent stale elements
-            	WebElement ul2 = driver.findElement(By.xpath("//*[@id=\"dashboard_wrapper\"]/div[1]/div[1]/ul"));
+            	WebElement ul2 = driver.findElement(By.className("row"));
                 List<WebElement> lis2 = ul2.findElements(By.tagName("li"));
                 String base = driver.getWindowHandle();
                 
