@@ -104,7 +104,6 @@ public class Bing {
             	else if(li.findElement(By.className("title")).getText().trim().equals("PC search")) {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
-            	System.out.println(mobileSearches + "\n" + desktopSearches);
             }
 
             // earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
@@ -155,8 +154,13 @@ public class Bing {
 	            
 	            // start desktop searching. first search is always web search for simplicity
 	            driver.findElement(By.id("sb_form_q")).clear();
-	            driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
-	            driver.findElement(By.id("sb_form_go")).click();
+            	// 50 50 chance for a lowercase search or regular search with default capitalization
+            	if(rand.nextInt(2) == 1) {
+            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+            	}
+            	else {
+            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
+            	}	            driver.findElement(By.id("sb_form_go")).click();
 	            currentSearch = "web";
 	            desktopSearches--;
 	            
@@ -191,10 +195,10 @@ public class Bing {
             	
             	// 50 50 chance for a lowercase search or regular search with default capitalization
             	if(rand.nextInt(2) == 1) {
-            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
+            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
             	}
             	else {
-            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+            		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
             	}
             	driver.findElement(By.id("sb_form_go")).click();
             	
@@ -270,7 +274,12 @@ public class Bing {
 	
 	            	// do the actual search
 	            	driver.findElement(By.id("sb_form_q")).clear();
-	            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+		            if(rand.nextInt(2) == 1) {
+		            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
+		            }
+		            else {
+		            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
+		            }
 	            	driver.findElement(By.id("sbBtn")).click();
 	            	
 	            	// wait in between searches
