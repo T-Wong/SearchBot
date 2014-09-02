@@ -18,6 +18,7 @@ import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 public class Bing {
 
@@ -91,8 +92,13 @@ public class Bing {
 	            driver.switchTo().alert().accept();
             }
             catch(Exception e) {
-            	JOptionPane.showMessageDialog(null, "An error has occured, during login for " + account.getKey() + ". Check to make sure login and username are correct"
-            			+ "and that there are no authentication issues.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
+            	JOptionPane.showMessageDialog(null, "Requires user interaction.", "Requires user interaction", JOptionPane.ERROR_MESSAGE);
+            	while(isElementPresent(By.id("c_cb0"))) {
+            		try {
+            			Thread.sleep(1000);
+            		}
+            		catch(Exception e2) {}
+            	}
             }
             
             // gets the number of searches needed to be done
@@ -333,6 +339,15 @@ public class Bing {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         try {
         	webElement.findElement(by);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+    
+    private boolean isElementPresent(By by) {
+        try {
+            driver.findElement(by);
             return true;
         } catch (NoSuchElementException e) {
             return false;
