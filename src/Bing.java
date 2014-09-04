@@ -250,7 +250,7 @@ public class Bing {
 	            }
 	            driver.findElement(By.id("sbBtn")).click();
 	            currentSearch = "web";
-	            mobileSearches--;
+//	            mobileSearches--;	Removed because sometimes 9/10 mobile points are earned because the first search doesn't register for points. Adds 1 extra search.
 	            
 	        	// wait in between searches
 	        	try {
