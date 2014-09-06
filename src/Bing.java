@@ -230,7 +230,7 @@ public class Bing {
 	            driver.findElement(By.className("idText")).click();
 	            driver.findElement(By.name("login")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
-	            driver.findElement(By.id("i0011")).click();
+	            driver.findElement(By.id("idSIButton9")).click();
 	            driver.switchTo().alert().accept();
 	            
 	            driver.get("http://www.bing.com/");
