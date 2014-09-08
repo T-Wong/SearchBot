@@ -29,7 +29,7 @@ public class Bing {
 	
     Random rand = new Random();
 	
-	// holds the number of searches needed to be done for mobile and desktop. set to 40 just in case the website changes
+	// holds the number of searches needed to be done for mobile and desktop. set to 40 just in case the website changes and needs to be defaulted
 	private int desktopSearches = 40;
 	private int mobileSearches = 40;
 	
@@ -70,16 +70,15 @@ public class Bing {
     
     @Before
     public void setUp() {
+        driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         baseUrl = "http://www.bing.com/rewards/dashboard";
+        driver.get(baseUrl);
     }
     
     @Test
     public void search() {
     	for(Map.Entry<String, char[]> account : accounts.entrySet()) {
-            driver = new FirefoxDriver();
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-            driver.get(baseUrl);
-
             // navigate to sign in
             driver.findElement(By.id("id_s")).click();
             driver.findElement(By.linkText("Connect")).click();
