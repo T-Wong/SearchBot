@@ -70,15 +70,17 @@ public class Bing {
     
     @Before
     public void setUp() {
-        driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         baseUrl = "http://www.bing.com/rewards/dashboard";
-        driver.get(baseUrl);
     }
     
     @Test
     public void search() {
     	for(Map.Entry<String, char[]> account : accounts.entrySet()) {
+    		// Initialize new firefox driver for normal web browser
+            driver = new FirefoxDriver();
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.get(baseUrl);
+            
             // navigate to sign in
             driver.findElement(By.id("id_s")).click();
             driver.findElement(By.linkText("Connect")).click();
