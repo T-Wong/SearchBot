@@ -15,11 +15,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
 import javax.swing.BorderFactory;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
@@ -282,7 +283,7 @@ public class main extends JFrame {
 
     // starts execution of the selenium script which does the searches
     private void startButtonActionPerformed(ActionEvent evt) {                                            
-    	Map<String, char[]> accounts = new HashMap<String, char[]>();	// holds username and passwords
+    	Map<String, char[]> accounts = new LinkedHashMap<String, char[]>();	// holds username and passwords
     	
     	// sets the account details in the hashmap
     	if(!email1.getText().equals("") && new String(password1.getPassword()) != "") {

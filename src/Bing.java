@@ -5,7 +5,7 @@
  */
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -18,7 +18,6 @@ import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 public class Bing {
 
@@ -36,7 +35,7 @@ public class Bing {
 	String currentSearch;	// type of search being done. ex. web, image, or video
 	
 	// holds account info
-    private Map<String, char[]> accounts = new HashMap<String, char[]>();
+    private Map<String, char[]> accounts = new LinkedHashMap<String, char[]>();
     
     // holds words from word list
     private Object[] wordArray;
