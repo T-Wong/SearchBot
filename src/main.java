@@ -31,6 +31,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle;
+import javax.swing.SwingWorker;
 import javax.swing.WindowConstants;
 import javax.swing.border.TitledBorder;
 
@@ -55,6 +56,8 @@ public class main extends JFrame {
     private JButton saveButton;
     private JButton startButton;   
     
+	Bing startBing;
+	
     public static void main(String args[]) {
         /* Create and display the form */
         EventQueue.invokeLater(new Runnable() {
@@ -319,8 +322,22 @@ public class main extends JFrame {
         catch(Exception e) {
         	e.printStackTrace();
         }
-    	// starts the process and locks up the gui thread, may add worker later if I want to update gui during execution.
-    	Bing startBing = new Bing(accounts, wordSet.toArray());
-    	startBing.execute();
-    }                                                   
+    	startBing = new Bing(accounts, wordSet.toArray());   	
+    	AnswerWorker worker = new AnswerWorker();
+    	worker.execute();
+    	startButton.setEnabled(false);
+    }       
+    
+    // A worker so that script execution isn't hanging on the eventdispatch thread
+    class AnswerWorker extends SwingWorker<Integer, Integer> {
+        @Override
+        protected Integer doInBackground() {
+        	startBing.execute();
+            return 32;          // not used  
+        }
+        @Override
+        protected void done() {
+        	startButton.setEnabled(true);
+        }
+    }
 }
