@@ -4,10 +4,12 @@
  * 	are actively searching for. 
  */
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.List;
 import java.util.Scanner;
 import java.util.SortedSet;
@@ -15,12 +17,16 @@ import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.*;
+import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.seleniumhq.jetty7.util.ajax.JSON;
+import org.json.*;
 
 public class WordList {
     
-	// holds the words. using a treeSet for fast searching as it goes by natural order
+	// Holds the words. using a SortedSat because I like the natural order and no duplicates
+	// Which happens a lot with this set of data because I'm always updating it
 	SortedSet<String> wordSet = new TreeSet<String>();
 	
 	private String filePath = (System.getProperty("user.dir") + "\\src\\WordList.txt");		// change this if you want the wordlist somewhere else
@@ -130,6 +136,28 @@ public class WordList {
     		
     		wordSet.add(word);
     	}
+    	
+    	// Gets json data from bing for related search results
+		SortedSet<String> tempSet = new TreeSet<String>();		// I just want to go over the data once
+		for(String entry : wordSet) {
+			tempSet.add(entry);
+		}
+		
+		for(String word : tempSet) {
+			try {
+		    	URL link = new URL("http://api.bing.net/qson.aspx?query=" + word.replaceAll(" ", "+"));
+		    	BufferedReader in = new BufferedReader(new InputStreamReader(link.openStream()));
+
+				JSONObject obj = new JSONObject(in.readLine());
+				JSONArray arr = obj.getJSONObject("SearchSuggestion").getJSONArray("Section");
+				
+				for(int i = 0;i < arr.length(); i++) {
+					wordSet.add(arr.getJSONObject(i).getString("Text"));
+				}
+				in.close();
+			}
+			catch(Exception e) {}	// anything caught by this means that there are no related searches
+		}
     }
     
     @After
