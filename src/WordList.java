@@ -112,37 +112,37 @@ public class WordList {
 //    		catch(Exception e) {}
 //    	}
 //    	
-    	// get top 5000 top article titles on wikipedia for that week
-    	driver.get(wikiUrl);
-    	
-    	WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl[2]/dd/dl/dd/table/tbody"));
-    	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
-    	
-    	for(WebElement tr : tr_collection) {
-    		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
-    		
-    		String word = td_collection.get(1).getText().trim();
-    		wordSet.add(word);
-    	}
-    	
-    	// get 50 more words from aol top daily searches
-    	driver.get(aolUrl);
-    	
-    	WebElement list = driver.findElement(By.xpath("//*[@id=\"trends\"]/div[3]"));
-    	List<WebElement> li_collection = list.findElements(By.tagName("li"));
-    	
-    	for(WebElement li : li_collection) {
-    		String word = li.getText().trim();
-    		
-    		wordSet.add(word);
-    	}
+//    	// get top 5000 top article titles on wikipedia for that week
+//    	driver.get(wikiUrl);
+//    	
+//    	WebElement tbody = driver.findElement(By.xpath("//*[@id=\"mw-content-text\"]/dl[2]/dd/dl/dd/table/tbody"));
+//    	List<WebElement> tr_collection = tbody.findElements(By.tagName("tr"));
+//    	
+//    	for(WebElement tr : tr_collection) {
+//    		List<WebElement> td_collection = tr.findElements(By.tagName("td"));
+//    		
+//    		String word = td_collection.get(1).getText().trim();
+//    		wordSet.add(word);
+//    	}
+//    	
+//    	// get 50 more words from aol top daily searches
+//    	driver.get(aolUrl);
+//    	
+//    	WebElement list = driver.findElement(By.xpath("//*[@id=\"trends\"]/div[3]"));
+//    	List<WebElement> li_collection = list.findElements(By.tagName("li"));
+//    	
+//    	for(WebElement li : li_collection) {
+//    		String word = li.getText().trim();
+//    		
+//    		wordSet.add(word);
+//    	}
     	
     	// Gets json data from bing for related search results
 		SortedSet<String> tempSet = new TreeSet<String>();		// I just want to go over the data once
 		for(String entry : wordSet) {
 			tempSet.add(entry);
 		}
-		
+		int count = 0;
 		for(String word : tempSet) {
 			try {
 		    	URL link = new URL("http://api.bing.net/qson.aspx?query=" + word.replaceAll(" ", "+"));
@@ -154,6 +154,10 @@ public class WordList {
 				for(int i = 0;i < arr.length(); i++) {
 					wordSet.add(arr.getJSONObject(i).getString("Text"));
 				}
+				if(count % 1000 == 0) {
+					System.out.println(word + " " + count/tempSet.size() + "%");
+				}
+				count++;
 				in.close();
 			}
 			catch(Exception e) {}	// anything caught by this means that there are no related searches
