@@ -82,14 +82,13 @@ public class Bing {
             
             // navigate to sign in
             driver.findElement(By.id("id_s")).click();
-            driver.findElement(By.linkText("Connect")).click();
+            driver.findElement(By.className("idp_wlid")).click();
             
             // login
             try {
 	            driver.findElement(By.name("login")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
 	            driver.findElement(By.id("idSIButton9")).click();
-	            driver.switchTo().alert().accept();
             }
             catch(Exception e) {
             	JOptionPane.showMessageDialog(null, "Requires user interaction.", "Requires user interaction", JOptionPane.ERROR_MESSAGE);
@@ -156,7 +155,7 @@ public class Bing {
              
             if(desktopSearches != 0) {
 	            // back arrow to get to bing home page
-	            driver.findElement(By.className("me_backarrow")).click();
+	            driver.findElement(By.id("back-to-bing-text")).click();
 	            
 	            // start desktop searching. first search is always web search for simplicity
 	            driver.findElement(By.id("sb_form_q")).clear();
@@ -339,8 +338,10 @@ public class Bing {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         try {
         	webElement.findElement(by);
+        	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             return true;
         } catch (NoSuchElementException e) {
+        	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             return false;
         }
     }
