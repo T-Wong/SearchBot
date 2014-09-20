@@ -7,14 +7,14 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 
 ## Features
 * Allows for up to 5 accounts at a time (not Facebook accounts)
+* A ~25,000 search list that contains many commonly searched for (contains NSFW language)
+* Go to this project [here] (https://github.com/T-Wong/SearchList/tree/master) if you want to have a large list millions of search terms that I have compiled
 * Encrypts and saves login information on local machine
 * Detects how many points needed for both mobile searching and desktop searching
 * Earns the "Earn and Explore" points
 * Variable search delay that can be changed in the code, default is 10-30 seconds
 * Searches for web, images, and videos for desktop searching (image and video searches don't register for points on mobile for some reason)
 * Emulates an iPhone to obtain mobile searches
-* A ~25,000 search list that contains many commonly searched for items and is still being updated by me (contains NSFW language)
-* Go to this project [here] (https://github.com/T-Wong/SearchList/tree/master) if you want to have a large list millions of search terms
 
 ## Requirements
 * Modern version of Mozilla Firefox
