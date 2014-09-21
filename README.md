@@ -1,7 +1,7 @@
 BingBot
 =======
 
-BingBot is a simple script with GUI that automates the earning of points for Bing Rewards. I tried to make this program very simple so that any person can pick it up and instantly use it without having to know a lot about Bing Rewards.
+BingBot is a simple script with GUI that automates the earning of points for Bing Rewards.
 
 ![alt tag](https://raw.github.com/T-Wong/BingBot/master/GUI.png)
 
@@ -9,7 +9,7 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 * Allows for up to 5 accounts at a time (not Facebook accounts)
 * A ~25,000 search list that contains many commonly searched for (contains NSFW language)
 * Uses PhantomJS and Seleneium to drive a hidden browser to earn points
-* Go to this project [here] (https://github.com/T-Wong/SearchList/tree/master) if you want to have a large list millions of search terms that I have compiled
+* Go to this project [here] (https://github.com/T-Wong/SearchList/tree/master) if you want to have a large list of millions of search terms that I have compiled
 * Encrypts and saves login information on local machine
 * Detects how many points needed for both mobile searching and desktop searching
 * Earns the "Earn and Explore" points
@@ -25,6 +25,12 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 1. Download BingBot.jar in the master branch or click [here] (https://github.com/T-Wong/BingBot/raw/master/BingBot.jar).
 2. Run the downloaded file.
 3. Done.
+
+## Usage
+1. Input your account information for your Bing Rewards accounts.
+2. Click "Save" if you want to save that enrypted information on your local computer.
+3. Click "Start" in order to start earning points.
+4. Once the "Start" button becomes usable again, it means that it has finished.
 
 or you can compile it yourself if you don't trust my pre-compiled version.
 
