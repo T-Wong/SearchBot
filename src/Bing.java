@@ -4,6 +4,9 @@
  * 	all Bing Rewards points as possible per account.
  */
 
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -14,33 +17,37 @@ import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
 
+import org.apache.commons.io.IOUtils;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Bing {
 
-	// constants used for timing in between searches and other variables
+	// Constants used for timing in between searches and other variables
 	private final int MIN_TIME = 10;
 	private final int MAX_TIME = 30;
-	private final int SEARCHES_PER = 2;	// the number of searches to earn 1 credit
+	private final int SEARCHES_PER = 2;	// The number of searches to earn 1 credit
 	
     Random rand = new Random();
 	
-	// holds the number of searches needed to be done for mobile and desktop. set to 40 just in case the website changes and needs to be defaulted
+	// Holds the number of searches needed to be done for mobile and desktop. set to 40 just in case the website changes and needs to be defaulted
 	private int desktopSearches = 40;
 	private int mobileSearches = 40;
 	
-	String currentSearch;	// type of search being done. ex. web, image, or video
+	String currentSearch;	// Type of search being done. ex. web, image, or video
 	
-	// holds account info
+	// Holds account info
     private Map<String, char[]> accounts = new LinkedHashMap<String, char[]>();
     
     // holds words from word list
     private Object[] wordArray;
     
-    // declare variables for selenium
+    // Declare variables for selenium
     private WebDriver driver;
     private String baseUrl;
     
@@ -49,12 +56,11 @@ public class Bing {
     	this.wordArray = wordArray;
     }
   
-    // execute whole script
+    // Execute whole script
     public void execute() {
         try {
             setUp();
             search();
-//            tearDown();		not used anymore
         }
         catch(Exception e) {
         	e.printStackTrace();
@@ -74,17 +80,38 @@ public class Bing {
     
     @Test
     public void search() {
-    	for(Map.Entry<String, char[]> account : accounts.entrySet()) {
-    		// Initialize new firefox driver for normal web browser
-            driver = new FirefoxDriver();
+    	// Saves phantomjs.exe to a temp folder on local file system to be used later
+    	InputStream in = null;
+    	OutputStream out = null;
+    	try {
+	    	in = getClass().getResourceAsStream("phantomjs.exe");
+	    	out = new FileOutputStream(System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+	    	IOUtils.copy(in, out);
+    	}
+    	catch(Exception e){
+    		e.printStackTrace();
+    	}
+    	finally {
+    		IOUtils.closeQuietly(in);
+    		IOUtils.closeQuietly(out);
+    	}
+
+    	for(Map.Entry<String, char[]> account : accounts.entrySet()) { 	    		
+    		// Initialize new phantomjs driver (1.97) for normal web browser
+    		DesiredCapabilities caps = new DesiredCapabilities();
+    		caps.setJavascriptEnabled(true);
+    		caps.setCapability("takesScreenshot", true);
+    		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+    		driver = new PhantomJSDriver(caps);
+    		
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.get(baseUrl);
             
-            // navigate to sign in
+            // Navigate to sign in
             driver.findElement(By.id("id_s")).click();
             driver.findElement(By.className("idp_wlid")).click();
             
-            // login
+            // Login
             try {
 	            driver.findElement(By.name("login")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
@@ -100,7 +127,7 @@ public class Bing {
             	}
             }
             
-            // gets the number of searches needed to be done
+            // Gets the number of searches needed to be done
             List<WebElement> searchList = (driver.findElements(By.className("tileset")).get(1)).findElements(By.tagName("li"));
             for(WebElement li : searchList) {
             	if(li.findElement(By.className("title")).getText().trim().equals("Mobile search")) {
@@ -111,11 +138,11 @@ public class Bing {
             	}
             }
 
-            // earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
+            // Earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
         	WebElement ul = driver.findElement(By.className("tileset"));
             List<WebElement> lis = ul.findElements(By.tagName("li"));
             		
-            // finds which elements need to be clicked
+            // Finds which elements need to be clicked
             ArrayList<String> titles = new ArrayList<String>();
             for(WebElement li : lis) {
             	if(isElementPresent(By.cssSelector("div[class='check open-check dashboard-sprite']"), li)) {
@@ -123,7 +150,7 @@ public class Bing {
             	}
             }
 
-            // clicks the rewards
+            // Clicks the rewards
             for(String title : titles) {
             	// finds the rewards html elements again to prevent stale elements
             	WebElement ul2 = driver.findElement(By.className("row"));
@@ -139,14 +166,14 @@ public class Bing {
                 	catch(Exception e) {}
                 }
                 
-            	// switches to the window and closes it
+            	// Switches to the window and closes it
             	Set<String> set = driver.getWindowHandles();
             	set.remove(base);
             	assert set.size() == 1;
             	driver.switchTo().window((String) set.toArray()[0]);
             	driver.close();
             	driver.switchTo().window(base);
-                // wait for page to load and for base window to refresh with changes. not sure if there is any other way because the list becomes stale after refresh
+                // Wait for page to load and for base window to refresh with changes. not sure if there is any other way because the list becomes stale after refresh
                 try {
                 	Thread.sleep(3000);
                 }
@@ -154,10 +181,10 @@ public class Bing {
             }
              
             if(desktopSearches != 0) {
-	            // back arrow to get to bing home page
+	            // Back arrow to get to bing home page
 	            driver.findElement(By.id("back-to-bing-text")).click();
 	            
-	            // start desktop searching. first search is always web search for simplicity
+	            // Start desktop searching. first search is always web search for simplicity
 	            driver.findElement(By.id("sb_form_q")).clear();
             	// 50 50 chance for a lowercase search or regular search with default capitalization
             	if(rand.nextInt(2) == 1) {
@@ -169,7 +196,7 @@ public class Bing {
 	            currentSearch = "web";
 	            desktopSearches--;
 	            
-	        	// wait in between searches
+	        	// Wait in between searches
 	        	try {
 	        		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
 	        	}
@@ -177,9 +204,9 @@ public class Bing {
 	        		e.printStackTrace();
 	        	}
             }
-            // start desktop searching
+            // Start desktop searching
             for(int i = 1; i <= desktopSearches; i++) {
-            	// randomly picks whether to search for web, images, or videos and then switches to that page
+            	// Randomly picks whether to search for web, images, or videos and then switches to that page
             	int typeOfSearch = rand.nextInt(5);
             	
             	if(typeOfSearch >= 2 && !currentSearch.equals("web")) {		// web search
@@ -195,7 +222,7 @@ public class Bing {
             		driver.findElement(By.linkText("VIDEOS")).click();
             	}
 
-            	// do the actual search
+            	// Do the actual search
             	driver.findElement(By.id("sb_form_q")).clear();
             	
             	// 50 50 chance for a lowercase search or regular search with default capitalization
@@ -207,7 +234,7 @@ public class Bing {
             	}
             	driver.findElement(By.id("sb_form_go")).click();
             	
-            	// wait in between searches
+            	// Wait in between searches
             	try {
             		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
             	}
@@ -218,14 +245,17 @@ public class Bing {
         	driver.quit();
             
             if(mobileSearches != 0) {
-	            // mobile searching
-	            FirefoxProfile profile = new FirefoxProfile(); 
-	            profile.setPreference("general.useragent.override", "iPhone"); 
-	            
-	            driver = new FirefoxDriver(profile);
+	            // Mobile searching
+        		// Initialize new phantomjs driver (1.97) for normal web browser
+        		caps.setJavascriptEnabled(true);
+        		caps.setCapability("takesScreenshot", true);
+        		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+        		caps.setPlatform(DesiredCapabilities.iphone().getPlatform());
+        		driver = new PhantomJSDriver(caps);
+        		
 	            driver.get(baseUrl);
 	            
-	            // login
+	            // Login
 	            driver.findElement(By.className("idText")).click();
 	            driver.findElement(By.name("login")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
@@ -234,7 +264,7 @@ public class Bing {
 	            
 	            driver.get("http://www.bing.com/");
 	            
-	            // first search from homepage
+	            // First search from homepage
 	            driver.findElement(By.id("sbBoxCnt")).click();
 	            driver.findElement(By.id("sb_form_q")).click();
 	            
@@ -251,7 +281,7 @@ public class Bing {
 	            currentSearch = "web";
 //	            mobileSearches--;	Removed because sometimes 9/10 mobile points are earned because the first search doesn't register for points. Adds 1 extra search.
 	            
-	        	// wait in between searches
+	        	// Wait in between searches
 	        	try {
 	        		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
 	        	}
@@ -261,23 +291,7 @@ public class Bing {
 	        	
 	        	// mobile searches from previous search page
 	        	for(int i = 1; i <= mobileSearches; i++) {
-	            	// randomly picks whether to search for web, images, or videos and then switches to that page
-//	            	int typeOfSearch = rand.nextInt(5);
-//	            	
-//	            	if(typeOfSearch >= 5 && !currentSearch.equals("web")) {		// web search
-//	            		currentSearch = "web";
-//	            		driver.findElement(By.linkText("WEB")).click();
-//	            	}
-//	            	else if(typeOfSearch == 3 && !currentSearch.equals("image")) {	// image search
-//	            		currentSearch = "image";
-//	            		driver.findElement(By.linkText("IMAGES")).click();
-//	            	}
-//	            	else if(typeOfSearch == 4 && !currentSearch.equals("video")){		// video search
-//	            		currentSearch = "video";
-//	            		driver.findElement(By.linkText("VIDEOS")).click();
-//	            	}
-	
-	            	// do the actual search
+	            	// Search
 	            	driver.findElement(By.id("sb_form_q")).clear();
 		            if(rand.nextInt(2) == 1) {
 		            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString());
@@ -287,7 +301,7 @@ public class Bing {
 		            }
 	            	driver.findElement(By.id("sbBtn")).click();
 	            	
-	            	// wait in between searches
+	            	// Wait in between searches
 	            	try {
 	            		Thread.sleep(((rand.nextInt(MAX_TIME - MIN_TIME)) + MIN_TIME) *  1000);
 	            	}
