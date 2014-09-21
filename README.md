@@ -8,6 +8,7 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 ## Features
 * Allows for up to 5 accounts at a time (not Facebook accounts)
 * A ~25,000 search list that contains many commonly searched for (contains NSFW language)
+* Uses PhantomJS and Seleneium to drive a hidden browser to earn points
 * Go to this project [here] (https://github.com/T-Wong/SearchList/tree/master) if you want to have a large list millions of search terms that I have compiled
 * Encrypts and saves login information on local machine
 * Detects how many points needed for both mobile searching and desktop searching
