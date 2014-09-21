@@ -4,7 +4,9 @@
  * 	all Bing Rewards points as possible per account.
  */
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -17,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.junit.*;
 import org.openqa.selenium.*;
@@ -103,6 +106,7 @@ public class Bing {
     		caps.setCapability("takesScreenshot", true);
     		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
     		driver = new PhantomJSDriver(caps);
+    		driver.manage().window().setSize(new Dimension(1920, 1080));
     		
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.get(baseUrl);
@@ -137,7 +141,7 @@ public class Bing {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
             }
-
+            
             // Earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
         	WebElement ul = driver.findElement(By.className("tileset"));
             List<WebElement> lis = ul.findElements(By.tagName("li"));
@@ -204,6 +208,7 @@ public class Bing {
 	        		e.printStackTrace();
 	        	}
             }
+            
             // Start desktop searching
             for(int i = 1; i <= desktopSearches; i++) {
             	// Randomly picks whether to search for web, images, or videos and then switches to that page
@@ -243,24 +248,25 @@ public class Bing {
             	}
             }
         	driver.quit();
-            
+        	
+			// Mobile searching
             if(mobileSearches != 0) {
-	            // Mobile searching
         		// Initialize new phantomjs driver (1.97) for normal web browser
-        		caps.setJavascriptEnabled(true);
-        		caps.setCapability("takesScreenshot", true);
-        		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
-        		caps.setPlatform(DesiredCapabilities.iphone().getPlatform());
-        		driver = new PhantomJSDriver(caps);
+            	DesiredCapabilities mobileCaps = DesiredCapabilities.iphone();
+            	mobileCaps.setJavascriptEnabled(true);
+        		mobileCaps.setCapability("takesScreenshot", true);
+        		mobileCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+        		mobileCaps.setCapability("phantomjs.page.settings.userAgent", "Mozilla/5.0(iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10");
+        		driver = new PhantomJSDriver(mobileCaps);
         		
 	            driver.get(baseUrl);
-	            
+
 	            // Login
 	            driver.findElement(By.className("idText")).click();
 	            driver.findElement(By.name("login")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
 	            driver.findElement(By.id("idSIButton9")).click();
-	            driver.switchTo().alert().accept();
+	            //driver.switchTo().alert().accept();
 	            
 	            driver.get("http://www.bing.com/");
 	            
@@ -299,7 +305,7 @@ public class Bing {
 		            else {
 		            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
 		            }
-	            	driver.findElement(By.id("sbBtn")).click();
+	            	driver.findElement(By.id("sb_form_go")).click();
 	            	
 	            	// Wait in between searches
 	            	try {
@@ -366,6 +372,15 @@ public class Bing {
             return true;
         } catch (NoSuchElementException e) {
             return false;
+        }
+    }
+    
+    private void saveScreenshot(String location) {
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(srcFile, new File(location));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
