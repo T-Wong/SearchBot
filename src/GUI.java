@@ -101,7 +101,7 @@ public class GUI extends JFrame {
 
         // set window details
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setTitle("BingBot");
+        setTitle("SearchBot");
         accountPanel.setBorder(BorderFactory.createTitledBorder(null, "Account Information", TitledBorder.CENTER, TitledBorder.DEFAULT_POSITION));
 
         // load logins
