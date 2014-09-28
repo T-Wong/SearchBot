@@ -102,9 +102,9 @@ public class Bing {
     	for(Map.Entry<String, char[]> account : accounts.entrySet()) { 	    		
     		// Initialize new phantomjs driver (1.97) for normal web browser
     		DesiredCapabilities caps = new DesiredCapabilities();
-    		caps.setJavascriptEnabled(true);
     		caps.setCapability("takesScreenshot", true);
     		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+    		caps.setJavascriptEnabled(true);
     		driver = new PhantomJSDriver(caps);
     		driver.manage().window().setSize(new Dimension(1920, 1080));
     		

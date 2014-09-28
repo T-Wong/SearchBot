@@ -1,9 +1,9 @@
-BingBot
+SearchBot
 =======
 
-BingBot is a simple script with GUI that automates the earning of points for Bing Rewards.
+SearchBotis a simple script with GUI that automates the earning of points for Bing Rewards.
 
-![alt tag](https://raw.github.com/T-Wong/BingBot/master/GUI.png)
+![alt tag](https://raw.github.com/T-Wong/SearchBot/master/GUI.png)
 
 ## Features
 * Allows for up to 5 accounts at a time (not Facebook accounts)
@@ -18,11 +18,10 @@ BingBot is a simple script with GUI that automates the earning of points for Bin
 * Emulates an iPhone to obtain mobile searches
 
 ## Requirements
-* Modern version of Mozilla Firefox
 * Java 1.7 or 7 JRE
 
 ## Installation
-1. Download BingBot.jar in the master branch or click [here] (https://github.com/T-Wong/BingBot/raw/master/BingBot.jar).
+1. Download BingBot.jar in the master branch or click [here] (https://github.com/T-Wong/SearchBot/raw/master/BingBot.jar).
 2. Run the downloaded file.
 3. Done.
 
