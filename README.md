@@ -21,7 +21,7 @@ SearchBot is a simple script with GUI that automates the earning of points for B
 * Java 1.7 or 7 JRE
 
 ## Installation
-1. Download BingBot.jar in the master branch or click [here] (https://github.com/T-Wong/SearchBot/raw/master/SearchBot.jar).
+1. Download SearchBot.jar in the master branch or click [here] (https://github.com/T-Wong/SearchBot/raw/master/SearchBot.jar).
 2. Run the downloaded file.
 3. Done.
 
