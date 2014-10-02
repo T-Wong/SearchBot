@@ -56,6 +56,8 @@ public class GUI extends JFrame {
     private JButton saveButton;
     private JButton startButton;   
     
+    AnswerWorker worker = new AnswerWorker();
+    
 	Bing startBing;
 	
     public static void main(String args[]) {
@@ -162,6 +164,16 @@ public class GUI extends JFrame {
             }
         });
 
+        // CLeanup if program closed. Force close phantomjs if open.
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void run() {
+            	try {
+            		Runtime.getRuntime().exec("taskkill /F /IM phantomjs.exe");
+            	}
+            	catch(Exception e) {}
+            }
+        });
+        
         // group and organize all the componenets
         GroupLayout accountPanelLayout = new GroupLayout(accountPanel);
         accountPanel.setLayout(accountPanelLayout);
@@ -323,7 +335,7 @@ public class GUI extends JFrame {
         	e.printStackTrace();
         }
     	startBing = new Bing(accounts, wordSet.toArray());   	
-    	AnswerWorker worker = new AnswerWorker();
+    	worker = new AnswerWorker();
     	worker.execute();
     	startButton.setEnabled(false);
     }       

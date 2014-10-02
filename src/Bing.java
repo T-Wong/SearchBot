@@ -50,6 +50,9 @@ public class Bing {
     // holds words from word list
     private Object[] wordArray;
     
+    // Holds the titles of the earn and explore rewards needed to be clicked
+	ArrayList<String> titles = new ArrayList<String>();
+
     // Declare variables for selenium
     private WebDriver driver;
     private String baseUrl;
@@ -66,6 +69,7 @@ public class Bing {
             search();
         }
         catch(Exception e) {
+//        	saveScreenshot("C:\\Users\\Tyler\\Desktop\\picture.png");
         	e.printStackTrace();
         	JOptionPane.showMessageDialog(null, "An error has occured, stopping.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
         	try {
@@ -82,7 +86,7 @@ public class Bing {
     }
     
     @Test
-    public void search() {
+    public void search() throws Exception {
     	// Saves phantomjs.exe to a temp folder on local file system to be used later
     	InputStream in = null;
     	OutputStream out = null;
@@ -112,8 +116,7 @@ public class Bing {
             driver.get(baseUrl);
             
             // Navigate to sign in
-            driver.findElement(By.id("id_s")).click();
-            driver.findElement(By.className("idp_wlid")).click();
+            driver.findElement(By.className("identityOption")).findElement(By.linkText("Sign in")).click();
             
             // Login
             try {
@@ -122,15 +125,9 @@ public class Bing {
 	            driver.findElement(By.id("idSIButton9")).click();
             }
             catch(Exception e) {
-            	JOptionPane.showMessageDialog(null, "Requires user interaction.", "Requires user interaction", JOptionPane.ERROR_MESSAGE);
-            	while(isElementPresent(By.id("c_cb0"))) {
-            		try {
-            			Thread.sleep(1000);
-            		}
-            		catch(Exception e2) {}
-            	}
+            	throw new Exception("Requires user interaction. Try logging into \"" + account.getKey() + "\"");
             }
-            
+
             // Gets the number of searches needed to be done
             List<WebElement> searchList = (driver.findElements(By.className("tileset")).get(1)).findElements(By.tagName("li"));
             for(WebElement li : searchList) {
@@ -141,17 +138,14 @@ public class Bing {
             		desktopSearches = formatText(li.findElement(By.className("progress")).getText());
             	}
             }
-            
-            // Earns the "earn and explore" rewards. have to use this for loop because we need to refresh the elements to prevent stale elements from being used
+
+            // Earns the "earn and explore" rewards. 
         	WebElement ul = driver.findElement(By.className("tileset"));
-            List<WebElement> lis = ul.findElements(By.tagName("li"));
-            		
+ 
             // Finds which elements need to be clicked
-            ArrayList<String> titles = new ArrayList<String>();
-            for(WebElement li : lis) {
-            	if(isElementPresent(By.cssSelector("div[class='check open-check dashboard-sprite']"), li)) {
-            		titles.add(li.findElement(By.className("title")).getText());
-            	}
+            List<WebElement> toBeClicked = ul.findElements(By.cssSelector("div[class='check open-check dashboard-sprite']"));
+            for(WebElement reward : toBeClicked) {
+            	titles.add(reward.findElement(By.xpath("./../..")).findElement(By.className("title")).getText());
             }
 
             // Clicks the rewards
@@ -183,7 +177,7 @@ public class Bing {
                 }
                 catch(Exception e) {} 
             }
-             
+
             if(desktopSearches != 0) {
 	            // Back arrow to get to bing home page
 	            driver.findElement(By.id("back-to-bing-text")).click();
@@ -213,18 +207,18 @@ public class Bing {
             for(int i = 1; i <= desktopSearches; i++) {
             	// Randomly picks whether to search for web, images, or videos and then switches to that page
             	int typeOfSearch = rand.nextInt(5);
-            	
+
             	if(typeOfSearch >= 2 && !currentSearch.equals("web")) {		// web search
             		currentSearch = "web";
-            		driver.findElement(By.linkText("WEB")).click();
+            		driver.findElement(By.linkText("Web"));
             	}
             	else if(typeOfSearch == 3 && !currentSearch.equals("image")) {	// image search
             		currentSearch = "image";
-            		driver.findElement(By.linkText("IMAGES")).click();
+            		driver.findElement(By.linkText("Images"));
             	}
             	else if(typeOfSearch == 4 && !currentSearch.equals("video")){		// video search
             		currentSearch = "video";
-            		driver.findElement(By.linkText("VIDEOS")).click();
+            		driver.findElement(By.linkText("Videos"));
             	}
 
             	// Do the actual search
