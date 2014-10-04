@@ -119,12 +119,11 @@ public class Bing {
             driver.findElement(By.className("identityOption")).findElement(By.linkText("Sign in")).click();
             
             // Login
-            try {
-	            driver.findElement(By.name("login")).sendKeys(account.getKey());
-	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
-	            driver.findElement(By.id("idSIButton9")).click();
-            }
-            catch(Exception e) {
+            driver.findElement(By.name("login")).sendKeys(account.getKey());
+            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
+            driver.findElement(By.id("idSIButton9")).click();
+            
+            if(!isElementPresent(By.className("tileset"))){	// Will stop and show an error dialog with which account is having problems
             	throw new Exception("Requires user interaction. Try logging into \"" + account.getKey() + "\"");
             }
 

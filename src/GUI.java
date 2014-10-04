@@ -317,6 +317,13 @@ public class GUI extends JFrame {
     		accounts.put(email5.getText().toLowerCase().trim(), password5.getPassword());
     	}
 
+    	
+    	// Show error box if no account is inputted
+    	if(accounts.size() == 0) {
+    		JOptionPane.showMessageDialog(null, "No accounts inputted.", "No accounts inputted.", JOptionPane.ERROR_MESSAGE);
+    		return;
+    	}
+    	
         // load current word list
     	SortedSet<String> wordSet = new TreeSet<String>();
     	
