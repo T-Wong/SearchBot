@@ -69,7 +69,7 @@ public class Bing {
             search();
         }
         catch(Exception e) {
-//        	saveScreenshot("C:\\Users\\Tyler\\Desktop\\picture.png");
+        	saveScreenshot("C:\\Users\\Tyler\\Desktop\\picture.png");
         	e.printStackTrace();
         	JOptionPane.showMessageDialog(null, "An error has occured, stopping.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
         	try {
@@ -298,7 +298,7 @@ public class Bing {
 		            else {
 		            	driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
 		            }
-	            	driver.findElement(By.id("sb_form_go")).click();
+	            	driver.findElement(By.id("sb_form_q")).sendKeys(Keys.ENTER);
 	            	
 	            	// Wait in between searches
 	            	try {
