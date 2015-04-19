@@ -19,14 +19,14 @@ import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
+//import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.IOUtils;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+//import org.openqa.selenium.phantomjs.PhantomJSDriver;
+//import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Bing {
@@ -69,7 +69,7 @@ public class Bing {
             search();
         }
         catch(Exception e) {
-        	saveScreenshot("C:\\Users\\Tyler\\Desktop\\picture.png");
+//        	saveScreenshot("C:\\Users\\Tyler\\Desktop\\picture.png");
         	e.printStackTrace();
         	JOptionPane.showMessageDialog(null, "An error has occured, stopping.\n\n" + e.getMessage(), "An error has occured", JOptionPane.ERROR_MESSAGE);
         	try {
@@ -87,30 +87,33 @@ public class Bing {
     
     @Test
     public void search() throws Exception {
-    	// Saves phantomjs.exe to a temp folder on local file system to be used later
-    	InputStream in = null;
-    	OutputStream out = null;
-    	try {
-	    	in = getClass().getResourceAsStream("phantomjs.exe");
-	    	out = new FileOutputStream(System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
-	    	IOUtils.copy(in, out);
-    	}
-    	catch(Exception e){
-    		e.printStackTrace();
-    	}
-    	finally {
-    		IOUtils.closeQuietly(in);
-    		IOUtils.closeQuietly(out);
-    	}
+//    	// Saves phantomjs.exe to a temp folder on local file system to be used later
+//    	InputStream in = null;
+//    	OutputStream out = null;
+//    	try {
+//	    	in = getClass().getResourceAsStream("phantomjs.exe");
+//	    	out = new FileOutputStream(System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+//	    	IOUtils.copy(in, out);
+//    	}
+//    	catch(Exception e){
+//    		e.printStackTrace();
+//    	}
+//    	finally {
+//    		IOUtils.closeQuietly(in);
+//    		IOUtils.closeQuietly(out);
+//    	}
 
     	for(Map.Entry<String, char[]> account : accounts.entrySet()) { 	    		
-    		// Initialize new phantomjs driver (1.97) for normal web browser
-    		DesiredCapabilities caps = new DesiredCapabilities();
-    		caps.setCapability("takesScreenshot", true);
-    		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
-    		caps.setJavascriptEnabled(true);
-    		driver = new PhantomJSDriver(caps);
-    		driver.manage().window().setSize(new Dimension(1920, 1080));
+//    		// Initialize new phantomjs driver (1.98) for normal web browser
+//    		DesiredCapabilities caps = new DesiredCapabilities();
+//    		caps.setCapability("takesScreenshot", true);
+//    		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+//    		caps.setJavascriptEnabled(true);
+    		
+//    		driver = new PhantomJSDriver(caps);
+    		driver = new FirefoxDriver();
+    		
+//    		driver.manage().window().setSize(new Dimension(1920, 1080));
     		
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.get(baseUrl);
@@ -119,10 +122,10 @@ public class Bing {
             driver.findElement(By.className("identityOption")).findElement(By.linkText("Sign in")).click();
             
             // Login
-            driver.findElement(By.name("login")).sendKeys(account.getKey());
-            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
+            driver.findElement(By.id("i0116")).sendKeys(account.getKey());
+            driver.findElement(By.id("i0118")).sendKeys(new String(account.getValue()));
             driver.findElement(By.id("idSIButton9")).click();
-            
+                        
             if(!isElementPresent(By.className("tileset"))){	// Will stop and show an error dialog with which account is having problems
             	throw new Exception("Requires user interaction. Try logging into \"" + account.getKey() + "\"");
             }
@@ -189,7 +192,8 @@ public class Bing {
             	}
             	else {
             		driver.findElement(By.id("sb_form_q")).sendKeys(wordArray[rand.nextInt(wordArray.length)].toString().toLowerCase());
-            	}	            driver.findElement(By.id("sb_form_go")).click();
+            	}	            
+            	driver.findElement(By.id("sb_form_go")).click();
 	            currentSearch = "web";
 	            desktopSearches--;
 	            
@@ -245,20 +249,26 @@ public class Bing {
 			// Mobile searching
             if(mobileSearches != 0) {
         		// Initialize new phantomjs driver (1.97) for normal web browser
-            	DesiredCapabilities mobileCaps = DesiredCapabilities.iphone();
-            	mobileCaps.setJavascriptEnabled(true);
-        		mobileCaps.setCapability("takesScreenshot", true);
-        		mobileCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
-        		mobileCaps.setCapability("phantomjs.page.settings.userAgent", "Mozilla/5.0(iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10");
-        		driver = new PhantomJSDriver(mobileCaps);
+//            	DesiredCapabilities mobileCaps = DesiredCapabilities.iphone();
+//            	mobileCaps.setJavascriptEnabled(true);
+//        		mobileCaps.setCapability("takesScreenshot", true);
+//        		mobileCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getenv("APPDATA") + "/BingBot/phantomjs.exe");
+//        		mobileCaps.setCapability("phantomjs.page.settings.userAgent", "Mozilla/5.0(iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10");
+//        		driver = new PhantomJSDriver(mobileCaps);
         		
-	            driver.get(baseUrl);
+        		FirefoxProfile profile = new FirefoxProfile();
+        		profile.setPreference("general.useragent.override", "Opera/12.02 (Android 4.1; Linux; Opera Mobi/ADR-1111101157; U; en-US) Presto/2.9.201 Version/12.02"); 
+        		
+        		driver = new FirefoxDriver(profile);
+        		
+	            driver.get("https://www.bing.com/rewards/signin");
 
 	            // Login
 	            driver.findElement(By.className("idText")).click();
 	            driver.findElement(By.name("login")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
 	            driver.findElement(By.id("idSIButton9")).click();
+	            driver.findElement(By.id("id_rc")).click();
 	            //driver.switchTo().alert().accept();
 	            
 	            driver.get("http://www.bing.com/");
@@ -368,12 +378,12 @@ public class Bing {
         }
     }
     
-    private void saveScreenshot(String location) {
-        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(srcFile, new File(location));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    private void saveScreenshot(String location) {
+//        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//        try {
+//            FileUtils.copyFile(srcFile, new File(location));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

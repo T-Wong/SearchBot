@@ -323,7 +323,7 @@ public class GUI extends JFrame {
     		JOptionPane.showMessageDialog(null, "No accounts inputted.", "No accounts inputted.", JOptionPane.ERROR_MESSAGE);
     		return;
     	}
-    	
+
         // load current word list
     	SortedSet<String> wordSet = new TreeSet<String>();
     	
