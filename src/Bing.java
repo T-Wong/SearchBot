@@ -122,7 +122,9 @@ public class Bing {
             driver.findElement(By.className("identityOption")).findElement(By.linkText("Sign in")).click();
             
             // Login
+            driver.findElement(By.id("i0116")).click();
             driver.findElement(By.id("i0116")).sendKeys(account.getKey());
+            driver.findElement(By.id("i0118")).click();
             driver.findElement(By.id("i0118")).sendKeys(new String(account.getValue()));
             driver.findElement(By.id("idSIButton9")).click();
                         
@@ -264,11 +266,11 @@ public class Bing {
 	            driver.get("https://www.bing.com/rewards/signin");
 
 	            // Login
-	            driver.findElement(By.className("idText")).click();
-	            driver.findElement(By.name("login")).sendKeys(account.getKey());
+	            driver.findElement(By.name("loginfmt")).click();
+	            driver.findElement(By.name("loginfmt")).sendKeys(account.getKey());
 	            driver.findElement(By.name("passwd")).sendKeys(new String(account.getValue()));
 	            driver.findElement(By.id("idSIButton9")).click();
-	            driver.findElement(By.id("id_rc")).click();
+//	            driver.findElement(By.id("id_rc")).click();
 	            //driver.switchTo().alert().accept();
 	            
 	            driver.get("http://www.bing.com/");

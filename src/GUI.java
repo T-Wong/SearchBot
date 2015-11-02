@@ -61,12 +61,44 @@ public class GUI extends JFrame {
 	Bing startBing;
 	
     public static void main(String args[]) {
-        /* Create and display the form */
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GUI().setVisible(true);
-            }
-        });
+    	if(args.length != 2){
+	        /* Create and display the form */
+	        EventQueue.invokeLater(new Runnable() {
+	            public void run() {
+	                new GUI().setVisible(true);
+	            }
+	        });
+    	}
+    	else {
+    		try {
+	            // load current word list
+	        	SortedSet<String> wordSet = new TreeSet<String>();
+	            try {
+	            	InputStream in = GUI.class.getResourceAsStream("WordList.txt");
+	            	BufferedReader br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+	            	
+	            	String line;
+	            	while ((line = br.readLine()) != null) {
+	            		wordSet.add(line.trim());
+	            	}
+	            	br.close();
+	            	in.close();
+	            }
+	            catch(Exception e) {
+	            	e.printStackTrace();
+	            }
+	            
+	            Map<String, char[]> accounts = new LinkedHashMap<String, char[]>();	// holds username and passwords
+	            accounts.put(args[0].toLowerCase().trim(), args[1].trim().toCharArray());
+	        
+	        	Bing cliBing = new Bing(accounts, wordSet.toArray());
+	        	cliBing.execute();
+    		}
+    		catch(Exception e) {}
+        	finally {
+        		System.exit(0);
+        	}
+        }
     }    
     
     public GUI() {
@@ -160,7 +192,7 @@ public class GUI extends JFrame {
 
         startButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                startButtonActionPerformed(evt);
+                startButtonActionPerformed();
             }
         });
 
@@ -297,7 +329,7 @@ public class GUI extends JFrame {
     }                                          
 
     // starts execution of the selenium script which does the searches
-    private void startButtonActionPerformed(ActionEvent evt) {                                            
+    private void startButtonActionPerformed() {                                            
     	Map<String, char[]> accounts = new LinkedHashMap<String, char[]>();	// holds username and passwords
     	
     	// sets the account details in the hashmap
