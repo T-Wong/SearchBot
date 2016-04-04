@@ -3,7 +3,6 @@ SearchBot
 
 SearchBot is a simple script with GUI that automates the earning of points for Bing Rewards.
 
-![alt tag](https://raw.github.com/T-Wong/SearchBot/master/GUI.png)
 
 ## Features
 * Allows for up to 5 accounts at a time (not Facebook accounts)
