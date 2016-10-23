@@ -1,3 +1,4 @@
+package xyz.tylerwong.searchbot;
 /*	Created by: Tyler Wong
  * 	Date: August 10th, 2014
  * 	Purpose: Selenium script that controls a FireFox browser to obtain	
