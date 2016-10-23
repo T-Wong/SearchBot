@@ -1,3 +1,4 @@
+package xyz.tylerwong.searchbot;
 /*	Created by: Tyler Wong
  * 	Date: August 10th, 2014
  * 	Purpose: Main class which initializes the GUI and accepts user input for
@@ -74,7 +75,7 @@ public class GUI extends JFrame {
 	            // load current word list
 	        	SortedSet<String> wordSet = new TreeSet<String>();
 	            try {
-	            	InputStream in = GUI.class.getResourceAsStream("WordList.txt");
+	            	InputStream in = GUI.class.getResourceAsStream("/WordList.txt");
 	            	BufferedReader br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
 	            	
 	            	String line;
